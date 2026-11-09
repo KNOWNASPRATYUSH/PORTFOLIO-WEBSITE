@@ -4,7 +4,6 @@ import { Float, useScroll, Stars, Sparkles, Environment, Text, MeshDistortMateri
 import * as THREE from 'three'
 import profileImg from '../assets/profile.jpg'
 import fitnessPreview from '../assets/india_fitness.png'
-import cartnovaLogo from '../assets/cartnova_logo.png'
 
 export default function Experience() {
   const { width, height } = useThree((state) => state.viewport)
@@ -99,7 +98,6 @@ export default function Experience() {
 
 function Desk() {
   const profileTexture = useTexture(profileImg)
-  const cartnovaTexture = useTexture(cartnovaLogo)
 
   return (
     <group position={[0, -0.5, 0]}>
@@ -119,13 +117,22 @@ function Desk() {
       <group position={[0, 0.12, -0.15]} rotation={[-0.2, 0, 0]}>
          <mesh position={[0, 0.4, 0]}>
             <boxGeometry args={[1.2, 0.8, 0.05]} />
-            <meshStandardMaterial color="#222" />
+            <meshStandardMaterial color="#18181b" metalness={0.9} roughness={0.1} />
          </mesh>
          <mesh position={[0, 0.4, 0.03]}>
-            <planeGeometry args={[0.7, 0.7]} />
-            <meshStandardMaterial map={cartnovaTexture} emissive="#ffffff" emissiveIntensity={1} transparent />
-            <pointLight position={[0, 0, 0.1]} intensity={0.5} color="#ffd400" distance={1} />
+            <planeGeometry args={[1.1, 0.7]} />
+            <meshStandardMaterial color="#050d1a" emissive="#00d4ff" emissiveIntensity={0.25} roughness={0.2} />
+            <pointLight position={[0, 0, 0.1]} intensity={0.6} color="#00d4ff" distance={1.2} />
          </mesh>
+         <Text
+           position={[0, 0.4, 0.04]}
+           fontSize={0.09}
+           color="#00d4ff"
+           anchorX="center"
+           anchorY="middle"
+         >
+           {"< PRATYUSH />"}
+         </Text>
       </group>
 
       {/* Floating Vertical Monitor */}

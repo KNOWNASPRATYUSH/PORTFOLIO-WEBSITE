@@ -61,7 +61,7 @@ export default function UI() {
           >
             <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
             <span className="orbitron text-[10px] sm:text-xs tracking-[0.4em] text-brand-blue uppercase">
-              Cartnova Engineering Hub
+              Full Stack Engineering Hub
             </span>
           </motion.div>
 
@@ -92,7 +92,7 @@ export default function UI() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xs sm:text-sm text-gray-400 max-w-xl font-light mb-10 leading-relaxed"
           >
-            Engineering zero-latency serverless architectures, real-time distributed platforms, and fluid 3D experiences under <span className="text-white font-medium">Cartnova</span>.
+            Engineering zero-latency serverless architectures, real-time distributed platforms, and fluid 3D experiences with high architectural precision.
           </motion.p>
 
           <motion.div 
@@ -156,7 +156,7 @@ export default function UI() {
             </p>
 
             <p className="text-xs sm:text-sm leading-relaxed text-gray-400 font-light mb-6">
-              Through <span className="text-brand-blue font-medium">Cartnova</span>, I build end-to-end digital experiences that are blazingly fast, statutorily secure, and designed to leave a lasting impact.
+              As an independent engineer, I build end-to-end digital experiences that are blazingly fast, statutorily secure, and designed to leave a lasting impact.
             </p>
 
             <div className="flex flex-wrap gap-2 mb-6">
@@ -406,8 +406,8 @@ export default function UI() {
               {[
                 { 
                   year: '2024 - PRESENT', 
-                  role: 'Full Stack Architect & Founder', 
-                  company: 'Cartnova / Elite Productions', 
+                  role: 'Full Stack Architect & Lead Engineer', 
+                  company: 'Independent / Flagship Engineering', 
                   desc: 'Architecting end-to-end web ecosystems including Coffee & Cravings (real-time QR cafe platform with zero external dependencies) and India Fitness (high-velocity athletic portal).' 
                 },
                 { 
@@ -584,7 +584,7 @@ export default function UI() {
           </motion.div>
 
           <p className="mt-8 md:mt-12 text-brand-blue font-bold orbitron text-[10px] md:text-[11px] tracking-[0.35em] glow-text">
-            DESIGNED &amp; ENGINEERED UNDER CARTNOVA BY PRATYUSH
+            DESIGNED &amp; ENGINEERED BY PRATYUSH KUMAR
           </p>
         </div>
       )

@@ -28,7 +28,7 @@ function App() {
         <div className="flex items-center gap-3 pointer-events-auto">
           <div className="w-2.5 h-2.5 rounded-full bg-brand-emerald animate-pulse shadow-[0_0_12px_#10b981]"></div>
           <span className="orbitron font-bold text-xs md:text-sm tracking-[0.25em] text-white">
-            CARTNOVA <span className="text-brand-blue">//</span> PRATYUSH
+            PRATYUSH KUMAR
           </span>
           <span className="hidden sm:inline-block text-[9px] orbitron bg-brand-blue/10 text-brand-blue border border-brand-blue/30 px-2.5 py-0.5 rounded-full">
             SYSTEM OPTIMAL
