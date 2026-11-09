@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import profileImg from '../assets/profile.jpg'
 import fitnessLogo from '../assets/india_fitness.png'
+import fitnessPreviewImg from '../assets/fitness_preview.jpg'
 import coffeeLogo from '../assets/coffee_cravings_clean.png'
+import coffeePreviewImg from '../assets/coffee_preview.jpg'
 
 export default function UI() {
   const [status, setStatus] = useState("")
@@ -47,7 +49,7 @@ export default function UI() {
   }
 
   const sections = [
-    // 01: HERO
+    // 01: HERO SECTION
     {
       id: 'hero',
       content: (
@@ -59,9 +61,9 @@ export default function UI() {
             transition={{ duration: 0.6 }}
             className="flex items-center gap-2 mb-4"
           >
-            <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
+            <span className="w-2 h-2 rounded-full bg-brand-emerald animate-pulse"></span>
             <span className="orbitron text-[10px] sm:text-xs tracking-[0.4em] text-brand-blue uppercase">
-              Full Stack Engineering Hub
+              Full Stack Portfolio // 2026
             </span>
           </motion.div>
 
@@ -80,7 +82,7 @@ export default function UI() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-sm sm:text-lg md:text-2xl font-light tracking-[0.25em] mb-8 text-brand-blue"
+            className="text-sm sm:text-lg md:text-2xl font-light tracking-[0.25em] mb-6 text-brand-blue"
           >
             FULL STACK ARCHITECT <span className="text-white/40">//</span> CREATIVE ENGINEER
           </motion.p>
@@ -90,24 +92,42 @@ export default function UI() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-xs sm:text-sm text-gray-400 max-w-xl font-light mb-10 leading-relaxed"
+            className="text-xs sm:text-sm text-gray-400 max-w-2xl font-light mb-8 leading-relaxed"
           >
-            Engineering zero-latency serverless architectures, real-time distributed platforms, and fluid 3D experiences with high architectural precision.
+            Designing and engineering zero-dependency backend systems, distributed Redis key-value architectures, and fluid 60FPS 3D WebGL experiences for production applications.
           </motion.p>
+
+          {/* Core Telemetry Counter Pills */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+            className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8 w-full max-w-2xl"
+          >
+            {[
+              { label: 'FLAGSHIPS LIVE', val: '2 PRODS', color: 'text-brand-blue' },
+              { label: 'BACKEND LATENCY', val: '< 10 MS', color: 'text-brand-amber' },
+              { label: 'UI RENDERING', val: '60 FPS', color: 'text-brand-purple' },
+              { label: 'TEST PASS RATE', val: '100% (71/71)', color: 'text-brand-emerald' },
+            ].map(pill => (
+              <div key={pill.label} className="glass p-3 rounded-xl border border-white/10 text-center">
+                <div className={`text-xs sm:text-sm font-bold orbitron ${pill.color}`}>{pill.val}</div>
+                <div className="text-[9px] text-gray-400 orbitron tracking-wider">{pill.label}</div>
+              </div>
+            ))}
+          </motion.div>
 
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.7, duration: 0.8 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
             className="flex flex-wrap items-center justify-center gap-3 pointer-events-auto"
           >
-            <div className="text-[10px] sm:text-xs border border-brand-blue/30 px-5 py-2 rounded-full flex items-center gap-2 group hover:bg-brand-blue/10 transition-colors cursor-help">
+            <div className="text-[10px] sm:text-xs border border-brand-blue/30 px-6 py-2.5 rounded-full flex items-center gap-2 group hover:bg-brand-blue/10 transition-colors cursor-help">
                <span className="w-2 h-2 bg-brand-blue rounded-full animate-pulse"></span>
-               SCROLL DOWN FOR WARP NAVIGATION
-            </div>
-            <div className="text-[10px] sm:text-xs border border-brand-purple/30 text-brand-purple px-4 py-2 rounded-full bg-brand-purple/5">
-               2 FLAGSHIPS DEPLOYED
+               SCROLL DOWN TO DIVE INTO FLAGSHIP ARCHITECTURE
             </div>
           </motion.div>
         </div>
@@ -118,21 +138,27 @@ export default function UI() {
     {
       id: 'about',
       content: (
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14 min-h-screen px-6 md:px-32 py-20 select-none">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14 min-h-screen px-6 md:px-28 py-20 select-none">
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative group"
+            className="relative group shrink-0"
           >
-            <div className="absolute -inset-1 bg-gradient-to-r from-brand-blue via-brand-purple to-brand-amber rounded-2xl blur-md opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-brand-blue via-brand-purple to-brand-amber rounded-3xl blur-md opacity-35 group-hover:opacity-100 transition duration-1000"></div>
             <img 
               src={profileImg} 
               alt="Pratyush Kumar" 
               draggable="false" 
-              className="relative w-48 sm:w-64 md:w-80 rounded-2xl border-2 border-brand-purple/50 object-cover shadow-2xl shadow-brand-purple/20 select-none" 
+              className="relative w-48 sm:w-60 md:w-72 rounded-2xl border-2 border-brand-purple/50 object-cover shadow-2xl shadow-brand-purple/20 select-none" 
             />
+            
+            {/* Quick Status Pill */}
+            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-black/90 border border-brand-purple/40 px-3 py-1 rounded-full text-[9px] orbitron text-brand-purple flex items-center gap-1.5 whitespace-nowrap shadow-lg">
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-emerald animate-ping"></span>
+              PATNA, IN • FULL STACK
+            </div>
           </motion.div>
 
           <motion.div 
@@ -144,27 +170,39 @@ export default function UI() {
           >
             <div className="flex items-center gap-2 mb-3">
               <span className="w-2 h-2 rounded-full bg-brand-purple"></span>
-              <span className="text-[10px] orbitron tracking-[0.3em] text-brand-purple uppercase">The Vision</span>
+              <span className="text-[10px] orbitron tracking-[0.3em] text-brand-purple uppercase">The Vision &amp; Craft</span>
             </div>
             
             <h2 className="text-2xl sm:text-3xl orbitron font-bold text-white mb-4 uppercase tracking-wider">
-              Logic Meets Aesthetics
+              Engineering Built for Speed, Scale &amp; Emotion
             </h2>
             
             <p className="text-sm sm:text-base leading-relaxed text-gray-300 font-light mb-4">
-              I’m <span className="text-white font-bold">Pratyush Kumar</span>, a full stack developer and creative engineer based in India. I specialize in bridging complex backend systems — from zero-dependency native Node.js and distributed Redis caches — with high-performance 3D visual storytelling.
+              I’m <span className="text-white font-bold">Pratyush Kumar</span>. I combine rigorous backend engineering with cinematic 3D visual frontend design to build systems that solve real operational needs and mesmerize users.
             </p>
 
             <p className="text-xs sm:text-sm leading-relaxed text-gray-400 font-light mb-6">
-              As an independent engineer, I build end-to-end digital experiences that are blazingly fast, statutorily secure, and designed to leave a lasting impact.
+              My engineering philosophy focuses on zero-dependency runtimes, memory-speed caching with Redis KV, cryptographic HMAC request verification, and statutory DPDP compliance. I prefer building bespoke, lightweight engines over stacking heavy third-party abstractions.
             </p>
 
-            <div className="flex flex-wrap gap-2 mb-6">
-              {['Full Stack Systems', 'Zero-Dependency Core', 'Distributed Caching', 'Interactive 3D'].map(tag => (
-                <span key={tag} className="text-[10px] orbitron bg-white/5 border border-white/10 px-3 py-1 rounded text-gray-300">
-                  {tag}
-                </span>
-              ))}
+            {/* Specializations Grid */}
+            <div className="grid grid-cols-2 gap-2 mb-6 text-[10px] sm:text-xs orbitron">
+              <div className="bg-white/5 border border-white/10 p-2.5 rounded-lg">
+                <span className="text-brand-blue block font-bold mb-0.5">CORE SYSTEMS</span>
+                <span className="text-gray-400 font-light">Zero-dep Node.js &amp; Upstash Redis</span>
+              </div>
+              <div className="bg-white/5 border border-white/10 p-2.5 rounded-lg">
+                <span className="text-brand-purple block font-bold mb-0.5">CREATIVE 3D</span>
+                <span className="text-gray-400 font-light">Three.js, Shaders &amp; 60FPS GSAP</span>
+              </div>
+              <div className="bg-white/5 border border-white/10 p-2.5 rounded-lg">
+                <span className="text-brand-amber block font-bold mb-0.5">PAYMENTS &amp; AUTH</span>
+                <span className="text-gray-400 font-light">Razorpay, UPI QR &amp; Webhooks</span>
+              </div>
+              <div className="bg-white/5 border border-white/10 p-2.5 rounded-lg">
+                <span className="text-brand-emerald block font-bold mb-0.5">COMPLIANCE</span>
+                <span className="text-gray-400 font-light">HMAC Security &amp; India DPDP Act</span>
+              </div>
             </div>
 
             <div className="flex gap-4 pointer-events-auto">
@@ -174,7 +212,15 @@ export default function UI() {
                  rel="noopener noreferrer"
                  className="bg-brand-purple/20 hover:bg-brand-purple/40 text-brand-purple border border-brand-purple/40 px-6 py-2.5 rounded-lg transition-all interactive text-xs sm:text-sm cursor-pointer orbitron flex items-center gap-2"
                >
-                 Follow Journal ↗
+                 Instagram Journal ↗
+               </a>
+               <a 
+                 href="https://github.com/KNOWNASPRATYUSH" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="bg-white/5 hover:bg-white/10 text-gray-300 border border-white/15 px-6 py-2.5 rounded-lg transition-all interactive text-xs sm:text-sm cursor-pointer orbitron flex items-center gap-2"
+               >
+                 GitHub Archive ↗
                </a>
             </div>
           </motion.div>
@@ -186,43 +232,65 @@ export default function UI() {
     {
       id: 'project_fitness',
       content: (
-        <div className="flex items-center justify-center md:justify-end min-h-screen px-6 md:px-32 py-20 select-none">
+        <div className="flex items-center justify-center md:justify-end min-h-screen px-6 md:px-24 py-20 select-none">
            <motion.div 
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="max-w-xl glass p-6 md:p-8 rounded-2xl border-r-4 border-brand-blue text-center md:text-right relative overflow-hidden"
+            className="w-full max-w-2xl glass p-6 md:p-8 rounded-2xl border-r-4 border-brand-blue text-center md:text-right relative overflow-hidden"
           >
-            {/* Blended Logo */}
-            <img 
-              src={fitnessLogo} 
-              alt="India Fitness" 
-              draggable="false"
-              className="absolute -top-10 -right-10 w-44 h-44 opacity-10 pointer-events-none grayscale hover:grayscale-0 transition-all duration-500" 
-            />
+            {/* Project Preview Screenshot Banner */}
+            <div className="relative mb-6 rounded-xl overflow-hidden border border-brand-blue/30 max-h-44 group">
+              <img 
+                src={fitnessPreviewImg} 
+                alt="India Fitness Interior & Workout Experience" 
+                draggable="false"
+                className="w-full h-44 object-cover object-center group-hover:scale-105 transition-transform duration-700 brightness-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+              
+              <div className="absolute top-3 right-3 flex items-center gap-2 bg-black/80 border border-brand-blue/50 px-3 py-1 rounded-full text-[10px] orbitron text-brand-blue">
+                <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
+                PRODUCTION LIVE
+              </div>
 
-            <div className="flex items-center justify-center md:justify-end gap-2 mb-3">
-              <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
-              <span className="text-[10px] orbitron tracking-[0.3em] text-brand-blue uppercase">Elite System // 01</span>
+              <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-left">
+                <div>
+                  <span className="text-[10px] orbitron text-brand-blue/80 uppercase tracking-widest block">Flagship // 01</span>
+                  <span className="text-lg font-bold text-white orbitron">INDIA FITNESS</span>
+                </div>
+                <img src={fitnessLogo} alt="Logo" className="w-8 h-8 rounded-full border border-brand-blue/40 p-0.5 bg-black" />
+              </div>
             </div>
 
-            <div className="flex items-center justify-center md:justify-end gap-3 mb-2">
-              <img src={fitnessLogo} alt="Logo" draggable="false" className="w-8 h-8 rounded-full border border-brand-blue/30" />
-              <h3 className="text-3xl sm:text-4xl font-bold tracking-tight">INDIA FITNESS</h3>
-            </div>
-            
-            <p className="text-xs sm:text-sm font-light text-brand-blue/90 mb-4 italic">
+            <p className="text-xs sm:text-sm font-light text-brand-blue mb-4 italic">
               Where Strength Meets Aesthetics • Athletic Web Engine
             </p>
             
-            <p className="text-sm sm:text-base leading-relaxed text-gray-300 mb-6 font-light">
-              A high-velocity athletics and fitness platform engineered for 60FPS fluid interactivity. Features modular training catalogs, coach management, and sleek dynamic layouts tailored for modern athletic engagement.
+            <p className="text-xs sm:text-sm leading-relaxed text-gray-300 mb-5 font-light">
+              High-performance digital athletics platform engineered with Next.js 15 and GSAP to deliver 60FPS fluid screen transitions with zero cumulative layout shifts. Features personalized membership tiers, coach profiles, and dynamic training plan catalogs.
             </p>
 
-            <div className="flex flex-wrap justify-center md:justify-end gap-2 mb-8 pointer-events-none">
-              {['React 19', 'GSAP', 'Next.js', 'PostgreSQL', 'TailwindCSS'].map(tech => (
-                <span key={tech} className="bg-brand-blue/10 text-brand-blue text-[10px] sm:text-xs px-3 py-1 rounded-full border border-brand-blue/20">{tech}</span>
+            {/* Architecture Highlights Checklist */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6 text-left text-[11px] text-gray-300">
+              <div className="bg-white/5 border border-white/10 p-2 rounded flex items-center gap-2">
+                <span className="text-brand-blue">✓</span> 60FPS Micro-Animations (GSAP)
+              </div>
+              <div className="bg-white/5 border border-white/10 p-2 rounded flex items-center gap-2">
+                <span className="text-brand-blue">✓</span> Next.js Serverless SSR Architecture
+              </div>
+              <div className="bg-white/5 border border-white/10 p-2 rounded flex items-center gap-2">
+                <span className="text-brand-blue">✓</span> Structured PostgreSQL Athlete Data
+              </div>
+              <div className="bg-white/5 border border-white/10 p-2 rounded flex items-center gap-2">
+                <span className="text-brand-blue">✓</span> Sub-100ms Vercel Edge Response
+              </div>
+            </div>
+
+            <div className="flex flex-wrap justify-center md:justify-end gap-1.5 mb-6 pointer-events-none">
+              {['React 19', 'Next.js 15', 'GSAP', 'PostgreSQL', 'TailwindCSS', 'Vercel Edge'].map(tech => (
+                <span key={tech} className="bg-brand-blue/10 text-brand-blue text-[10px] px-2.5 py-1 rounded-full border border-brand-blue/20">{tech}</span>
               ))}
             </div>
 
@@ -231,7 +299,7 @@ export default function UI() {
                  href="https://india-fitness.vercel.app/" 
                  target="_blank" 
                  rel="noopener noreferrer"
-                 className="inline-block bg-brand-blue/90 hover:bg-brand-blue text-black font-bold orbitron px-6 py-3 sm:px-8 sm:py-3.5 rounded transition-all transform hover:scale-105 interactive shadow-[0_0_20px_rgba(0,212,255,0.4)] text-xs sm:text-sm cursor-pointer"
+                 className="inline-block bg-brand-blue/90 hover:bg-brand-blue text-black font-bold orbitron px-6 py-3 rounded-lg transition-all transform hover:scale-105 interactive shadow-[0_0_20px_rgba(0,212,255,0.4)] text-xs sm:text-sm cursor-pointer"
                >
                  LIVE BROADCAST ↗
                </a>
@@ -239,7 +307,7 @@ export default function UI() {
                  href="https://github.com/KNOWNASPRATYUSH/INDIA-FITNESS" 
                  target="_blank" 
                  rel="noopener noreferrer"
-                 className="inline-block bg-white/5 hover:bg-white/10 text-brand-blue border border-brand-blue/30 font-medium orbitron px-5 py-3 sm:px-6 sm:py-3.5 rounded transition-all interactive text-xs sm:text-sm cursor-pointer"
+                 className="inline-block bg-white/5 hover:bg-white/10 text-brand-blue border border-brand-blue/30 font-medium orbitron px-5 py-3 rounded-lg transition-all interactive text-xs sm:text-sm cursor-pointer"
                >
                  SOURCE CODE ↗
                </a>
@@ -253,45 +321,73 @@ export default function UI() {
     {
       id: 'project_coffee',
       content: (
-        <div className="flex items-center justify-center md:justify-start min-h-screen px-6 md:px-32 py-20 select-none">
+        <div className="flex items-center justify-center md:justify-start min-h-screen px-6 md:px-24 py-20 select-none">
            <motion.div 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="max-w-xl glass p-6 md:p-8 rounded-2xl border-l-4 border-brand-amber text-center md:text-left relative overflow-hidden group"
+            className="w-full max-w-2xl glass p-6 md:p-8 rounded-2xl border-l-4 border-brand-amber text-center md:text-left relative overflow-hidden group"
           >
-            {/* Blended Logo Watermark */}
-            <img 
-              src={coffeeLogo} 
-              alt="Coffee & Cravings" 
-              draggable="false"
-              className="absolute -top-10 -left-10 w-48 h-48 opacity-10 pointer-events-none grayscale group-hover:opacity-25 transition-all duration-500" 
-            />
-
-            <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
-              <span className="w-2 h-2 rounded-full bg-brand-amber animate-pulse"></span>
-              <span className="text-[10px] orbitron tracking-[0.3em] text-brand-amber uppercase">Elite System // 02</span>
-            </div>
-
-            <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
-              <div className="w-9 h-9 rounded-full border border-brand-amber/40 bg-black/60 p-1.5 flex items-center justify-center shadow-[0_0_12px_rgba(245,158,11,0.25)]">
-                <img src={coffeeLogo} alt="Logo" draggable="false" className="w-full h-full object-contain" />
+            {/* Project Preview Screenshot Banner */}
+            <div className="relative mb-6 rounded-xl overflow-hidden border border-brand-amber/30 max-h-44 group">
+              <img 
+                src={coffeePreviewImg} 
+                alt="Coffee & Cravings Artisan Cafe Culinary Spread" 
+                draggable="false"
+                className="w-full h-44 object-cover object-center group-hover:scale-105 transition-transform duration-700 brightness-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+              
+              <div className="absolute top-3 left-3 flex items-center gap-2 bg-black/80 border border-brand-amber/50 px-3 py-1 rounded-full text-[10px] orbitron text-brand-amber">
+                <span className="w-2 h-2 rounded-full bg-brand-amber animate-pulse"></span>
+                PRODUCTION LIVE • PATNA
               </div>
-              <h3 className="text-3xl sm:text-4xl font-bold tracking-tight">COFFEE &amp; CRAVINGS</h3>
+
+              <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-left">
+                <div>
+                  <span className="text-[10px] orbitron text-brand-amber/80 uppercase tracking-widest block">Flagship // 02</span>
+                  <span className="text-lg font-bold text-white orbitron">COFFEE &amp; CRAVINGS</span>
+                </div>
+                <div className="w-9 h-9 rounded-full border border-brand-amber/40 bg-black p-1 flex items-center justify-center">
+                  <img src={coffeeLogo} alt="Coffee Logo" className="w-7 h-7 object-contain" />
+                </div>
+              </div>
             </div>
 
             <p className="text-xs sm:text-sm font-light text-amber-200/90 mb-4 italic">
-              Artisan Cafe &amp; Contactless QR Dining Ecosystem • Patna
+              Artisan Cafe &amp; Contactless QR Dining Ecosystem • Mithapur, Patna
             </p>
 
-            <p className="text-sm sm:text-base leading-relaxed text-gray-300 mb-6 font-light">
-              Full-scale cafe operating platform featuring cryptographic HMAC-signed QR table ordering, online Razorpay &amp; dynamic UPI payments, and an instant-chime Barista Kitchen Display System (KDS). Engineered with a zero-dependency native Node.js core on Vercel Serverless with Upstash Redis KV for lightning-fast throughput.
+            <p className="text-xs sm:text-sm leading-relaxed text-gray-300 mb-5 font-light">
+              Full-scale artisan dining platform engineered with a <strong className="text-white">zero external dependency</strong> native Node.js core on Vercel Serverless and Upstash Redis. Features cryptographic HMAC-signed QR table ordering across 6 tables, online Razorpay &amp; dynamic UPI QR payments, and an instant-chime Barista Kitchen Display System (KDS).
             </p>
 
-            <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-8 pointer-events-none">
-              {['Node.js Core', 'Upstash Redis', 'Razorpay & UPI', 'HMAC Signatures', 'Live KDS', 'DPDP Compliant'].map(tech => (
-                <span key={tech} className="bg-brand-amber/10 text-amber-300 text-[10px] sm:text-xs px-3 py-1 rounded-full border border-brand-amber/30">{tech}</span>
+            {/* Architecture Highlights Checklist */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6 text-left text-[11px] text-gray-300">
+              <div className="bg-white/5 border border-white/10 p-2 rounded flex items-center gap-2">
+                <span className="text-amber-400">✓</span> HMAC-Signed Table QR Ordering
+              </div>
+              <div className="bg-white/5 border border-white/10 p-2 rounded flex items-center gap-2">
+                <span className="text-amber-400">✓</span> Barista Live KDS with Audio Chimes
+              </div>
+              <div className="bg-white/5 border border-white/10 p-2 rounded flex items-center gap-2">
+                <span className="text-amber-400">✓</span> Razorpay &amp; Dynamic UPI Webhook Net
+              </div>
+              <div className="bg-white/5 border border-white/10 p-2 rounded flex items-center gap-2">
+                <span className="text-amber-400">✓</span> DPDP Act 2023 (Right to be Forgotten)
+              </div>
+              <div className="bg-white/5 border border-white/10 p-2 rounded flex items-center gap-2">
+                <span className="text-amber-400">✓</span> Zero npm Backend Dependencies
+              </div>
+              <div className="bg-white/5 border border-white/10 p-2 rounded flex items-center gap-2">
+                <span className="text-amber-400">✓</span> 71 Automated Integration Tests
+              </div>
+            </div>
+
+            <div className="flex flex-wrap justify-center md:justify-start gap-1.5 mb-6 pointer-events-none">
+              {['Node.js (Core)', 'Upstash Redis KV', 'Razorpay & UPI', 'HMAC-SHA256', 'Live KDS', 'DPDP Act', 'Vercel'].map(tech => (
+                <span key={tech} className="bg-brand-amber/10 text-amber-300 text-[10px] px-2.5 py-1 rounded-full border border-brand-amber/30">{tech}</span>
               ))}
             </div>
 
@@ -300,15 +396,15 @@ export default function UI() {
                  href="https://www.coffeeandcravings.shop/" 
                  target="_blank" 
                  rel="noopener noreferrer"
-                 className="inline-block bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-black font-bold orbitron px-6 py-3 sm:px-8 sm:py-3.5 rounded transition-all transform hover:scale-105 interactive shadow-[0_0_20px_rgba(245,158,11,0.45)] text-xs sm:text-sm cursor-pointer"
+                 className="inline-block bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-black font-bold orbitron px-6 py-3 rounded-lg transition-all transform hover:scale-105 interactive shadow-[0_0_20px_rgba(245,158,11,0.45)] text-xs sm:text-sm cursor-pointer"
                >
-                 ENTER CAFE ↗
+                 ENTER CAFE (LIVE) ↗
                </a>
                <a 
                  href="https://github.com/KNOWNASPRATYUSH/Coffee-cravings" 
                  target="_blank" 
                  rel="noopener noreferrer"
-                 className="inline-block bg-white/5 hover:bg-white/10 text-amber-300 border border-brand-amber/30 font-medium orbitron px-5 py-3 sm:px-6 sm:py-3.5 rounded transition-all interactive text-xs sm:text-sm cursor-pointer"
+                 className="inline-block bg-white/5 hover:bg-white/10 text-amber-300 border border-brand-amber/30 font-medium orbitron px-5 py-3 rounded-lg transition-all interactive text-xs sm:text-sm cursor-pointer"
                >
                  SOURCE CODE ↗
                </a>
@@ -328,45 +424,74 @@ export default function UI() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="w-full max-w-5xl glass p-6 md:p-10 rounded-3xl border border-brand-blue/15"
+            className="w-full max-w-5xl glass p-6 md:p-10 rounded-3xl border border-brand-blue/15 shadow-[0_0_40px_rgba(0,0,0,0.8)]"
           >
             <div className="flex items-center justify-center gap-2 mb-2">
               <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
-              <span className="text-[10px] orbitron tracking-[0.3em] text-brand-blue uppercase">Technical Arsenal</span>
+              <span className="text-[10px] orbitron tracking-[0.3em] text-brand-blue uppercase">Production Capabilities</span>
             </div>
             
             <h2 className="text-2xl sm:text-3xl orbitron font-bold text-white mb-8 md:mb-10 text-center uppercase tracking-widest">
-              Core Capabilities
+              Technical Arsenal
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
               {[
                 { 
-                  name: 'Frontend Engineering', 
+                  name: 'Frontend Systems', 
                   color: 'border-brand-blue text-brand-blue',
-                  items: ['React 19 & Next.js', 'Three.js / Fiber / Drei', 'Tailwind CSS & GSAP', 'TypeScript & Vite'] 
+                  desc: 'High-performance UI & 3D rendering',
+                  items: [
+                    'React 19 & Next.js 15', 
+                    'Three.js / React Three Fiber', 
+                    'Drei & Shaders', 
+                    'Tailwind CSS & GSAP 60FPS', 
+                    'TypeScript & Modern Vite'
+                  ] 
                 },
                 { 
-                  name: 'Backend & Core Runtimes', 
+                  name: 'Backend Core', 
                   color: 'border-brand-purple text-brand-purple',
-                  items: ['Native Node.js (Core)', 'Express & Serverless APIs', 'Python & Go Basics', 'REST & Webhook Engines'] 
+                  desc: 'Zero-dep runtimes & APIs',
+                  items: [
+                    'Native Node.js (Core http/crypto)', 
+                    'Express & Serverless Handlers', 
+                    'Python & Go Automation', 
+                    'REST & Webhook Processors', 
+                    'HMAC-SHA256 Token Engines'
+                  ] 
                 },
                 { 
-                  name: 'Databases & In-Memory', 
+                  name: 'Data & In-Memory', 
                   color: 'border-brand-amber text-amber-400',
-                  items: ['Upstash Redis (REST KV)', 'PostgreSQL & Supabase', 'MongoDB & NoSQL', 'Firebase & Realtime DB'] 
+                  desc: 'Sub-millisecond retrieval',
+                  items: [
+                    'Upstash Redis REST KV', 
+                    'Redis Sorted Sets & TTL', 
+                    'PostgreSQL & Supabase', 
+                    'MongoDB & Document DBs', 
+                    'Firebase Realtime & Auth'
+                  ] 
                 },
                 { 
-                  name: 'Security & DevOps', 
+                  name: 'DevOps & Safety', 
                   color: 'border-brand-emerald text-emerald-400',
-                  items: ['HMAC Cryptography', 'DPDP Act 2023 Compliance', 'Vercel & Cloud CI/CD', 'Docker & Git Architecture'] 
+                  desc: 'Enterprise security & scale',
+                  items: [
+                    'India DPDP Act 2023', 
+                    'Vercel Serverless CD/CI', 
+                    'Docker Containerization', 
+                    'Git Architecture', 
+                    'Rate Limiting & Anti-Replay'
+                  ] 
                 }
               ].map(cat => (
                 <div key={cat.name} className={`border-l-2 ${cat.color} pl-4 py-2 hover:bg-white/5 transition-colors group rounded-r-lg`}>
-                  <h3 className={`font-bold mb-3 text-xs sm:text-sm tracking-wider uppercase ${cat.color}`}>
+                  <h3 className={`font-bold text-xs sm:text-sm tracking-wider uppercase mb-1 ${cat.color}`}>
                     {cat.name}
                   </h3>
-                  <ul className="text-xs text-gray-400 space-y-1.5">
+                  <p className="text-[10px] text-gray-500 mb-3">{cat.desc}</p>
+                  <ul className="text-xs text-gray-300 space-y-2">
                     {cat.items.map(item => (
                       <li key={item} className="hover:text-white transition-colors flex items-center gap-1.5">
                         <span className="text-[8px] opacity-60">▹</span> {item}
@@ -375,6 +500,10 @@ export default function UI() {
                   </ul>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-white/10 text-center text-xs text-gray-400 orbitron">
+              PROFICIENT IN TAKING IDEAS FROM ZERO TO HARDENED PRODUCTION DEPLOYMENT
             </div>
           </motion.div>
         </div>
@@ -385,17 +514,17 @@ export default function UI() {
     {
       id: 'journey',
       content: (
-        <div className="flex items-center justify-start min-h-screen px-6 md:px-32 py-20 select-none">
+        <div className="flex items-center justify-start min-h-screen px-6 md:px-28 py-20 select-none">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="max-w-2xl"
+            className="max-w-3xl"
           >
             <div className="flex items-center gap-2 mb-3">
               <span className="w-2 h-2 rounded-full bg-brand-purple animate-pulse"></span>
-              <span className="text-[10px] orbitron tracking-[0.3em] text-brand-purple uppercase">Trajectory</span>
+              <span className="text-[10px] orbitron tracking-[0.3em] text-brand-purple uppercase">Track Record</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl orbitron font-bold text-white mb-8 md:mb-12 uppercase tracking-tight">
@@ -407,14 +536,20 @@ export default function UI() {
                 { 
                   year: '2024 - PRESENT', 
                   role: 'Full Stack Architect & Lead Engineer', 
-                  company: 'Independent / Flagship Engineering', 
-                  desc: 'Architecting end-to-end web ecosystems including Coffee & Cravings (real-time QR cafe platform with zero external dependencies) and India Fitness (high-velocity athletic portal).' 
+                  company: 'Independent Flagships', 
+                  desc: 'Engineered two live, high-traffic web ecosystems: Coffee & Cravings (real-time QR cafe platform built with zero npm backend dependencies, Upstash Redis, Razorpay/UPI payments, KDS, and DPDP Act compliance) and India Fitness (high-velocity athletic portal with GSAP 60FPS fluid navigation).' 
                 },
                 { 
-                  year: '2022 - 2024', 
+                  year: '2023 - 2024', 
+                  role: '3D Web & Interactive Interface Developer', 
+                  company: 'Creative Tech & Systems', 
+                  desc: 'Developed interactive Three.js scenes, hardware-accelerated shaders, and responsive UI components. Specialized in lowering bundle overhead while ensuring fluid performance across mobile and desktop.' 
+                },
+                { 
+                  year: '2022 - 2023', 
                   role: 'Frontend Architect & UI Engineer', 
-                  company: 'Independent / Creative Tech', 
-                  desc: 'Crafted 60FPS user experiences, responsive design systems, and modern full-stack web solutions with modern JavaScript frameworks.' 
+                  company: 'Web Application Consulting', 
+                  desc: 'Constructed custom design systems, API integration pipelines, and state management frameworks using React, Next.js, and TypeScript.' 
                 }
               ].map(job => (
                 <div key={job.year} className="relative pl-6 md:pl-8 border-l-2 border-brand-purple/30 hover:border-brand-purple transition-all group">
@@ -437,7 +572,7 @@ export default function UI() {
     {
       id: 'blueprint',
       content: (
-        <div className="flex items-center justify-center md:justify-end min-h-screen px-6 md:px-32 py-20 select-none">
+        <div className="flex items-center justify-center md:justify-end min-h-screen px-6 md:px-28 py-20 select-none">
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -447,7 +582,7 @@ export default function UI() {
           >
             <div className="flex items-center justify-center md:justify-end gap-2 mb-3">
               <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
-              <span className="text-[10px] orbitron tracking-[0.3em] text-brand-blue uppercase">Philosophy</span>
+              <span className="text-[10px] orbitron tracking-[0.3em] text-brand-blue uppercase">Engineering Tenets</span>
             </div>
 
             <h2 className="text-2xl sm:text-3xl orbitron font-bold text-white mb-6 md:mb-8 uppercase">
@@ -459,21 +594,21 @@ export default function UI() {
                 { 
                   num: '01', 
                   title: 'Zero-Latency Architecture', 
-                  desc: 'Every millisecond counts. Code is engineered with minimal overhead, native core libraries, and distributed memory caching to deliver instant responses.' 
+                  desc: 'Every millisecond of latency is a lost user. Native Node.js core runtimes without third-party bloat combined with in-memory Redis KV deliver sub-10ms response times globally.' 
                 },
                 { 
                   num: '02', 
-                  title: 'Visual Poetry & 60FPS', 
-                  desc: 'Interfaces should tell a gripping story. Reactive animations and 3D scenes are tuned to maintain 60FPS fluidity on all modern screens.' 
+                  title: 'Visual Poetry at 60 FPS', 
+                  desc: 'Web applications should be visceral and unforgettable. 3D WebGL scenes, physics-based motion, and reactive cursor feedback tell a brand story while remaining featherlight.' 
                 },
                 { 
                   num: '03', 
-                  title: 'Security & Compliance First', 
-                  desc: 'From cryptographic HMAC signatures to full DPDP Act statutory compliance, trust and data safety are built in at the foundation.' 
+                  title: 'Statutory Safety by Design', 
+                  desc: 'Data protection and cryptographic HMAC verification are never afterthoughts. Built with DPDP Act 2023 compliance, encrypted session cookies, and multi-tier rate limiting.' 
                 }
               ].map(doc => (
                 <div key={doc.title} className="hover:translate-x-[-8px] transition-transform group">
-                   <div className="text-[10px] orbitron text-brand-blue/70 mb-0.5">{doc.num} // PRINCIPLE</div>
+                   <div className="text-[10px] orbitron text-brand-blue/70 mb-0.5">{doc.num} // ARCHITECTURAL LAW</div>
                    <h3 className="text-white group-hover:text-brand-blue font-bold text-md sm:text-lg mb-1 transition-colors">
                      {doc.title}
                    </h3>
@@ -496,54 +631,54 @@ export default function UI() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="glass p-8 md:p-12 rounded-3xl border border-brand-blue/20 w-full max-w-lg shadow-[0_0_30px_rgba(0,0,0,0.8)]"
+            className="glass p-8 md:p-12 rounded-3xl border border-brand-blue/20 w-full max-w-lg shadow-[0_0_40px_rgba(0,0,0,0.85)]"
           >
             <div className="flex items-center justify-center gap-2 mb-3">
               <span className="w-2 h-2 rounded-full bg-brand-blue animate-ping"></span>
-              <span className="text-[10px] orbitron tracking-[0.4em] text-brand-blue uppercase">Encrypted Transmission</span>
+              <span className="text-[10px] orbitron tracking-[0.4em] text-brand-blue uppercase">Encrypted Terminal</span>
             </div>
 
-            <h2 className="text-2xl sm:text-4xl orbitron font-bold mb-4 glow-text text-white">
+            <h2 className="text-2xl sm:text-4xl orbitron font-bold mb-3 glow-text text-white">
               INITIATE CONNECTION
             </h2>
 
-            <p className="text-xs sm:text-sm text-gray-400 font-light mb-8">
-              Open for full-stack engineering, 3D web platforms, and architectural consulting.
+            <p className="text-xs sm:text-sm text-gray-400 font-light mb-6">
+              Available for full stack engineering, 3D web systems, and technical consulting.
             </p>
 
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4 md:gap-5 pointer-events-auto text-left">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4 text-left pointer-events-auto">
                <input type="hidden" name="access_key" value="c1cefa47-9b89-476b-8bd1-ada665d42bea" />
                <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} tabIndex="-1" autoComplete="off" />
                
                <div>
-                 <label className="text-[9px] orbitron text-gray-500 uppercase tracking-widest block mb-1">
-                   Transmission Channel
+                 <label className="text-[9px] orbitron text-gray-400 uppercase tracking-widest block mb-1">
+                   Sender Channel (Email)
                  </label>
                  <input 
                    type="email" 
                    name="email" 
                    placeholder="YOUR EMAIL (CHANNEL)" 
-                   className="w-full bg-black/60 border border-brand-blue/30 px-5 py-3.5 rounded-xl outline-none focus:border-brand-blue focus:shadow-[0_0_15px_rgba(0,212,255,0.25)] text-white text-xs sm:text-sm interactive transition-all" 
+                   className="w-full bg-black/60 border border-brand-blue/30 px-5 py-3 rounded-xl outline-none focus:border-brand-blue focus:shadow-[0_0_15px_rgba(0,212,255,0.25)] text-white text-xs sm:text-sm interactive transition-all" 
                    required 
                  />
                </div>
 
                <div>
-                 <label className="text-[9px] orbitron text-gray-500 uppercase tracking-widest block mb-1">
-                   Payload Content
+                 <label className="text-[9px] orbitron text-gray-400 uppercase tracking-widest block mb-1">
+                   Message Payload
                  </label>
                  <textarea 
                    name="message" 
                    rows="3" 
                    placeholder="YOUR MESSAGE TO PRATYUSH..." 
-                   className="w-full bg-black/60 border border-brand-blue/30 px-5 py-3.5 rounded-xl outline-none focus:border-brand-blue focus:shadow-[0_0_15px_rgba(0,212,255,0.25)] text-white text-xs sm:text-sm resize-none interactive transition-all" 
+                   className="w-full bg-black/60 border border-brand-blue/30 px-5 py-3 rounded-xl outline-none focus:border-brand-blue focus:shadow-[0_0_15px_rgba(0,212,255,0.25)] text-white text-xs sm:text-sm resize-none interactive transition-all" 
                    required 
                  />
                </div>
 
                <button 
                  type="submit" 
-                 className="bg-brand-blue text-black font-bold orbitron py-4 rounded-xl hover:bg-brand-purple hover:text-white transition-all transform hover:scale-[1.02] interactive text-xs sm:text-sm cursor-pointer shadow-[0_0_20px_rgba(0,212,255,0.35)] mt-2"
+                 className="bg-brand-blue text-black font-bold orbitron py-3.5 rounded-xl hover:bg-brand-purple hover:text-white transition-all transform hover:scale-[1.02] interactive text-xs sm:text-sm cursor-pointer shadow-[0_0_20px_rgba(0,212,255,0.35)] mt-1"
                >
                  {status || "TRANSMIT PACKET ↗"}
                </button>

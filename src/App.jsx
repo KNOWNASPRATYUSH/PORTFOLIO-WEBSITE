@@ -31,7 +31,7 @@ function App() {
             PRATYUSH KUMAR
           </span>
           <span className="hidden sm:inline-block text-[9px] orbitron bg-brand-blue/10 text-brand-blue border border-brand-blue/30 px-2.5 py-0.5 rounded-full">
-            SYSTEM OPTIMAL
+            FULL STACK ARCHITECT
           </span>
         </div>
 
@@ -63,6 +63,25 @@ function App() {
         </div>
       </header>
 
+      {/* Right Side Section Navigation Index */}
+      <div className={`hidden lg:flex fixed right-6 top-1/2 -translate-y-1/2 z-40 flex-col gap-2.5 pointer-events-none select-none transition-opacity duration-1000 ${isLoaded ? 'opacity-60' : 'opacity-0'}`}>
+        {[
+          { num: '01', name: 'HERO' },
+          { num: '02', name: 'VISION' },
+          { num: '03', name: 'FITNESS' },
+          { num: '04', name: 'COFFEE' },
+          { num: '05', name: 'SKILLS' },
+          { num: '06', name: 'JOURNEY' },
+          { num: '07', name: 'BLUEPRINT' },
+          { num: '08', name: 'CONNECT' },
+        ].map((item) => (
+          <div key={item.num} className="flex items-center justify-end gap-2 text-[9px] orbitron">
+            <span className="text-gray-400 tracking-wider">{item.name}</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-brand-blue/50"></span>
+          </div>
+        ))}
+      </div>
+
       {/* Cyber HUD Fixed Bottom Telemetry */}
       <footer className={`fixed bottom-0 left-0 right-0 z-40 px-6 md:px-12 py-3 flex items-center justify-between pointer-events-none select-none text-[9px] md:text-[10px] orbitron text-gray-500 transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <div className="flex items-center gap-2">
@@ -72,7 +91,7 @@ function App() {
         </div>
         <div className="flex items-center gap-2 text-brand-blue/90">
           <span className="w-1.5 h-1.5 rounded-full bg-brand-blue animate-ping"></span>
-          SCROLL TO NAVIGATE
+          SCROLL TO NAVIGATE 8 SECTIONS
         </div>
       </footer>
       
