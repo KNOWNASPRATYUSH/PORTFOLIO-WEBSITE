@@ -30,7 +30,7 @@ function App() {
           }}
         >
           <Suspense fallback={null}>
-            <ScrollControls pages={7} damping={0.1} distance={1}>
+            <ScrollControls pages={8} damping={0.1} distance={1}>
               <Experience />
               <Scroll html>
                 <UI />

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import profileImg from '../assets/profile.jpg'
 import fitnessLogo from '../assets/india_fitness.png'
+import coffeeLogo from '../assets/coffee_cravings_clean.png'
 
 export default function UI() {
   const [status, setStatus] = useState("")
@@ -117,7 +118,7 @@ export default function UI() {
       )
     },
     {
-      id: 'projects',
+      id: 'project_fitness',
       content: (
         <div className="flex items-center justify-center md:justify-end min-h-screen px-6 md:px-32 py-20 select-none">
            <motion.div 
@@ -134,7 +135,7 @@ export default function UI() {
               className="absolute -top-10 -right-10 w-40 h-40 opacity-10 pointer-events-none grayscale hover:grayscale-0 transition-all duration-500" 
             />
 
-            <h2 className="text-2xl sm:text-3xl orbitron font-bold text-brand-blue mb-4 md:mb-6 uppercase tracking-wider">Elite Project</h2>
+            <h2 className="text-2xl sm:text-3xl orbitron font-bold text-brand-blue mb-4 md:mb-6 uppercase tracking-wider">Elite Project // 01</h2>
             <div className="flex items-center justify-center md:justify-end gap-4 mb-2">
               <img src={fitnessLogo} alt="Logo" draggable="false" className="w-8 h-8 rounded-full border border-brand-blue/30" />
               <h3 className="text-3xl sm:text-4xl font-bold">INDIA FITNESS</h3>
@@ -148,13 +149,78 @@ export default function UI() {
                 <span key={tech} className="bg-brand-blue/10 text-brand-blue text-[10px] sm:text-xs px-3 py-1 rounded-full border border-brand-blue/20">{tech}</span>
               ))}
             </div>
-            <div className="pointer-events-auto">
+            <div className="pointer-events-auto flex flex-wrap justify-center md:justify-end gap-3">
                <a 
                  href="https://india-fitness.vercel.app/" 
                  target="_blank" 
+                 rel="noopener noreferrer"
                  className="inline-block bg-brand-blue/80 hover:bg-brand-blue text-black font-bold orbitron px-6 py-3 sm:px-8 sm:py-4 rounded transition-all transform hover:scale-105 interactive shadow-[0_0_20px_rgba(0,212,255,0.4)] text-sm sm:text-base cursor-pointer"
                >
                  LIVE BROADCAST
+               </a>
+               <a 
+                 href="https://github.com/KNOWNASPRATYUSH/INDIA-FITNESS" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="inline-block bg-white/5 hover:bg-white/10 text-brand-blue border border-brand-blue/30 font-medium orbitron px-5 py-3 sm:px-6 sm:py-4 rounded transition-all interactive text-xs sm:text-sm cursor-pointer"
+               >
+                 SOURCE CODE
+               </a>
+            </div>
+          </motion.div>
+        </div>
+      )
+    },
+    {
+      id: 'project_coffee',
+      content: (
+        <div className="flex items-center justify-center md:justify-start min-h-screen px-6 md:px-32 py-20 select-none">
+           <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-xl glass p-6 md:p-8 rounded-2xl border-l-4 border-amber-400 text-center md:text-left relative overflow-hidden group"
+          >
+            {/* Blended Logo Watermark */}
+            <img 
+              src={coffeeLogo} 
+              alt="Coffee & Cravings" 
+              draggable="false"
+              className="absolute -top-10 -left-10 w-44 h-44 opacity-10 pointer-events-none grayscale group-hover:opacity-25 transition-all duration-500" 
+            />
+
+            <h2 className="text-2xl sm:text-3xl orbitron font-bold text-amber-400 mb-4 md:mb-6 uppercase tracking-wider">Elite Project // 02</h2>
+            <div className="flex items-center justify-center md:justify-start gap-4 mb-2">
+              <div className="w-9 h-9 rounded-full border border-amber-400/40 bg-black/60 p-1 flex items-center justify-center shadow-[0_0_12px_rgba(245,158,11,0.25)]">
+                <img src={coffeeLogo} alt="Logo" draggable="false" className="w-full h-full object-contain" />
+              </div>
+              <h3 className="text-3xl sm:text-4xl font-bold">COFFEE &amp; CRAVINGS</h3>
+            </div>
+            <p className="text-sm sm:text-md font-light text-amber-200/90 mb-6 italic">Artisan Cafe &amp; Real-Time QR Dining Operating System</p>
+            <p className="text-md sm:text-lg leading-relaxed text-gray-300 mb-8 font-light">
+              Full-featured cafe ordering ecosystem with cryptographic HMAC-signed QR table ordering, online Razorpay &amp; dynamic UPI payments, and an instant-chime Barista Kitchen Display System (KDS). Engineered with a zero-dependency native Node.js core on Vercel Serverless with Upstash Redis KV.
+            </p>
+            <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-8 pointer-events-none">
+              {['Node.js Core', 'Upstash Redis', 'Razorpay & UPI', 'HMAC Signatures', 'Live KDS', 'DPDP Compliant'].map(tech => (
+                <span key={tech} className="bg-amber-400/10 text-amber-300 text-[10px] sm:text-xs px-3 py-1 rounded-full border border-amber-400/30">{tech}</span>
+              ))}
+            </div>
+            <div className="pointer-events-auto flex flex-wrap justify-center md:justify-start gap-3">
+               <a 
+                 href="https://www.coffeeandcravings.shop/" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="inline-block bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-black font-bold orbitron px-6 py-3 sm:px-8 sm:py-4 rounded transition-all transform hover:scale-105 interactive shadow-[0_0_20px_rgba(245,158,11,0.45)] text-sm sm:text-base cursor-pointer"
+               >
+                 ENTER CAFE
+               </a>
+               <a 
+                 href="https://github.com/KNOWNASPRATYUSH/Coffee-cravings" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="inline-block bg-white/5 hover:bg-white/10 text-amber-300 border border-amber-400/30 font-medium orbitron px-5 py-3 sm:px-6 sm:py-4 rounded transition-all interactive text-xs sm:text-sm cursor-pointer"
+               >
+                 SOURCE CODE
                </a>
             </div>
           </motion.div>
@@ -204,7 +270,7 @@ export default function UI() {
             <h2 className="text-3xl sm:text-4xl orbitron font-bold text-brand-purple mb-8 md:mb-12 uppercase tracking-tighter">Galactic Journey</h2>
             <div className="space-y-10 md:space-y-12">
               {[
-                { year: '2024 - PRESENT', role: 'Full Stack Excellence', company: 'Freelance / Elite Projects', desc: 'Crafting high-end immersive web experiences like India Fitness and 3D interfaces.' },
+                { year: '2024 - PRESENT', role: 'Full Stack Excellence', company: 'Freelance / Elite Projects', desc: 'Engineering full-stack real-time web ecosystems like Coffee & Cravings (artisan cafe QR platform) and India Fitness (high-performance athletics portal).' },
                 { year: '2022 - 2023', role: 'Frontend Architect', company: 'Tech Innovators', desc: 'Spearheaded modern UI overhauls and optimized performance for enterprise dashboards.' }
               ].map(job => (
                 <div key={job.year} className="relative pl-6 md:pl-8 border-l-2 border-brand-purple/20 hover:border-brand-purple/60 transition-all group">

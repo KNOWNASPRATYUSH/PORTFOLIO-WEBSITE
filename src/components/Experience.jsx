@@ -31,14 +31,14 @@ export default function Experience() {
     // Camera movement based on scroll - DIVE DEEPER
     const zBase = isMobile ? 8 : 5
     const targetX = Math.sin(scrollOffset * Math.PI * 2) * (isMobile ? 1.5 : 3)
-    const targetZ = zBase - (scrollOffset * 25) // Increased from 10 to 25 to pass all spheres
+    const targetZ = zBase - (scrollOffset * 28) // Scaled for 8 pages
     const targetY = (isMobile ? 1.5 : 2) + Math.cos(scrollOffset * Math.PI) * 1.5
 
     const targetPos = new THREE.Vector3(targetX, targetY, targetZ)
     state.camera.position.lerp(targetPos, 0.05)
     
     // Look ahead slightly based on scroll
-    const lookAtZ = -scrollOffset * 20
+    const lookAtZ = -scrollOffset * 24
     state.camera.lookAt(0, 0, lookAtZ)
 
     // Parallax on mouse
@@ -75,15 +75,19 @@ export default function Experience() {
         <SkillSphere color="#a855f7" name="Node" />
       </Float>
 
-      <Float speed={4} rotationIntensity={1.5} floatIntensity={2.5} position={[2, 0, -6]}>
+      <Float speed={3} rotationIntensity={1} floatIntensity={1.5} position={[-3.5, -1, -4]}>
+        <SkillSphere color="#f59e0b" name="Redis" />
+      </Float>
+
+      <Float speed={4} rotationIntensity={1.5} floatIntensity={2.5} position={[2, 0, -7]}>
         <SkillSphere color="#00d4ff" name="Next.js" />
       </Float>
 
-      <Float speed={2} rotationIntensity={0.5} floatIntensity={1} position={[-3, 3, -10]}>
+      <Float speed={2} rotationIntensity={0.5} floatIntensity={1} position={[-3, 3, -11]}>
         <SkillSphere color="#a855f7" name="PostgreSQL" />
       </Float>
 
-      <Float speed={3.5} rotationIntensity={2} floatIntensity={1} position={[4, -1, -14]}>
+      <Float speed={3.5} rotationIntensity={2} floatIntensity={1} position={[4, -1, -15]}>
         <SkillSphere color="#00d4ff" name="Docker" />
       </Float>
 
