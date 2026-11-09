@@ -13,7 +13,7 @@ export default function Experience() {
   const starsRef = useRef()
   
   const isMobile = width < height
-  const responsiveScale = isMobile ? Math.min(width * 0.12, 1) : 1
+  const responsiveScale = isMobile ? Math.min(width * 0.16, 0.72) : 1
 
   useFrame((state, delta) => {
     const scrollOffset = scroll.offset
@@ -22,28 +22,28 @@ export default function Experience() {
     // Warp speed stars acceleration on fast scroll
     if (starsRef.current) {
       starsRef.current.rotation.z += delta * (0.02 + scrollVelocity * 0.5)
-      starsRef.current.scale.z = 1 + scrollVelocity * 20
-      starsRef.current.scale.x = 1 + scrollVelocity * 2
-      starsRef.current.scale.y = 1 + scrollVelocity * 2
+      starsRef.current.scale.z = 1 + scrollVelocity * 15
+      starsRef.current.scale.x = 1 + scrollVelocity * 1.5
+      starsRef.current.scale.y = 1 + scrollVelocity * 1.5
     }
 
     // Camera movement based on scroll across 8 pages
-    const zBase = isMobile ? 8 : 5
-    const targetX = Math.sin(scrollOffset * Math.PI * 2) * (isMobile ? 1.5 : 3)
-    const targetZ = zBase - (scrollOffset * 28)
-    const targetY = (isMobile ? 1.5 : 2) + Math.cos(scrollOffset * Math.PI) * 1.5
+    const zBase = isMobile ? 8.5 : 5
+    const targetX = Math.sin(scrollOffset * Math.PI * 2) * (isMobile ? 0.6 : 3)
+    const targetZ = zBase - (scrollOffset * (isMobile ? 25 : 28))
+    const targetY = (isMobile ? 1.2 : 2) + Math.cos(scrollOffset * Math.PI) * (isMobile ? 0.6 : 1.5)
 
     const targetPos = new THREE.Vector3(targetX, targetY, targetZ)
     state.camera.position.lerp(targetPos, 0.05)
     
     // Look ahead dynamically
-    const lookAtZ = -scrollOffset * 24
+    const lookAtZ = -scrollOffset * (isMobile ? 20 : 24)
     state.camera.lookAt(0, 0, lookAtZ)
 
-    // Parallax on mouse movement
+    // Parallax on mouse movement (desktop only, smoothed)
     const mouseX = state.mouse.x * 0.5
     const mouseY = state.mouse.y * 0.5
-    if (groupRef.current) {
+    if (groupRef.current && !isMobile) {
       groupRef.current.rotation.y = THREE.MathUtils.lerp(groupRef.current.rotation.y, mouseX * 0.2, 0.1)
       groupRef.current.rotation.x = THREE.MathUtils.lerp(groupRef.current.rotation.x, -mouseY * 0.1, 0.1)
     }
@@ -60,59 +60,61 @@ export default function Experience() {
       
       {/* Atmospheric Starfield and Sparkles */}
       <group ref={starsRef}>
-         <Stars radius={100} depth={50} count={7000} factor={6} saturation={0} fade speed={1} />
+         <Stars radius={100} depth={50} count={isMobile ? 3500 : 7000} factor={6} saturation={0} fade speed={1} />
       </group>
-      <Sparkles count={300} scale={[24, 24, 16]} size={2.5} speed={0.6} opacity={0.35} color="#00d4ff" />
+      <Sparkles count={isMobile ? 120 : 300} scale={[24, 24, 16]} size={2.5} speed={0.6} opacity={0.35} color="#00d4ff" />
       <fog attach="fog" args={['#0a0a0a', 5, 18]} />
 
       {/* Hero Workstation Desk */}
-      <Float speed={2} rotationIntensity={0.3} floatIntensity={0.8}>
-        <Desk />
+      <Float speed={2} rotationIntensity={0.2} floatIntensity={0.6}>
+        <Desk isMobile={isMobile} />
       </Float>
 
       {/* Floating 3D Holographic Project Displays */}
-      <Float speed={2.5} rotationIntensity={0.4} floatIntensity={1} position={[-2.8, 0.8, -2.5]}>
+      <Float speed={2.5} rotationIntensity={0.3} floatIntensity={0.8} position={[isMobile ? 0 : -2.8, isMobile ? 1.8 : 0.8, -2.5]}>
         <HoloProjectFrame 
           image={fitnessPreviewImg} 
           title="INDIA FITNESS" 
           subtitle="ATHLETIC WEB ENGINE"
           accentColor="#00d4ff" 
-          rotation={[0, 0.35, 0]} 
+          rotation={isMobile ? [0, 0, 0] : [0, 0.35, 0]}
+          scale={isMobile ? 0.65 : 1}
         />
       </Float>
 
-      <Float speed={2.5} rotationIntensity={0.4} floatIntensity={1} position={[2.8, 0.8, -6.5]}>
+      <Float speed={2.5} rotationIntensity={0.3} floatIntensity={0.8} position={[isMobile ? 0 : 2.8, isMobile ? 1.8 : 0.8, -6.5]}>
         <HoloProjectFrame 
           image={coffeePreviewImg} 
           title="COFFEE & CRAVINGS" 
           subtitle="ARTISAN QR CAFE SYSTEM"
           accentColor="#f59e0b" 
-          rotation={[0, -0.35, 0]} 
+          rotation={isMobile ? [0, 0, 0] : [0, -0.35, 0]}
+          scale={isMobile ? 0.65 : 1}
         />
       </Float>
 
-      {/* Floating Tech Arsenal Orbiting Spheres */}
-      <Float speed={3} rotationIntensity={1} floatIntensity={1.8} position={[3, 2, -2]}>
+      {/* Floating Tech Arsenal Orbiting Spheres (Responsive Coordinates) */}
+      <Float speed={3} rotationIntensity={1} floatIntensity={1.8} position={[isMobile ? 1.4 : 3, isMobile ? 2.4 : 2, -2]}>
         <SkillSphere color="#00d4ff" name="React 19" ringColor="#00d4ff" />
       </Float>
 
-      <Float speed={2.5} rotationIntensity={1} floatIntensity={1.5} position={[-3.8, 2, -1]}>
+      <Float speed={2.5} rotationIntensity={1} floatIntensity={1.5} position={[isMobile ? -1.4 : -3.8, isMobile ? 2.4 : 2, -1]}>
         <SkillSphere color="#a855f7" name="Node.js" ringColor="#a855f7" />
       </Float>
 
-      <Float speed={3} rotationIntensity={1} floatIntensity={1.5} position={[-3.2, -1.2, -4.5]}>
+      <Float speed={3} rotationIntensity={1} floatIntensity={1.5} position={[isMobile ? -1.3 : -3.2, isMobile ? -1.4 : -1.2, -4.5]}>
         <SkillSphere color="#f59e0b" name="Redis KV" ringColor="#f59e0b" />
       </Float>
 
-      <Float speed={4} rotationIntensity={1.5} floatIntensity={2} position={[2.6, -0.6, -7.5]}>
+      <Float speed={4} rotationIntensity={1.5} floatIntensity={2} position={[isMobile ? 1.3 : 2.6, isMobile ? -1.2 : -0.6, -7.5]}>
         <SkillSphere color="#00d4ff" name="Next.js" ringColor="#00d4ff" />
       </Float>
 
-      <Float speed={2} rotationIntensity={0.6} floatIntensity={1} position={[-3, 2.5, -11]}>
+      <Float speed={2} rotationIntensity={0.6} floatIntensity={1} position={[isMobile ? -1.3 : -3, isMobile ? 2.2 : 2.5, -11]}>
         <SkillSphere color="#a855f7" name="PostgreSQL" ringColor="#a855f7" />
       </Float>
 
-      <Float speed={3.5} rotationIntensity={1.8} floatIntensity={1} position={[3.8, -0.8, -15]}>
+      <Float speed={3.5} rotationIntensity={1.8} floatIntensity={1} position={[isMobile ? 1.3 : 3.8, isMobile ? -1.2 : -0.8, -15]}>
         <SkillSphere color="#00d4ff" name="Docker" ringColor="#00d4ff" />
       </Float>
 
@@ -121,11 +123,11 @@ export default function Experience() {
   )
 }
 
-function Desk() {
+function Desk({ isMobile }) {
   const profileTexture = useTexture(profileImg)
 
   return (
-    <group position={[0, -0.5, 0]}>
+    <group position={[0, isMobile ? -0.2 : -0.5, 0]}>
       {/* Table Top Surface */}
       <mesh receiveShadow position={[0, 0, 0]}>
         <boxGeometry args={[4.2, 0.1, 2.2]} />
@@ -164,7 +166,6 @@ function Desk() {
           <boxGeometry args={[0.16, 0.03, 0.26]} />
           <meshStandardMaterial color="#1f1f23" metalness={0.7} roughness={0.3} />
         </mesh>
-        {/* Mouse RGB Glow Strip */}
         <mesh position={[0, 0.018, 0]}>
           <boxGeometry args={[0.02, 0.005, 0.12]} />
           <meshStandardMaterial color="#a855f7" emissive="#a855f7" emissiveIntensity={0.8} />
@@ -173,33 +174,27 @@ function Desk() {
 
       {/* Artisan Coffee Mug (Coffee & Cravings Tribute) */}
       <group position={[1.4, 0.18, -0.2]}>
-        {/* Mug Body */}
         <mesh>
           <cylinderGeometry args={[0.13, 0.11, 0.26, 24]} />
           <meshStandardMaterial color="#18181b" metalness={0.4} roughness={0.3} />
         </mesh>
-        {/* Coffee Liquid Inside */}
         <mesh position={[0, 0.1, 0]}>
           <cylinderGeometry args={[0.12, 0.12, 0.01, 24]} />
           <meshStandardMaterial color="#3b1d11" roughness={0.1} />
         </mesh>
-        {/* Mug Handle */}
         <mesh position={[0.14, 0, 0]} rotation={[0, 0, Math.PI / 2]}>
           <torusGeometry args={[0.07, 0.022, 12, 24]} />
           <meshStandardMaterial color="#18181b" metalness={0.4} roughness={0.3} />
         </mesh>
-        {/* Subtle Coffee Warmth Glow */}
         <pointLight position={[0, 0.2, 0]} intensity={0.4} color="#f59e0b" distance={0.6} />
       </group>
 
       {/* Main Developer Laptop */}
       <group position={[-0.1, 0.06, -0.15]}>
-        {/* Laptop Base */}
         <mesh position={[0, 0.03, 0]}>
           <boxGeometry args={[1.3, 0.04, 0.9]} />
           <meshStandardMaterial color="#27272a" metalness={0.9} roughness={0.15} />
         </mesh>
-        {/* Trackpad */}
         <mesh position={[0, 0.052, 0.22]}>
           <boxGeometry args={[0.42, 0.002, 0.28]} />
           <meshStandardMaterial color="#18181b" metalness={0.6} roughness={0.4} />
@@ -207,19 +202,16 @@ function Desk() {
 
         {/* Laptop Screen Open */}
         <group position={[0, 0.05, -0.42]} rotation={[-0.22, 0, 0]}>
-           {/* Screen Lid Back */}
            <mesh position={[0, 0.44, 0]}>
               <boxGeometry args={[1.3, 0.88, 0.04]} />
               <meshStandardMaterial color="#18181b" metalness={0.9} roughness={0.1} />
            </mesh>
-           {/* Display Bezel & Glass */}
            <mesh position={[0, 0.44, 0.022]}>
               <planeGeometry args={[1.22, 0.8]} />
               <meshStandardMaterial color="#030712" emissive="#00d4ff" emissiveIntensity={0.18} roughness={0.2} />
               <pointLight position={[0, 0, 0.1]} intensity={0.7} color="#00d4ff" distance={1.4} />
            </mesh>
            
-           {/* Terminal Code Display */}
            <Text
              position={[-0.56, 0.74, 0.026]}
              fontSize={0.042}
@@ -242,17 +234,14 @@ await engineer.deployNextGen({ fps: 60 });`}
 
       {/* Floating Vertical Pro Monitor */}
       <group position={[-1.6, 0.85, -0.4]} rotation={[0, 0.32, 0]}>
-        {/* Monitor Frame */}
         <mesh>
           <boxGeometry args={[0.65, 1.35, 0.08]} />
           <meshStandardMaterial color="#0f172a" metalness={0.9} roughness={0.1} />
         </mesh>
-        {/* Monitor Display Bezel */}
         <mesh position={[0, 0, 0.045]}>
           <planeGeometry args={[0.58, 1.25]} />
           <meshStandardMaterial map={profileTexture} emissive="#ffffff" emissiveIntensity={0.25} />
         </mesh>
-        {/* Telemetry Status Strip at Monitor Base */}
         <group position={[0, -0.52, 0.048]}>
           <mesh>
              <planeGeometry args={[0.54, 0.14]} />
@@ -269,7 +258,6 @@ await engineer.deployNextGen({ fps: 60 });`}
             {`SYSTEM: FULL STACK ONLINE\nPATNA (25.59° N, 85.14° E)`}
           </Text>
         </group>
-        {/* Monitor Stand */}
         <mesh position={[0, -0.7, -0.1]}>
           <cylinderGeometry args={[0.03, 0.03, 0.45]} />
           <meshStandardMaterial color="#222" metalness={0.9} />
@@ -279,11 +267,11 @@ await engineer.deployNextGen({ fps: 60 });`}
   )
 }
 
-function HoloProjectFrame({ image, title, subtitle, accentColor, rotation = [0, 0, 0] }) {
+function HoloProjectFrame({ image, title, subtitle, accentColor, rotation = [0, 0, 0], scale = 1 }) {
   const texture = useTexture(image)
   
   return (
-    <group rotation={rotation}>
+    <group rotation={rotation} scale={[scale, scale, scale]}>
       {/* Outer Floating Cyber Glass Frame */}
       <mesh>
         <boxGeometry args={[2.5, 1.6, 0.06]} />

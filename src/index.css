@@ -93,8 +93,19 @@ body {
   box-shadow: 0 0 15px var(--neon-purple), 0 0 30px var(--neon-purple);
 }
 
-* {
-  cursor: none !important;
+@media (hover: hover) and (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
+
+@media (pointer: coarse) {
+  #custom-cursor {
+    display: none !important;
+  }
+  * {
+    cursor: auto !important;
+  }
 }
 
 @keyframes scan {
