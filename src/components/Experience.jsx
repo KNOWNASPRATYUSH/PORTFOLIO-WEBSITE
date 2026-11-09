@@ -52,9 +52,10 @@ export default function Experience() {
 
   return (
     <group ref={groupRef} scale={[responsiveScale, responsiveScale, responsiveScale]}>
-      <ambientLight intensity={0.2} />
+      <ambientLight intensity={0.25} />
       <pointLight position={[10, 10, 10]} intensity={1.5} color="#00d4ff" />
       <spotLight position={[-5, 5, 5]} angle={0.25} penumbra={1} intensity={2} color="#a855f7" castShadow />
+      <pointLight position={[-5, -2, -4]} intensity={1.2} color="#f59e0b" />
       
       <group ref={starsRef}>
          <Stars radius={100} depth={50} count={7000} factor={6} saturation={0} fade speed={1} />
