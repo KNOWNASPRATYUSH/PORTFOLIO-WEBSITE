@@ -41,30 +41,26 @@ export default function CustomCursor() {
       }
     }
 
-    const mouseEnter = () => setHovering(true)
-    const mouseLeave = () => setHovering(false)
+    const handleMouseOver = (e) => {
+      if (e.target && e.target.closest && e.target.closest('button, a, .interactive, input, textarea')) {
+        setHovering(true)
+      } else {
+        setHovering(false)
+      }
+    }
 
     window.addEventListener('mousemove', moveCursor)
     window.addEventListener('touchstart', showCursor)
     window.addEventListener('touchmove', moveCursor)
     window.addEventListener('touchend', hideCursor)
-    
-    // Add event listeners for hover states
-    const interactiveElements = document.querySelectorAll('button, a, .interactive')
-    interactiveElements.forEach(el => {
-      el.addEventListener('mouseenter', mouseEnter)
-      el.addEventListener('mouseleave', mouseLeave)
-    })
+    window.addEventListener('mouseover', handleMouseOver)
 
     return () => {
       window.removeEventListener('mousemove', moveCursor)
       window.removeEventListener('touchstart', showCursor)
       window.removeEventListener('touchmove', moveCursor)
       window.removeEventListener('touchend', hideCursor)
-      interactiveElements.forEach(el => {
-        el.removeEventListener('mouseenter', mouseEnter)
-        el.removeEventListener('mouseleave', mouseLeave)
-      })
+      window.removeEventListener('mouseover', handleMouseOver)
     }
   }, [hovering])
 
