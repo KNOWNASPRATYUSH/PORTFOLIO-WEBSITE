@@ -63,7 +63,7 @@ export default function UI() {
           >
             <span className="w-2 h-2 rounded-full bg-brand-emerald animate-pulse"></span>
             <span className="orbitron text-[9px] sm:text-xs tracking-[0.3em] sm:tracking-[0.4em] text-brand-blue uppercase">
-              Full Stack Portfolio // 2026
+              Web Developer // Full Stack Portfolio // 2026
             </span>
           </motion.div>
 
@@ -82,9 +82,9 @@ export default function UI() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-xs sm:text-base md:text-xl lg:text-2xl font-light tracking-[0.2em] sm:tracking-[0.25em] mb-4 sm:mb-6 text-brand-blue"
+            className="text-xs sm:text-base md:text-xl lg:text-2xl font-light tracking-[0.15em] sm:tracking-[0.2em] mb-4 sm:mb-6 text-brand-blue"
           >
-            FULL STACK ARCHITECT <span className="text-white/40">//</span> CREATIVE ENGINEER
+            WEB DEVELOPER <span className="text-white/40">//</span> FULL STACK ARCHITECT <span className="text-white/40">//</span> CREATIVE ENGINEER
           </motion.p>
 
           <motion.p
@@ -94,7 +94,7 @@ export default function UI() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-[11px] sm:text-xs md:text-sm text-gray-400 max-w-xl font-light mb-6 sm:mb-8 leading-relaxed px-2"
           >
-            Designing and engineering zero-dependency backend systems, distributed Redis key-value architectures, and fluid 60FPS 3D WebGL experiences for production applications.
+            I’m Pratyush Kumar, a professional Web Developer and Full Stack Systems Engineer based in Patna, India. I architect zero-dependency backend runtimes, distributed Redis key-value platforms, and fluid 60FPS 3D WebGL experiences for production applications.
           </motion.p>
 
           {/* Core Telemetry Counter Pills */}
@@ -149,14 +149,14 @@ export default function UI() {
             <div className="absolute -inset-1 bg-gradient-to-r from-brand-blue via-brand-purple to-brand-amber rounded-3xl blur-md opacity-35 group-hover:opacity-100 transition duration-1000"></div>
             <img 
               src={profileImg} 
-              alt="Pratyush Kumar" 
+              alt="Pratyush Kumar — Web Developer &amp; Full Stack Software Engineer" 
               draggable="false" 
               className="relative w-36 sm:w-52 md:w-64 lg:w-72 rounded-2xl border-2 border-brand-purple/50 object-cover shadow-2xl shadow-brand-purple/20 select-none" 
             />
             
             <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-black/90 border border-brand-purple/40 px-3 py-1 rounded-full text-[8px] sm:text-[9px] orbitron text-brand-purple flex items-center gap-1.5 whitespace-nowrap shadow-lg">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-emerald animate-ping"></span>
-              PATNA, IN • FULL STACK
+              PATNA, IN • WEB DEVELOPER
             </div>
           </motion.div>
 
@@ -169,15 +169,15 @@ export default function UI() {
           >
             <div className="flex items-center gap-2 mb-2 sm:mb-3">
               <span className="w-2 h-2 rounded-full bg-brand-purple"></span>
-              <span className="text-[9px] sm:text-[10px] orbitron tracking-[0.3em] text-brand-purple uppercase">The Vision &amp; Craft</span>
+              <span className="text-[9px] sm:text-[10px] orbitron tracking-[0.3em] text-brand-purple uppercase">The Vision &amp; Craft // Pratyush Kumar</span>
             </div>
             
             <h2 className="text-xl sm:text-2xl md:text-3xl orbitron font-bold text-white mb-3 sm:mb-4 uppercase tracking-wider">
-              Speed, Scale &amp; Emotion
+              PRATYUSH KUMAR — WEB DEVELOPER
             </h2>
             
             <p className="text-xs sm:text-sm md:text-base leading-relaxed text-gray-300 font-light mb-3 sm:mb-4">
-              I’m <span className="text-white font-bold">Pratyush Kumar</span>. I combine rigorous backend engineering with cinematic 3D visual frontend design to build systems that solve real operational needs and mesmerize users.
+              I’m <span className="text-white font-bold">Pratyush Kumar</span>, a professional Web Developer and Full-Stack Systems Engineer based in Patna, India. I combine rigorous backend engineering with cinematic 3D visual frontend design to build systems that solve real operational needs and mesmerize users.
             </p>
 
             <p className="text-[11px] sm:text-xs md:text-sm leading-relaxed text-gray-400 font-light mb-4 sm:mb-6">
@@ -243,7 +243,7 @@ export default function UI() {
             <div className="relative mb-4 sm:mb-6 rounded-xl overflow-hidden border border-brand-blue/30 max-h-36 sm:max-h-44 group">
               <img 
                 src={fitnessPreviewImg} 
-                alt="India Fitness Interior & Workout Experience" 
+                alt="India Fitness Web Application — Developed by Pratyush Kumar Web Developer" 
                 draggable="false"
                 className="w-full h-36 sm:h-44 object-cover object-center group-hover:scale-105 transition-transform duration-700 brightness-90"
               />
@@ -259,7 +259,7 @@ export default function UI() {
                   <span className="text-[9px] orbitron text-brand-blue/80 uppercase tracking-widest block">Flagship // 01</span>
                   <span className="text-base sm:text-lg font-bold text-white orbitron">INDIA FITNESS</span>
                 </div>
-                <img src={fitnessLogo} alt="Logo" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-brand-blue/40 p-0.5 bg-black" />
+                <img src={fitnessLogo} alt="India Fitness Logo — Built by Web Developer Pratyush Kumar" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-brand-blue/40 p-0.5 bg-black" />
               </div>
             </div>
 
@@ -332,7 +332,7 @@ export default function UI() {
             <div className="relative mb-4 sm:mb-6 rounded-xl overflow-hidden border border-brand-amber/30 max-h-36 sm:max-h-44 group">
               <img 
                 src={coffeePreviewImg} 
-                alt="Coffee & Cravings Artisan Cafe Culinary Spread" 
+                alt="Coffee & Cravings Artisan Dining Web Platform — Engineered by Pratyush Kumar Web Developer" 
                 draggable="false"
                 className="w-full h-36 sm:h-44 object-cover object-center group-hover:scale-105 transition-transform duration-700 brightness-90"
               />
@@ -349,7 +349,7 @@ export default function UI() {
                   <span className="text-base sm:text-lg font-bold text-white orbitron">COFFEE &amp; CRAVINGS</span>
                 </div>
                 <div className="w-8 h-8 rounded-full border border-brand-amber/40 bg-black p-1 flex items-center justify-center">
-                  <img src={coffeeLogo} alt="Coffee Logo" className="w-6 h-6 object-contain" />
+                  <img src={coffeeLogo} alt="Coffee & Cravings Logo — Built by Web Developer Pratyush Kumar" className="w-6 h-6 object-contain" />
                 </div>
               </div>
             </div>
@@ -427,11 +427,11 @@ export default function UI() {
           >
             <div className="flex items-center justify-center gap-2 mb-2">
               <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
-              <span className="text-[9px] sm:text-[10px] orbitron tracking-[0.3em] text-brand-blue uppercase">Production Capabilities</span>
+              <span className="text-[9px] sm:text-[10px] orbitron tracking-[0.3em] text-brand-blue uppercase">Web Developer Capabilities</span>
             </div>
             
             <h2 className="text-xl sm:text-2xl md:text-3xl orbitron font-bold text-white mb-6 sm:mb-10 text-center uppercase tracking-widest">
-              Technical Arsenal
+              Technical Arsenal &amp; Web Stack
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -615,6 +615,47 @@ export default function UI() {
                 </div>
               ))}
             </div>
+
+            {/* Interactive SEO FAQ Accordion */}
+            <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-white/10 text-left">
+              <div className="flex items-center gap-1.5 mb-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-purple animate-pulse"></span>
+                <span className="text-[9px] sm:text-[10px] orbitron text-brand-purple tracking-[0.2em] uppercase">
+                  Frequently Asked Questions // FAQ
+                </span>
+              </div>
+              
+              <div className="space-y-2 text-[10px] sm:text-xs">
+                {[
+                  {
+                    q: 'Who is Pratyush Kumar?',
+                    a: 'Pratyush Kumar is a Web Developer & Full-Stack Systems Engineer based in Patna, Bihar, India. He builds high-performance production web systems, zero-dependency Node.js architectures, Upstash Redis caching, and fluid 60FPS 3D WebGL interfaces.'
+                  },
+                  {
+                    q: 'What web development technologies does Pratyush specialize in?',
+                    a: 'Full-stack web engineering with React 19, Next.js 15, Three.js 3D WebGL, native Node.js core runtimes, Upstash Redis KV, PostgreSQL databases, Tailwind CSS, and Razorpay/UPI payment infrastructure.'
+                  },
+                  {
+                    q: 'What major web projects has Pratyush engineered?',
+                    a: 'Coffee & Cravings (artisan QR dining operating system with live KDS at coffeeandcravings.shop) and India Fitness (high-velocity athletic web portal with GSAP motion at india-fitness.vercel.app).'
+                  },
+                  {
+                    q: 'How can I hire or contact Pratyush for web development?',
+                    a: 'Transmit a message via the Encrypted Terminal in Section 08, email directly, or connect through GitHub (KNOWNASPRATYUSH) and Instagram (@knownaspratyush_).'
+                  }
+                ].map((faq, i) => (
+                  <details key={i} className="glass p-2.5 sm:p-3 rounded-xl border border-white/10 cursor-pointer pointer-events-auto group open:border-brand-blue/40 transition-colors">
+                    <summary className="font-semibold text-white group-hover:text-brand-blue list-none flex justify-between items-center select-none text-[10px] sm:text-[11px] orbitron tracking-wide">
+                      <span>{faq.q}</span>
+                      <span className="text-brand-blue text-xs ml-2 group-open:rotate-180 transition-transform">▾</span>
+                    </summary>
+                    <p className="mt-2 text-gray-300 font-light leading-relaxed text-[10px] sm:text-[11px] border-t border-white/5 pt-2">
+                      {faq.a}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
       ),
@@ -638,11 +679,11 @@ export default function UI() {
             </div>
 
             <h2 className="text-xl sm:text-3xl md:text-4xl orbitron font-bold mb-2 sm:mb-3 glow-text text-white">
-              INITIATE CONNECTION
+              INITIATE CONNECTION // CONTACT
             </h2>
 
             <p className="text-[11px] sm:text-xs md:text-sm text-gray-400 font-light mb-5 sm:mb-6">
-              Available for full stack engineering, 3D web systems, and technical consulting.
+              Available for full stack web development, 3D interactive web applications, and software consulting.
             </p>
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-3.5 sm:gap-4 text-left pointer-events-auto">

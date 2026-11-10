@@ -39,7 +39,7 @@ function App() {
             PRATYUSH KUMAR
           </span>
           <span className="hidden md:inline-block text-[9px] orbitron bg-brand-blue/10 text-brand-blue border border-brand-blue/30 px-2.5 py-0.5 rounded-full">
-            FULL STACK ARCHITECT
+            WEB DEVELOPER &amp; ARCHITECT
           </span>
         </div>
 

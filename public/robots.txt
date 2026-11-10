@@ -1,4 +1,19 @@
+# Robots.txt for Pratyush Kumar Portfolio
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml
+# Googlebot & Image Directives
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /assets/
+Allow: /og-image.jpg
+Allow: /favicon.png
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap Location
+Sitemap: https://pratyush-portfolio.vercel.app/sitemap.xml

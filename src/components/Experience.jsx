@@ -223,8 +223,8 @@ function Desk({ isMobile }) {
 {`// PRATYUSH KUMAR — CORE WORKSPACE
 const engineer = {
   name: "Pratyush Kumar",
-  role: "Full Stack Architect",
-  specialties: ["3D WebGL", "Node Core", "Redis KV"],
+  role: "Web Developer & Systems Architect",
+  specialties: ["React 19", "Node.js Core", "Redis KV", "Three.js"],
   production: ["Coffee & Cravings", "India Fitness"]
 };
 await engineer.deployNextGen({ fps: 60 });`}
