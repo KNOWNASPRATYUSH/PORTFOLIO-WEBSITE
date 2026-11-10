@@ -45,8 +45,8 @@ export default function CustomCursor() {
   if (isTouchDevice) return null
 
   return (
-    <div 
-      id="custom-cursor" 
+    <div
+      id="custom-cursor"
       className={`${hovering ? 'hovering' : ''} pointer-events-none`}
       style={{
         position: 'fixed',

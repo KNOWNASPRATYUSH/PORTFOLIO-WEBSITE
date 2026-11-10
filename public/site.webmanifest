@@ -1,0 +1,21 @@
+{
+  "name": "Pratyush Kumar — Portfolio",
+  "short_name": "Pratyush",
+  "description": "3D Portfolio of Pratyush Kumar — Full Stack Architect & Creative Engineer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
