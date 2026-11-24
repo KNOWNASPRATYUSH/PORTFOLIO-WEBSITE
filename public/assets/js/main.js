@@ -256,7 +256,7 @@
     var textRotate = function () {
         if ($(".wg-curve-text").length > 0) {
             if ($(".text-rotate").length > 0) {
-                const text = "award winning agency - since 2022 -";
+                const text = "PRATYUSH KUMAR • FREELANCE WEB DEV • ";
                 const chars = text.split("");
                 const degree = 360 / chars.length;
 
@@ -424,7 +424,7 @@
                             cls = "msg-success";
                             $form.find(":input").not(".submit, [type=hidden]").val("");
                         } else {
-                            result = "Transmission error. Please try emailing directly to cartnova.co@gmail.com";
+                            result = "Transmission error. Please try emailing directly to admin@knownaspratyush.online";
                             cls = "msg-error";
                         }
                         $form.find(".flat-alert").remove();
@@ -442,7 +442,7 @@
                         $form.prepend(
                             $("<div />", {
                                 class: "flat-alert msg-error",
-                                text: "Network error. Please try emailing directly to cartnova.co@gmail.com",
+                                text: "Network error. Please try emailing directly to admin@knownaspratyush.online",
                                 style: "padding: 12px; margin-bottom: 16px; border-radius: 8px; font-size: 13px; background: rgba(255, 0, 0, 0.1); border: 1px solid #ff4444; color: #fff;"
                             }).append($('<a class="close" href="#" style="float: right; color: #fff; text-decoration: none;">&times;</a>'))
                         );
