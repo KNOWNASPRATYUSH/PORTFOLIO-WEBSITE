@@ -1,0 +1,100 @@
+# Robots.txt for Pratyush Kumar Portfolio (Optimized for Search Engines & AI Crawlers)
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /favicon.png
+Allow: /favicon.svg
+Allow: /og-image.jpg
+Allow: /sitemap.xml
+Allow: /site.webmanifest
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Googlebot Specific Crawling Directives
+User-agent: Googlebot
+Allow: /
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+Allow: /assets/fonts/
+Allow: /assets/icon/
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Googlebot-Image Directives
+User-agent: Googlebot-Image
+Allow: /assets/images/
+Allow: /og-image.jpg
+Allow: /favicon.png
+
+# OpenAI Crawlers (SearchGPT, ChatGPT Search, Model Training)
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: OAI-SearchBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Anthropic Claude Crawlers
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: Claude-Web
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Perplexity AI Search Crawler
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Google Gemini & Extended AI Crawler
+User-agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Apple Intelligence & Siri Suggestions Crawler
+User-agent: Applebot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: Applebot-Extended
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Common Crawl (Foundation Training Corpus for Open LLMs)
+User-agent: CCBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Meta AI Crawlers
+User-agent: meta-externalagent
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Bingbot & Microsoft Copilot
+User-agent: Bingbot
+Allow: /
+Allow: /assets/
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Verified XML Sitemap for Search Engines & AI Crawlers
+Sitemap: https://www.knownaspratyush.online/sitemap.xml

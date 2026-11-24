@@ -1,26 +1,1528 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta name="description" content="3D Portfolio of Pratyush Kumar - Full Stack Developer specializing in high-performance web experiences." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pratyush Kumar | 3D Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-      body {
-        margin: 0;
-        background: #0a0a0a;
-        color: #ffffff;
-        overflow-x: hidden;
-        font-family: 'Inter', sans-serif;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pratyush Kumar | Full-Stack Web Developer in Patna &amp; Founder, CARTNOVA</title>
+    <meta name="author" content="Pratyush Kumar">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="description"
+        content="Official portfolio of Pratyush Kumar (KNOWNASPRATYUSH), top Full-Stack Web Developer and Founder of CARTNOVA in Patna, Bihar, India. Architect of Coffee &amp; Cravings, India Fitness, and high-performance web systems.">
+    <meta name="keywords"
+        content="Pratyush Kumar, KNOWNASPRATYUSH, Full-Stack Developer, Web Developer Patna, Best Web Developer in Patna, CARTNOVA, Founder CARTNOVA, Web Development Agency Patna, Freelance Developer Bihar, React 19, Next.js 15, Node.js, Coffee and Cravings, India Fitness">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="color-scheme" content="dark">
+
+    <!-- Canonical & Alternate Language URLs -->
+    <link rel="canonical" href="https://www.knownaspratyush.online/">
+    <link rel="alternate" hreflang="x-default" href="https://www.knownaspratyush.online/">
+    <link rel="alternate" hreflang="en" href="https://www.knownaspratyush.online/">
+
+    <!-- AI & LLM Discovery (llms.txt) -->
+    <link rel="alternate" type="text/markdown" title="LLM Context" href="/llms.txt">
+    <link rel="alternate" type="text/markdown" title="LLM Full Context" href="/llms-full.txt">
+
+    <!-- Crawling & Indexing Directives for Googlebot & Global Engines -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Geo Targeting Directives (Patna, Bihar, India) -->
+    <meta name="geo.region" content="IN-BR">
+    <meta name="geo.placename" content="Patna, Bihar, India">
+    <meta name="geo.position" content="25.5941;85.1376">
+    <meta name="ICBM" content="25.5941, 85.1376">
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Pratyush Kumar | Full-Stack Developer &amp; Founder, CARTNOVA">
+    <meta property="og:title" content="Pratyush Kumar | Full-Stack Web Developer &amp; Founder, CARTNOVA">
+    <meta property="og:description"
+        content="Explore live production platforms including Coffee &amp; Cravings (artisan QR dining engine) and India Fitness (high-velocity athletic portal) by Full-Stack Developer Pratyush Kumar.">
+    <meta property="og:url" content="https://www.knownaspratyush.online/">
+    <meta property="og:image" content="https://www.knownaspratyush.online/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="profile:first_name" content="Pratyush">
+    <meta property="profile:last_name" content="Kumar">
+    <meta property="profile:username" content="KNOWNASPRATYUSH">
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pratyush Kumar | Full-Stack Web Developer &amp; Founder, CARTNOVA">
+    <meta name="twitter:description"
+        content="Official web development portfolio of Pratyush Kumar, Founder of CARTNOVA — architect of Coffee &amp; Cravings and India Fitness.">
+    <meta name="twitter:image" content="https://www.knownaspratyush.online/og-image.jpg">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="/assets/fonts/fonts.css">
+    <link rel="stylesheet" href="/assets/fonts/inter/inter.css">
+    <link rel="stylesheet" href="/assets/icon/icomoon/style.css">
+    
+    <!-- CSS Plugins & Main Styles -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Schema.org Comprehensive Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://www.knownaspratyush.online/#person",
+          "name": "Pratyush Kumar",
+          "givenName": "Pratyush",
+          "familyName": "Kumar",
+          "alternateName": [
+            "Pratyush",
+            "Pratyush Web Developer",
+            "Pratyush Kumar Web Developer",
+            "Pratyush Developer",
+            "Pratyush Software Engineer",
+            "KNOWNASPRATYUSH"
+          ],
+          "jobTitle": [
+            "Full-Stack Web Developer",
+            "Founder, CARTNOVA",
+            "Software Engineer"
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "CARTNOVA",
+            "url": "https://www.knownaspratyush.online/"
+          },
+          "gender": "https://schema.org/Male",
+          "nationality": "Indian",
+          "description": "Pratyush Kumar (KNOWNASPRATYUSH) is a Full-Stack Web Developer and Founder of CARTNOVA based in Patna, Bihar, India. Creator of production platforms Coffee & Cravings and India Fitness.",
+          "image": "https://www.knownaspratyush.online/og-image.jpg",
+          "url": "https://www.knownaspratyush.online/",
+          "email": "admin@knownaspratyush.online",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Patna",
+            "addressRegion": "Bihar",
+            "addressCountry": "IN",
+            "postalCode": "800001"
+          },
+          "sameAs": [
+            "https://github.com/KNOWNASPRATYUSH",
+            "https://www.instagram.com/knownaspratyush_/",
+            "https://www.coffeeandcravings.shop/",
+            "https://india-fitness.vercel.app/"
+          ],
+          "knowsAbout": [
+            {
+              "@type": "Thing",
+              "name": "Full-stack web development",
+              "sameAs": "https://en.wikipedia.org/wiki/Full-stack_developer"
+            },
+            {
+              "@type": "Thing",
+              "name": "React",
+              "sameAs": "https://en.wikipedia.org/wiki/React_(software)"
+            },
+            {
+              "@type": "Thing",
+              "name": "Next.js",
+              "sameAs": "https://en.wikipedia.org/wiki/Next.js"
+            },
+            {
+              "@type": "Thing",
+              "name": "Node.js",
+              "sameAs": "https://en.wikipedia.org/wiki/Node.js"
+            },
+            {
+              "@type": "Thing",
+              "name": "Redis",
+              "sameAs": "https://en.wikipedia.org/wiki/Redis"
+            },
+            {
+              "@type": "Thing",
+              "name": "PostgreSQL",
+              "sameAs": "https://en.wikipedia.org/wiki/PostgreSQL"
+            },
+            {
+              "@type": "Thing",
+              "name": "Tailwind CSS",
+              "sameAs": "https://en.wikipedia.org/wiki/Tailwind_CSS"
+            },
+            {
+              "@type": "Place",
+              "name": "Patna",
+              "sameAs": "https://en.wikipedia.org/wiki/Patna"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Bihar",
+              "sameAs": "https://en.wikipedia.org/wiki/Bihar"
+            },
+            {
+              "@type": "Country",
+              "name": "India",
+              "sameAs": "https://en.wikipedia.org/wiki/India"
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.knownaspratyush.online/#organization",
+          "name": "CARTNOVA",
+          "alternateName": ["Cartnova", "CARTNOVA Digital Studio", "Cartnova Agency"],
+          "url": "https://www.knownaspratyush.online/",
+          "logo": "https://www.knownaspratyush.online/assets/images/logo/logo-2.svg",
+          "founder": {
+            "@id": "https://www.knownaspratyush.online/#person"
+          },
+          "foundingLocation": {
+            "@type": "Place",
+            "name": "Patna, Bihar, India",
+            "sameAs": "https://en.wikipedia.org/wiki/Patna"
+          },
+          "description": "Digital product studio and creative engineering agency founded by Pratyush Kumar, delivering bespoke full-stack platforms, high-speed e-commerce systems, and custom web architectures."
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://www.knownaspratyush.online/#service",
+          "name": "Pratyush Kumar — Freelance Web Developer & Systems Architect",
+          "image": "https://www.knownaspratyush.online/og-image.jpg",
+          "url": "https://www.knownaspratyush.online/",
+          "email": "admin@knownaspratyush.online",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Patna",
+            "addressRegion": "Bihar",
+            "postalCode": "800001",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 25.5941,
+            "longitude": 85.1376
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Patna" },
+            { "@type": "AdministrativeArea", "name": "Bihar" },
+            { "@type": "Country", "name": "India" },
+            { "@type": "Place", "name": "Global Remote" }
+          ],
+          "founder": {
+            "@id": "https://www.knownaspratyush.online/#person"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "21:00"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Web Engineering Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Full-Stack Web Engineering (React 19 & Next.js 15)",
+                  "description": "Production-grade reactive applications with locked 60FPS fluid GSAP motion, SSR, zero CLS, and sub-second LCP."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Zero-Dependency Backend Runtimes",
+                  "description": "Native Node.js core microservices without external npm vulnerabilities, booting in single-digit milliseconds."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Sub-10ms Redis In-Memory Caching",
+                  "description": "High-velocity Upstash Redis REST KV storage and sorted sets for real-time order streams, menus, and session state."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "DPDP Act 2023 Statutory Compliance",
+                  "description": "Indian data privacy sovereignty compliance, HMAC-SHA256 request authentication, and zero third-party cookie leakage."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://www.knownaspratyush.online/#profilepage",
+          "url": "https://www.knownaspratyush.online/",
+          "name": "Pratyush Kumar — Freelance Web Developer & Systems Architect",
+          "mainEntity": {
+            "@id": "https://www.knownaspratyush.online/#person"
+          },
+          "dateCreated": "2024-01-01T00:00:00+05:30",
+          "dateModified": "2026-11-24T12:00:00+05:30",
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.knownaspratyush.online/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.knownaspratyush.online/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://www.knownaspratyush.online/#flagship-projects",
+          "name": "Flagship Production Systems Engineered by Pratyush Kumar",
+          "itemListElement": [
+            {
+              "@type": "SoftwareApplication",
+              "position": 1,
+              "name": "Coffee & Cravings Live Dining Platform",
+              "operatingSystem": "Web, iOS, Android",
+              "applicationCategory": "BusinessApplication",
+              "url": "https://www.coffeeandcravings.shop/",
+              "author": {
+                "@id": "https://www.knownaspratyush.online/#person"
+              },
+              "description": "Artisan dining and QR table ordering web platform with zero-dependency Node.js core, Upstash Redis, HMAC-SHA256 tokens, and instant-chime Barista KDS."
+            },
+            {
+              "@type": "SoftwareApplication",
+              "position": 2,
+              "name": "India Fitness Athletics Platform",
+              "operatingSystem": "Web, iOS, Android",
+              "applicationCategory": "HealthApplication",
+              "url": "https://india-fitness.vercel.app/",
+              "author": {
+                "@id": "https://www.knownaspratyush.online/#person"
+              },
+              "description": "High-performance digital athletics platform engineered with Next.js 15, PostgreSQL, and GSAP fluid navigation for Patna's premier gym destination."
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.knownaspratyush.online/#website",
+          "name": "Pratyush Kumar | Freelance Web Developer & Systems Architect",
+          "alternateName": "Pratyush Web Developer Official Portfolio",
+          "url": "https://www.knownaspratyush.online/",
+          "inLanguage": "en-US",
+          "author": {
+            "@id": "https://www.knownaspratyush.online/#person"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.knownaspratyush.online/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Who is Pratyush Kumar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pratyush Kumar (KNOWNASPRATYUSH) is an Indian Freelance Web Developer, Full-Stack Software Engineer, and Systems Architect based in Patna, Bihar, India. He builds high-performance production web systems, zero-dependency Node.js backend architectures, and distributed Redis KV caching layers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What web development technologies does Pratyush specialize in?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pratyush specializes in full-stack web engineering with React 19, Next.js 15, Tailwind CSS, native Node.js core runtimes (http, crypto, fs), Upstash Redis REST KV, PostgreSQL databases, GSAP 60FPS fluid motion, and payment infrastructure with Razorpay and dynamic UPI."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What flagship web platforms has Pratyush Kumar engineered?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pratyush has engineered two major production platforms: Coffee & Cravings (https://www.coffeeandcravings.shop/), a zero-dependency QR dining and Kitchen Display System with 71/71 automated test coverage; and India Fitness (https://india-fitness.vercel.app/), a high-performance athletic web portal with locked 60FPS GSAP transitions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does Pratyush Kumar build zero-dependency Node.js backends?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Guided by Dijkstra's principle that 'simplicity is prerequisite for reliability', Pratyush uses native Node.js core modules rather than heavy npm dependency chains. This eliminates software supply-chain vulnerabilities, cuts bundle sizes by up to 90%, and enables single-digit millisecond boot times."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does Pratyush Kumar achieve sub-10ms response times?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pratyush utilizes distributed Upstash Redis REST KV storage and Redis Sorted Sets to serve data directly from edge in-memory caches, bypassing traditional database roundtrips for high-velocity operations like live orders, active menus, and user session state."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does Pratyush Kumar ensure DPDP Act 2023 statutory compliance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pratyush builds web systems with zero third-party tracking cookies, localized state management via HMAC-SHA256 cryptographically authenticated tokens, and encrypted session data stored entirely within Indian data sovereignty boundaries."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Pratyush Kumar provide freelance web development in Patna, Bihar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Pratyush is based in Patna, Bihar (serving Boring Road, Bailey Road, Kankarbagh, Sipara, Kurthaul, Sampatchak, and Patliputra) and provides on-site and remote freelance web engineering and consulting services."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Pratyush Kumar available for remote work across India and globally?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Pratyush provides remote freelance full-stack software development, architectural consulting, and performance optimization for tech teams, startups, and clients across India (Bengaluru, Delhi NCR, Mumbai, Hyderabad, Pune) and internationally (USA, UK, Europe, UAE)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is Pratyush Kumar's official website and contact channel?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "His sole canonical portfolio website is https://www.knownaspratyush.online. You can reach him directly at admin@knownaspratyush.online or review his open-source code on GitHub at https://github.com/KNOWNASPRATYUSH."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I hire Pratyush Kumar for a web development project?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can hire Pratyush Kumar by transmitting a project scope through the contact form at https://www.knownaspratyush.online/#contact or emailing admin@knownaspratyush.online with project requirements, timeline, and architectural specifications. Serious inquiries receive responses within 24 hours."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is CARTNOVA and who is the founder?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CARTNOVA is a boutique digital product engineering studio and creative web agency founded by Pratyush Kumar in Patna, Bihar, India. CARTNOVA specializes in high-velocity web platforms, modern e-commerce architectures (such as VŌLT), and bespoke full-stack systems."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who is the best web developer in Patna, Bihar for custom web platforms?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pratyush Kumar (Founder of CARTNOVA) is widely recognized as a premier full-stack web developer in Patna, Bihar. He is the architect behind production platforms including Coffee & Cravings and India Fitness, specializing in React 19, Next.js 15, zero-dependency Node.js core runtimes, and sub-10ms Redis in-memory caching."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body data-default-mode="dark" class="counter-scroll">
+    <!-- Preload -->
+    <div class="preload preload-container bg-dark" id="preload">
+        <div class="preload-logo">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <!-- /Preload -->
+
+    <!-- Body Background with Atmospheric Overlay -->
+    <div class="body-background">
+        <div class="bg-item">
+            <img loading="lazy" width="1440" height="900" src="/assets/images/item/cloud-bg.png" alt="Cloud Overlay">
+        </div>
+        <div class="bg-video video-dark">
+            <video class="video" muted="" autoplay="" loop="" playsinline="">
+                <source src="/assets/images/overlay-2.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-1"></div>
+        </div>
+    </div>
+    <!-- /Body Background -->
+
+    <!-- Color Configuration Gear Button -->
+    <div class="tf-left-bar">
+        <a class="btn-setting-color tf-btn-icon style-2" data-bs-toggle="offcanvas" href="#settingColorMenu" aria-label="Color Configuration"><i class="icon-gear"></i></a>
+    </div>
+
+    <!-- Setting Color Offcanvas Drawer -->
+    <div class="offcanvas offcanvas-end offcanvas-color" id="settingColorMenu">
+        <div class="offcanvas-content">
+            <div class="canvas-header">
+                <h5 class="letter-space--2">Color Palette</h5>
+                <span class="icon-close-popup" data-bs-dismiss="offcanvas">
+                    <i class="icon-close"></i>
+                </span>
+            </div>
+            <div class="canvas-body">
+                <h6 class="title">Select Theme Accent</h6>
+                <div class="settings-color list-choose">
+                    <button type="button" class="btn-color theme-light choose-item">
+                        <span class="color type-body-v1"></span>
+                        <span class="text">Silver Dawn</span>
+                    </button>
+                    <button type="button" class="btn-color theme-light choose-item">
+                        <span class="color type-body-v2"></span>
+                        <span class="text">Lavender Stone</span>
+                    </button>
+                    <button type="button" class="btn-color theme-light choose-item">
+                        <span class="color type-body-v3"></span>
+                        <span class="text">Ocean Breeze</span>
+                    </button>
+                    <button type="button" class="btn-color theme-dark choose-item active">
+                        <span class="color type-dark-v1"></span>
+                        <span class="text">Midnight Fade</span>
+                    </button>
+                    <button type="button" class="btn-color theme-dark choose-item">
+                        <span class="color type-dark-v2"></span>
+                        <span class="text">Charcoal Mist</span>
+                    </button>
+                    <button type="button" class="btn-color theme-dark choose-item">
+                        <span class="color type-dark-v3"></span>
+                        <span class="text">Forest Shadow</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Setting Color -->
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="action-open-mobile d-lg-none">
+        <div class="tf-btn-icon style-2">
+            <div class="btn-mobile-menu">
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-mobile-list">
+            <ul class="nav-mobile-item">
+                <li class="nav-item">
+                    <a href="#home" class="item-link scroll-link">
+                        <i class="icon icon-home"></i>
+                        <p class="tool-tip text-caption">Home</p>
+                    </a>
+                </li>
+                <li class="br-line"></li>
+                <li class="nav-item">
+                    <a href="#about" class="item-link scroll-link">
+                        <i class="icon icon-user-circle"></i>
+                        <p class="tool-tip text-caption">About</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#work" class="item-link scroll-link">
+                        <i class="icon icon-high-light"></i>
+                        <p class="tool-tip text-caption">Work</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="item-link scroll-link">
+                        <i class="icon icon-edu"></i>
+                        <p class="tool-tip text-caption">Experience</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service" class="item-link scroll-link">
+                        <i class="icon icon-service"></i>
+                        <p class="tool-tip text-caption">Services</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tech" class="item-link scroll-link">
+                        <i class="icon icon-tech-stack"></i>
+                        <p class="tool-tip text-caption">Tech Stack</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonial" class="item-link scroll-link">
+                        <i class="icon icon-tes"></i>
+                        <p class="tool-tip text-caption">Reviews</p>
+                    </a>
+                </li>
+                <li class="br-line"></li>
+                <li class="nav-item">
+                    <a href="#contact" class="item-link scroll-link">
+                        <i class="icon icon-send"></i>
+                        <p class="tool-tip text-caption">Contact</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /Menu Mobile -->
+
+    <!-- Desktop Tool Sidebar (Right) -->
+    <div class="sidebar-tools pst-v1">
+        <div class="nav-top">
+            <div class="tf-btn-icon toggle-switch-mode" title="Toggle Light/Dark Theme">
+                <i class="icon icon-light"></i>
+            </div>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#home" class="item-link scroll-link">
+                    <i class="icon icon-home"></i>
+                    <p class="tool-tip text-caption">Home</p>
+                </a>
+            </li>
+            <li class="br-line"></li>
+            <li class="nav-item">
+                <a href="#about" class="item-link scroll-link">
+                    <i class="icon icon-user-circle"></i>
+                    <p class="tool-tip text-caption">About</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#work" class="item-link scroll-link">
+                    <i class="icon icon-high-light"></i>
+                    <p class="tool-tip text-caption">Work Flagships</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#education" class="item-link scroll-link">
+                    <i class="icon icon-edu"></i>
+                    <p class="tool-tip text-caption">Experience</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#service" class="item-link scroll-link">
+                    <i class="icon icon-service"></i>
+                    <p class="tool-tip text-caption">Services</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#tech" class="item-link scroll-link">
+                    <i class="icon icon-tech-stack"></i>
+                    <p class="tool-tip text-caption">Tech Stack</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#testimonial" class="item-link scroll-link">
+                    <i class="icon icon-tes"></i>
+                    <p class="tool-tip text-caption">Testimonials</p>
+                </a>
+            </li>
+            <li class="br-line"></li>
+            <li class="nav-item">
+                <a href="#contact" class="item-link scroll-link">
+                    <i class="icon icon-send"></i>
+                    <p class="tool-tip text-caption">Contact</p>
+                </a>
+            </li>
+        </ul>
+        <div class="nav-bottom">
+            <a href="#" class="tf-btn-icon go-top" aria-label="Go to Top">
+                <i class="icon icon-arrow-top"></i>
+            </a>
+        </div>
+    </div>
+    <!-- /Tool Sidebar -->
+
+    <div class="overlay-pop"></div>
+    <main id="wrapper">
+
+        <!-- Time & Status Top Header -->
+        <div class="tf-header-wrap">
+            <a href="/" class="logo-site d-lg-none">
+                <img class="image-switch" data-light="/assets/images/logo/logo.svg" data-dark="/assets/images/logo/logo-2.svg" loading="lazy" width="40"
+                    height="40" src="/assets/images/logo/logo-2.svg" alt="Pratyush Kumar Logo">
+            </a>
+            <div class="left">
+                <div class="time-local text-body-3">
+                    <p class="date">Patna, IN • Today</p>
+                    <p class="clock">12:00 PM IST</p>
+                </div>
+            </div>
+        </div>
+        <!-- /Time Local -->
+
+        <!-- Fixed User Profile Sidebar (Left) -->
+        <div class="sidebar-user">
+            <div class="wrap">
+                <div class="user-image">
+                    <div class="image">
+                        <img loading="lazy" width="468" height="856" src="/assets/images/avatar/avatar.png" alt="Pratyush Kumar — Web Developer &amp; Systems Architect">
+                    </div>
+                    <div class="meta-left d-none d-sm-block">
+                        <div class="bg-item-svg">
+                            <img class="image-switch" data-dark="/assets/images/item/vector-user_dark.svg" width="32" height="227"
+                                src="/assets/images/item/vector-user_dark.svg" alt="Vector Accent">
+                        </div>
+                        <p class="avaiable-dot vertical text-body-3 text-black-72 fw-medium">
+                            <span class="text-vertical">Available for Work</span>
+                            <span class="dot"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="user-logo d-none d-lg-block">
+                    <img class="image-switch" data-light="/assets/images/logo/logo.svg" data-dark="/assets/images/logo/logo-2.svg" loading="lazy"
+                        width="40" height="40" src="/assets/images/logo/logo-2.svg" alt="Pratyush Kumar Monogram">
+                </div>
+                <ul class="tf-social-icon-2 user-social d-grid">
+                    <li><a href="https://github.com/KNOWNASPRATYUSH" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="icon icon-high-light"></i></a></li>
+                    <li><a href="https://www.instagram.com/knownaspratyush_/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="icon icon-user-circle"></i></a></li>
+                    <li><a href="mailto:admin@knownaspratyush.online" title="Direct Email"><i class="icon icon-send"></i></a></li>
+                </ul>
+                <div class="user-info">
+                    <p class="avaiable-dot text-body-3 fw-medium d-sm-none">
+                        <span class="dot"></span>
+                        <span>Available for Work</span>
+                    </p>
+                    <h5 class="greeting letter-space--2 text-white animationtext clip">
+                        Hey, I’m
+                        <span class="cd-words-wrapper">
+                            <span class="item-text is-visible">Pratyush</span>
+                            <span class="item-text is-hidden">Full-Stack Dev</span>
+                            <span class="item-text is-hidden">CARTNOVA Founder</span>
+                            <span class="item-text is-hidden">Product Engineer</span>
+                        </span>
+                    </h5>
+                    <p class="introduce text-white-56 letter-space--05 text-body-3">
+                        Full-Stack Web Developer &amp; Founder of CARTNOVA based in Patna, India. Building fast, secure ordering platforms, 60FPS fluid web systems, and high-velocity digital experiences.
+                    </p>
+                    <div class="br-line"></div>
+                    <div class="action-group">
+                        <a href="#contact" class="tf-btn-action scroll-link">
+                            <span class="ic-wrap">
+                                <i class="icon icon-arrow-right-top"></i>
+                            </span>
+                            <span class="text text-body-3 letter-space--05 fw-medium">
+                                Let’s talk
+                            </span>
+                            <span class="ic-wrap">
+                                <i class="icon icon-arrow-right-top"></i>
+                            </span>
+                        </a>
+                        <a href="https://github.com/KNOWNASPRATYUSH" target="_blank" rel="noopener noreferrer" class="action-down">
+                            <i class="icon icon-high-light"></i>
+                            <span class="text-body-3">
+                                GitHub
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /User Sidebar -->
+
+        <div class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-8 ms-auto">
+                        <div class="wrap-container">
+
+                            <!-- Section 01: Hero Intro -->
+                            <div id="home" class="section-intro flat-spacing">
+                                <div class="intro-author effectFade fadeUp no-div">
+                                    <div class="author-image">
+                                        <img loading="lazy" width="31" height="31" src="/assets/images/avatar/avatar.png" alt="Pratyush Kumar Thumbnail" style="border-radius: 50%; object-fit: cover;">
+                                    </div>
+                                    <div class="author-info letter-space--05">
+                                        <p class="info_name text-black">Pratyush Kumar</p>
+                                        <p class="info_duty text-black-50 text-body-3">Full-Stack Developer &amp; Founder, CARTNOVA</p>
+                                    </div>
+                                </div>
+                                <h1 class="intro-title letter-space--2 split-text effect-blur-fade">
+                                    I build
+                                    <span class="">fast, secure web systems</span><br>
+                                    <span class="type-2">&amp; digital products</span>
+                                    that drive real business
+                                </h1>
+                                <p class="intro-desc text-white-56 effectFade fadeUp no-div" style="margin-top: 16px; font-size: 15px; line-height: 1.6; max-width: 600px;">
+                                    Full-Stack Web Developer &amp; Founder of <strong>CARTNOVA</strong> based in Patna, Bihar, India. Engineering high-velocity web platforms, zero-dependency Node.js architectures, and sub-10ms in-memory caching systems.
+                                </p>
+                                <div class="intro-item">
+                                    <div class="scribble-wrap">
+                                        <svg class="scribble" viewBox="0 0 772 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                 <linearGradient id="paint0_linear_268_462" x1="12" y1="107" x2="752" y2="66" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#F5F5F5" />
+                                                    <stop class="bred" offset="0.466346" stop-color="#00d4ff" />
+                                                    <stop offset="1" stop-color="#a855f7" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="scribblePath"
+                                                d="M12 104.315C34.6667 116.269 92.8 137.913 144 128.853C208 117.528 317 33.5324 356 27.8698C395 22.2072 502 20 530 79.1463C557.711 137.682 582 217 477 281.743C423.902 314.483 308 281.433 365 188C422 94.5672 544 65.6205 597 81.6645C650 97.7085 732 88.2708 752 64.6767"
+                                                stroke="url(#paint0_linear_268_462)" stroke-width="50" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="wg-curve-text">
+                                        <div class="icon">
+                                            <span style="font-size: 24px; font-weight: 700; color: #00d4ff;">60FPS</span>
+                                        </div>
+                                        <div class="text-rotate">
+                                            <div class="circle">
+                                                <div class="text" id="circularText"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-counter effectFade fadeUp no-div">
+                                    <div class="wg-counter">
+                                        <p class="counter h1 d-flex font-2 letter-space--2">
+                                            <span class="number" data-speed="1000" data-to="3">3</span>
+                                            +
+                                        </p>
+                                        <p class="text text-black-56 text-body-3">
+                                            Years Engineering Experience
+                                        </p>
+                                    </div>
+                                    <div class="wg-counter">
+                                        <p class="counter h1 d-flex font-2 letter-space--2">
+                                            <span class="number" data-speed="1000" data-to="2">2</span>
+                                            x
+                                        </p>
+                                        <p class="text text-black-56 text-body-3">
+                                            Live Flagship Production Systems
+                                        </p>
+                                    </div>
+                                    <div class="wg-counter">
+                                        <p class="counter h1 d-flex font-2 letter-space--2">
+                                            &lt;<span class="number" data-speed="1000" data-to="10">10</span>
+                                            ms
+                                        </p>
+                                        <p class="text text-black-56 text-body-3">
+                                            In-Memory Redis KV Latency
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="intro-client letter-space--05 text-body-3">
+                                    <i class="icon icon-global-elip"></i>
+                                    Flagship Ecosystems &amp; Core Standards
+                                </p>
+
+                                <div class="infiniteSlide-brand">
+                                    <div class="infiniteSlide" data-clone="3">
+                                        <div class="image-brand" style="color: #00d4ff; font-weight: 600; font-size: 14px; letter-spacing: 0.1em; display: flex; align-items: center; gap: 8px;">
+                                            <span>☕ COFFEE &amp; CRAVINGS</span>
+                                        </div>
+                                        <div class="image-brand" style="color: #a855f7; font-weight: 600; font-size: 14px; letter-spacing: 0.1em; display: flex; align-items: center; gap: 8px;">
+                                            <span>⚡ INDIA FITNESS</span>
+                                        </div>
+                                        <div class="image-brand" style="color: #10b981; font-weight: 600; font-size: 14px; letter-spacing: 0.1em; display: flex; align-items: center; gap: 8px;">
+                                            <span>🛡️ DPDP ACT 2023</span>
+                                        </div>
+                                        <div class="image-brand" style="color: #f59e0b; font-weight: 600; font-size: 14px; letter-spacing: 0.1em; display: flex; align-items: center; gap: 8px;">
+                                            <span>⚡ UPSTASH REDIS KV</span>
+                                        </div>
+                                        <div class="image-brand" style="color: #00d4ff; font-weight: 600; font-size: 14px; letter-spacing: 0.1em; display: flex; align-items: center; gap: 8px;">
+                                            <span>⚛️ REACT 19 &amp; NEXT.JS 15</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Intro -->
+
+                            <!-- Section 02: About -->
+                            <div id="about" class="section-about flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-user-circle"></i>
+                                    About Pratyush Kumar
+                                </div>
+                                <h4 class="s-title letter-space--2 text-black-72 split-text effect-blur-fade">
+                                    Engineering web systems with clarity, <br class="d-none d-lg-block">
+                                    cryptographic precision, <br class="d-none d-lg-block">
+                                    and raw performance
+                                </h4>
+                                <p class="s-desc text-black-56 scrolling-effect effectTop">
+                                    I combine zero-dependency Node.js core runtimes, distributed Redis KV caching, and cinematic UI design to build platforms that solve real operational needs and mesmerize users.<br><br>
+                                    Every project is approached with both systems rigor and design elegance—ensuring that architecture isn’t just fast on paper, but hardened against tampering, statutory compliant with the India DPDP Act 2023, and resilient in high-traffic production environments.
+                                </p>
+                                <ul class="award-list">
+                                    <li class="award-item hover-cursor-img">
+                                        <div class="left">
+                                            <h6 class="award_name letter-space--2 text-black-72">Coffee &amp; Cravings (Live Platform)</h6>
+                                            <p class="award_desc text-black-56">Zero-dep Native Node Core &bull; Upstash Redis &bull; HMAC QR Ordering</p>
+                                        </div>
+                                        <h6 class="award_year text-black-72">2026</h6>
+                                        <div class="award_img hover-image">
+                                            <img loading="lazy" width="158" height="224" src="/assets/images/section/coffee_preview.jpg" alt="Coffee &amp; Cravings Preview">
+                                        </div>
+                                    </li>
+                                    <li class="award-item hover-cursor-img">
+                                        <div class="left">
+                                            <h6 class="award_name letter-space--2 text-black-72">India Fitness (Live Athletics Engine)</h6>
+                                            <p class="award_desc text-black-56">Next.js 15 &bull; PostgreSQL &bull; GSAP 60FPS Fluid Motion</p>
+                                        </div>
+                                        <h6 class="award_year text-black-72">2026</h6>
+                                        <div class="award_img hover-image">
+                                            <img loading="lazy" width="158" height="224" src="/assets/images/section/fitness_preview.jpg" alt="India Fitness Preview">
+                                        </div>
+                                    </li>
+                                    <li class="award-item hover-cursor-img">
+                                        <div class="left">
+                                            <h6 class="award_name letter-space--2 text-black-72">CARTNOVA Digital Studio</h6>
+                                            <p class="award_desc text-black-56">Founder &bull; High-Performance Web Architecture &amp; Brand Systems</p>
+                                        </div>
+                                        <h6 class="award_year text-black-72">2025</h6>
+                                        <div class="award_img hover-image">
+                                            <img loading="lazy" width="158" height="224" src="/assets/images/section/coffee_preview.jpg" alt="CARTNOVA Digital Studio">
+                                        </div>
+                                    </li>
+                                    <li class="award-item hover-cursor-img">
+                                        <div class="left">
+                                            <h6 class="award_name letter-space--2 text-black-72">VŌLT Modern E-Commerce Platform</h6>
+                                            <p class="award_desc text-black-56">Full-Stack Storefront &bull; Instant Checkout &bull; Zero Layout Shifts</p>
+                                        </div>
+                                        <h6 class="award_year text-black-72">2025</h6>
+                                        <div class="award_img hover-image">
+                                            <img loading="lazy" width="158" height="224" src="/assets/images/section/fitness_preview.jpg" alt="VOLT Storefront Preview">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /About -->
+
+                            <!-- Section 03: Work Highlights -->
+                            <div id="work" class="section-work flat-spacing">
+                                <div class="sect-tag text-caption fw-medium">
+                                    <i class="icon icon-high-light"></i>
+                                    Flagship Work Highlights
+                                </div>
+                                <div class="work-list element-sticky">
+
+                                    <!-- Flagship 01: Coffee & Cravings -->
+                                    <div class="sticky-item">
+                                        <div class="wg-work">
+                                            <div class="work-image">
+                                                <img loading="lazy" width="700" height="427" src="/assets/images/section/coffee_preview.jpg" alt="Coffee &amp; Cravings Production Platform">
+                                            </div>
+                                            <div class="wrap">
+                                                <div class="work-content">
+                                                    <div class="w-image">
+                                                        <img loading="lazy" width="468" height="856" src="/assets/images/section/coffee_preview.jpg" alt="Coffee &amp; Cravings UI">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="content-top">
+                                                            <div class="w-logo" style="margin-bottom: 24px;">
+                                                                <span style="background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); color: #f59e0b; padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 8px;">
+                                                                    <span style="width: 7px; height: 7px; border-radius: 50%; background: #f59e0b; box-shadow: 0 0 8px #f59e0b;"></span>
+                                                                    LIVE PRODUCTION &bull; COFFEE &amp; CRAVINGS
+                                                                </span>
+                                                            </div>
+                                                            <h4 class="w-title letter-space--2 text-white-72">
+                                                                Coffee &amp; Cravings
+                                                            </h4>
+                                                            <p class="w-desc text-white-56 text-body-3">
+                                                                Artisan dining platform with zero-dependency native Node.js core, Upstash Redis, cryptographic HMAC-signed QR table ordering across 6 tables, instant-chime Barista KDS, Razorpay &amp; dynamic UPI payments, and DPDP Act compliance.
+                                                            </p>
+                                                            <div class="w-highlight">
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">Year</p>
+                                                                    <p class="text-body-1 text-white-72">2026</p>
+                                                                </div>
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">Role</p>
+                                                                    <p class="text-body-1 text-white-72">Freelance Web Developer &amp; Architect</p>
+                                                                </div>
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">Tests</p>
+                                                                    <p class="text-body-1 text-white-72">71/71 Passed (100%)</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-tag-list">
+                                                                <div class="tag"><span class="text-body-3 fw-medium text-white-72">Native Node.js</span></div>
+                                                                <div class="tag"><span class="text-body-3 fw-medium text-white-72">Upstash Redis</span></div>
+                                                                <div class="tag"><span class="text-body-3 fw-medium text-white-72">HMAC-SHA256</span></div>
+                                                                <div class="tag"><span class="text-body-3 fw-medium text-white-72">Razorpay &amp; UPI</span></div>
+                                                                <div class="tag"><span class="text-body-3 fw-medium text-white-72">DPDP Act 2023</span></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-bottom">
+                                                            <div class="br-line"></div>
+                                                            <div class="group-action">
+                                                                <a href="https://www.coffeeandcravings.shop/" target="_blank" rel="noopener noreferrer" class="tf-btn-action style-white">
+                                                                    <span class="ic-wrap"><i class="icon icon-arrow-right-top"></i></span>
+                                                                    <span class="text text-body-3 letter-space--05 fw-medium">Live Broadcast ↗</span>
+                                                                    <span class="ic-wrap"><i class="icon icon-arrow-right-top"></i></span>
+                                                                </a>
+                                                                <a href="https://github.com/KNOWNASPRATYUSH/Coffee-cravings" target="_blank" rel="noopener noreferrer" class="tf-btn-action style-white" style="margin-left: 10px;">
+                                                                    <span class="text text-body-3 letter-space--05 fw-medium">Source Code ↗</span>
+                                                                </a>
+                                                                <p class="text-white-40">
+                                                                    <span class="text-white-72">01</span> / 02
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Flagship 02: India Fitness -->
+                                    <div class="sticky-item">
+                                        <div class="wg-work">
+                                            <div class="work-image">
+                                                <img loading="lazy" width="700" height="427" src="/assets/images/section/fitness_preview.jpg" alt="India Fitness Athletic Engine">
+                                            </div>
+                                            <div class="wrap">
+                                                <div class="work-content">
+                                                    <div class="w-image">
+                                                        <img loading="lazy" width="468" height="856" src="/assets/images/section/fitness_preview.jpg" alt="India Fitness UI">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="content-top">
+                                                            <div class="w-logo" style="margin-bottom: 24px;">
+                                                                <span style="background: rgba(0, 212, 255, 0.15); border: 1px solid rgba(0, 212, 255, 0.4); color: #00d4ff; padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 8px;">
+                                                                    <span style="width: 7px; height: 7px; border-radius: 50%; background: #00d4ff; box-shadow: 0 0 8px #00d4ff;"></span>
+                                                                    LIVE PRODUCTION &bull; INDIA FITNESS
+                                                                </span>
+                                                            </div>
+                                                            <h4 class="w-title letter-space--2 text-white-72">
+                                                                India Fitness
+                                                            </h4>
+                                                            <p class="w-desc text-white-56 text-body-3">
+                                                                High-performance digital athletics platform engineered for Patna’s premier fitness destination across Sipara, Kurthaul &amp; Sampatchak. Built with Next.js 15, PostgreSQL, and GSAP for 60FPS fluid screen transitions, personalized membership tiers, workout regimens, and interactive tools.
+                                                            </p>
+                                                            <div class="w-highlight">
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">Year</p>
+                                                                    <p class="text-body-1 text-white-72">2026</p>
+                                                                </div>
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">Role</p>
+                                                                    <p class="text-body-1 text-white-72">Freelance Web Developer</p>
+                                                                </div>
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">UI Framerate</p>
+                                                                    <p class="text-body-1 text-white-72">Locked 60 FPS</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-tag-list">
+                                                                <div class="tag"><span class="text-body-3 fw-medium text-white-72">Next.js 15</span></div>
+                                                                <div class="tag"><span class="text-body-3 fw-medium text-white-72">React 19</span></div>
+                                                                <div class="tag"><span class="text-body-3 fw-medium text-white-72">PostgreSQL</span></div>
+                                                                <div class="tag"><span class="text-body-3 fw-medium text-white-72">GSAP Motion</span></div>
+                                                                <div class="tag"><span class="text-body-3 fw-medium text-white-72">Tailwind CSS</span></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-bottom">
+                                                            <div class="br-line"></div>
+                                                            <div class="group-action">
+                                                                <a href="https://india-fitness.vercel.app/" target="_blank" rel="noopener noreferrer" class="tf-btn-action style-white">
+                                                                    <span class="ic-wrap"><i class="icon icon-arrow-right-top"></i></span>
+                                                                    <span class="text text-body-3 letter-space--05 fw-medium">Live Broadcast ↗</span>
+                                                                    <span class="ic-wrap"><i class="icon icon-arrow-right-top"></i></span>
+                                                                </a>
+                                                                <a href="https://github.com/KNOWNASPRATYUSH/INDIA-FITNESS" target="_blank" rel="noopener noreferrer" class="tf-btn-action style-white" style="margin-left: 10px;">
+                                                                    <span class="text text-body-3 letter-space--05 fw-medium">Source Code ↗</span>
+                                                                </a>
+                                                                <p class="text-white-40">
+                                                                    <span class="text-white-72">02</span> / 02
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /Work Highlight -->
+
+                            <!-- Section 04: Education & Experience -->
+                            <div id="education" class="section-education-experience flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-edu"></i>
+                                    Education &amp; Experience
+                                </div>
+                                <div class="timeline scroll-down">
+                                    <div class="timeline-line">
+                                        <div class="prg-line"></div>
+                                    </div>
+                                    <!-- Item 1 -->
+                                    <div class="timeline-item effectFade fadeUp no-div">
+                                        <p class="timeline-date text-black-56">2025 - 2026</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="/assets/images/logo/logo-4.svg" loading="lazy" width="32"
+                                                    height="32" src="/assets/images/logo/logo-3.svg" alt="Flagships">
+                                            </div>
+                                            <p class="timeline-role fw-medium text-black-72">Freelance Full Stack Architect &amp; Web Developer</p>
+                                            <p class="timeline-desc text-body-3 text-black-56">
+                                                Engineered two live, high-traffic web ecosystems: Coffee &amp; Cravings (zero-dependency native Node.js core, Upstash Redis, Razorpay/UPI payments, KDS, and DPDP Act compliance) and India Fitness (Next.js 15, PostgreSQL, and GSAP 60FPS fluid navigation).
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 2 -->
+                                    <div class="timeline-item effectFade fadeUp no-div">
+                                        <p class="timeline-date text-black-56">2024 - 2025</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="/assets/images/item/edu-2_dark.svg" width="29" height="32"
+                                                    src="/assets/images/item/edu-2.svg" alt="3D Web Tech">
+                                            </div>
+                                            <p class="timeline-role fw-medium text-black-72">Interactive Web &amp; UI Systems Developer</p>
+                                            <p class="timeline-desc text-body-3 text-black-56">
+                                                Developed interactive Three.js graphics, hardware-accelerated shaders, and responsive UI components. Specialized in lowering bundle overhead while ensuring fluid 60FPS motion across mobile and desktop.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 3 -->
+                                    <div class="timeline-item effectFade fadeUp no-div">
+                                        <p class="timeline-date text-black-56">2023 - 2024</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="/assets/images/item/edu-3_dark.svg" width="120" height="32"
+                                                    src="/assets/images/item/edu-3.svg" alt="Design Academy">
+                                            </div>
+                                            <p class="timeline-role fw-medium text-black-72">Frontend Web Developer &amp; UI Engineer</p>
+                                            <p class="timeline-desc text-body-3 text-black-56">
+                                                Constructed custom design systems, API integration pipelines, and state management architectures using React, Next.js, and TypeScript with rigorous attention to Core Web Vitals and accessible semantics.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Education & Experience -->
+
+                            <!-- Section 05: Services -->
+                            <div id="service" class="section-service flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div mb-0">
+                                    <i class="icon icon-service"></i>
+                                    Services &amp; Capabilities
+                                </div>
+                                <div id="accordion-service">
+                                    <!-- Service 1 -->
+                                    <div class="service-accordion_item scrolling-effect effectBottom" role="presentation">
+                                        <div class="accordion-action" data-bs-target="#service-1" role="button" data-bs-toggle="collapse"
+                                            aria-controls="service-1" aria-expanded="true">
+                                            <h4 class="text letter-space--2 text-black-72">Full-Stack Web Engineering</h4>
+                                            <div class="ic-wrap"><span class="ic-accordion-custom"></span></div>
+                                        </div>
+                                        <div id="service-1" class="collapse show" data-bs-parent="#accordion-service">
+                                            <div class="accordion-content">
+                                                <div class="service-tag">
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">React 19</span>
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">Next.js 15</span>
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">TypeScript</span>
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">Vite Modern</span>
+                                                </div>
+                                                <p class="service-desc text-black-56">
+                                                    I architect responsive, production-ready web applications combining modern frontend frameworks with solid architectural foundations to deliver exceptional speed, zero layout shifts, and mobile-first responsiveness.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="br-line scrolling-effect effectBottom"></div>
+
+                                    <!-- Service 2 -->
+                                    <div class="service-accordion_item scrolling-effect effectBottom" role="presentation">
+                                        <div class="accordion-action collapsed" data-bs-target="#service-2" role="button" data-bs-toggle="collapse"
+                                            aria-controls="service-2" aria-expanded="false">
+                                            <h4 class="text letter-space--2 text-black-72">Zero-Dependency Backend Runtimes</h4>
+                                            <div class="ic-wrap"><span class="ic-accordion-custom"></span></div>
+                                        </div>
+                                        <div id="service-2" class="collapse" data-bs-parent="#accordion-service">
+                                            <div class="accordion-content">
+                                                <div class="service-tag">
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">Native Node.js (Core)</span>
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">Serverless Handlers</span>
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">REST APIs</span>
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">Webhooks</span>
+                                                </div>
+                                                <p class="service-desc text-black-56">
+                                                    Eliminating external dependency bloat by writing clean, native Node.js core code that boots in single-digit milliseconds, scales effortlessly on Vercel Edge, and minimizes attack surfaces.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="br-line scrolling-effect effectBottom"></div>
+
+                                    <!-- Service 3 -->
+                                    <div class="service-accordion_item scrolling-effect effectBottom" role="presentation">
+                                        <div class="accordion-action collapsed" data-bs-target="#service-3" role="button" data-bs-toggle="collapse"
+                                            aria-controls="service-3" aria-expanded="false">
+                                            <h4 class="text letter-space--2 text-black-72">In-Memory Caching &amp; Distributed KV</h4>
+                                            <div class="ic-wrap"><span class="ic-accordion-custom"></span></div>
+                                        </div>
+                                        <div id="service-3" class="collapse" data-bs-parent="#accordion-service">
+                                            <div class="accordion-content">
+                                                <div class="service-tag">
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">Upstash Redis KV</span>
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">Redis Sorted Sets</span>
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">PostgreSQL</span>
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">TTL Data Lifecycles</span>
+                                                </div>
+                                                <p class="service-desc text-black-56">
+                                                    Sub-millisecond data retrieval with managed Redis key-value stores. Ideal for real-time live ordering, order state machines, session management, and ultra-fast dynamic catalog access.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="br-line scrolling-effect effectBottom"></div>
+
+                                    <!-- Service 4 -->
+                                    <div class="service-accordion_item scrolling-effect effectBottom" role="presentation">
+                                        <div class="accordion-action collapsed" data-bs-target="#service-4" role="button" data-bs-toggle="collapse"
+                                            aria-controls="service-4" aria-expanded="false">
+                                            <h4 class="text letter-space--2 text-black-72">Cryptographic Security &amp; Statutory Compliance</h4>
+                                            <div class="ic-wrap"><span class="ic-accordion-custom"></span></div>
+                                        </div>
+                                        <div id="service-4" class="collapse" data-bs-parent="#accordion-service">
+                                            <div class="accordion-content">
+                                                <div class="service-tag">
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">HMAC-SHA256</span>
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">India DPDP Act 2023</span>
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">Anti-Replay Mitigations</span>
+                                                    <span class="tag-item text-body-3 fw-medium text-black-72 link">Razorpay &amp; UPI Verification</span>
+                                                </div>
+                                                <p class="service-desc text-black-56">
+                                                    Hardened request signing, cryptographic table QR tokens, statutory compliance with India's Digital Personal Data Protection Act, and replay-proof payment webhook consumers.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Service -->
+
+                            <!-- Section 06: Tech Stack -->
+                            <div id="tech" class="section-tech-stack flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-tech-stack"></i>
+                                    Technical Arsenal &amp; Stack
+                                </div>
+                                <h4 class="s-title letter-space--2 text-black-72 split-text effect-blur-fade">
+                                    Production-hardened tools <br class="d-none d-sm-block">
+                                    powering zero-latency results
+                                </h4>
+                                <div class="tech-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 32px;">
+                                    <div class="tech-card effectFade fadeUp no-div" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 24px;">
+                                        <h5 style="color: #fff; font-size: 16px; font-weight: 600; margin-bottom: 8px;">Frontend &amp; Motion</h5>
+                                        <p style="color: rgba(255, 255, 255, 0.5); font-size: 13px; line-height: 1.6; margin-bottom: 16px;">
+                                            Fluid reactive interfaces, server-side rendering, and zero cumulative layout shifts.
+                                        </p>
+                                        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">React 19</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">Next.js 15</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">TypeScript</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">GSAP Motion</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">Tailwind CSS</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-card effectFade fadeUp no-div" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 24px;">
+                                        <h5 style="color: #fff; font-size: 16px; font-weight: 600; margin-bottom: 8px;">Backend Core Runtimes</h5>
+                                        <p style="color: rgba(255, 255, 255, 0.5); font-size: 13px; line-height: 1.6; margin-bottom: 16px;">
+                                            Lean native Node.js core runtimes booting in single-digit ms without third-party bloat.
+                                        </p>
+                                        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">Native Node.js (Core)</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">Serverless Handlers</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">REST APIs</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">Real-Time KDS</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-card effectFade fadeUp no-div" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 24px;">
+                                        <h5 style="color: #fff; font-size: 16px; font-weight: 600; margin-bottom: 8px;">Data &amp; Edge Caching</h5>
+                                        <p style="color: rgba(255, 255, 255, 0.5); font-size: 13px; line-height: 1.6; margin-bottom: 16px;">
+                                            In-memory distributed key-value storage and structured relational data management.
+                                        </p>
+                                        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">Upstash Redis KV</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">Redis Sorted Sets</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">PostgreSQL</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">Connection Pools</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-card effectFade fadeUp no-div" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 24px;">
+                                        <h5 style="color: #fff; font-size: 16px; font-weight: 600; margin-bottom: 8px;">Security &amp; Compliance</h5>
+                                        <p style="color: rgba(255, 255, 255, 0.5); font-size: 13px; line-height: 1.6; margin-bottom: 16px;">
+                                            HMAC-SHA256 request authentication, anti-replay nonces, and India DPDP Act 2023 compliance.
+                                        </p>
+                                        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">HMAC-SHA256</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">India DPDP Act 2023</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">Razorpay &amp; UPI</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #fff; font-size: 12px; padding: 4px 10px; border-radius: 6px;">Zero Tracker Leakage</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Tech Stack -->
+
+                            <!-- Section 07: Testimonials & Client Feedback -->
+                            <div id="testimonial" class="section-testimonial flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-tes"></i>
+                                    Verified Production Feedback
+                                </div>
+                                <div class="heading overflow-hidden">
+                                    <div class="head-left">
+                                        <h4 class="s-title letter-space--2 text-black-72 split-text effect-blur-fade">
+                                            Here’s what operators <br class="d-none d-lg-block">
+                                            &amp; partners say
+                                        </h4>
+                                        <div class="box-counter effectFade fadeUp no-div">
+                                            <div class="wg-counter">
+                                                <p class="counter h1 d-flex font-2 letter-space--2 text-black-72">
+                                                    <span class="number" data-speed="1000" data-to="100">100</span>
+                                                    %
+                                                </p>
+                                                <p class="text text-black-56">Test Pass Rate (71/71)</p>
+                                            </div>
+                                            <div class="wg-counter">
+                                                <p class="counter h1 d-flex font-2 letter-space--2 text-black-72">
+                                                    &lt;<span class="number" data-speed="1000" data-to="10">10</span>
+                                                    ms
+                                                </p>
+                                                <p class="text text-black-56">KV Edge Latency</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div dir="ltr" class="swiper sw-main-image effectFade fadeRight no-div">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="head-image">
+                                                    <div class="wrap-image">
+                                                        <img loading="lazy" width="236" height="297" src="/assets/images/section/coffee_preview.jpg" alt="Coffee Review" style="object-fit: cover;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="head-image">
+                                                    <div class="wrap-image">
+                                                        <img loading="lazy" width="236" height="297" src="/assets/images/section/fitness_preview.jpg" alt="Fitness Review" style="object-fit: cover;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-testimonial_wrap effectFade fadeUp no-div">
+                                    <div dir="ltr" class="swiper tf-swiper swiper-testimonial">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="testimonial-v01">
+                                                    <div class="tes-icon"><i class="icon icon-quote"></i></div>
+                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                        “Pratyush engineered our cafe’s entire QR dining platform and Kitchen Display System from scratch. The instant audio chimes and sub-second order processing completely transformed our rush hours.”
+                                                    </h5>
+                                                    <div class="tes-author">
+                                                        <p class="author_name fw-medium text-black-72">Operations Lead</p>
+                                                        <p class="text-body-3 text-black-56">Coffee &amp; Cravings, Patna</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="testimonial-v01">
+                                                    <div class="tes-icon"><i class="icon icon-quote"></i></div>
+                                                    <h5 class="tes-text letter-space--2 text-black-72">
+                                                        “The performance on India Fitness is outstanding. 60FPS fluid transitions with Next.js 15 and PostgreSQL gave our athletes an instantaneous web portal that feels like a native mobile app.”
+                                                    </h5>
+                                                    <div class="tes-author">
+                                                        <p class="author_name fw-medium text-black-72">Platform Director</p>
+                                                        <p class="text-body-3 text-black-56">India Fitness Portal</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="number-pagination"></div>
+                                    <div class="group-btn">
+                                        <div class="sw-nav sw-nav-prev link"><i class="icon icon-arrow-caret-left"></i></div>
+                                        <div class="sw-nav sw-nav-next link"><i class="icon icon-arrow-caret-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Testimonial -->
+
+                            <!-- Section 08: Contact -->
+                            <div id="contact" class="section-contact flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-send"></i>
+                                    Initiate Connection
+                                </div>
+                                <h4 class="s-title letter-space--2 split-text effect-blur-fade">
+                                    Have a project in mind, <br class="d-none d-lg-block">
+                                    need a custom platform, or consultation? <br class="d-none d-lg-block">
+                                    Send a message below
+                                </h4>
+                                <form class="form-contact" id="contactform" method="post" novalidate="novalidate">
+                                    <input type="hidden" name="access_key" value="c1cefa47-9b89-476b-8bd1-ada665d42bea">
+                                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                    <div class="form-content effectFade fadeUp no-div">
+                                        <fieldset class="field-ip">
+                                            <input type="text" name="name" id="name" placeholder="Your Name *" required>
+                                        </fieldset>
+                                        <fieldset class="field-ip">
+                                            <input type="email" name="email" id="email" placeholder="Your Email Channel *" required>
+                                        </fieldset>
+                                        <fieldset class="field-ip">
+                                            <input type="text" name="message" id="message" placeholder="Tell me about your project or inquiry *" required>
+                                        </fieldset>
+                                    </div>
+                                    <div class="form-action effectFade fadeUp no-div">
+                                        <div class="send-wrap">
+                                            <button type="submit" class="tf-btn animate-btn animate-dark">
+                                                <span class="text-body-3">Send Message ↗</span>
+                                            </button>
+                                        </div>
+                                        <a href="mailto:admin@knownaspratyush.online" class="text-body-1 link letter-space--2 text-black-72">
+                                            admin@knownaspratyush.online
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /Contact -->
+
+                            <!-- Section 09: FAQ / Search Engine Directives (Sleek Minimal Accordion) -->
+                            <div id="faq" class="section-faq" style="margin-top: 48px; margin-bottom: 24px; padding-top: 36px; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px;">
+                                    <span class="text-caption text-black-56" style="letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px;">
+                                        Frequently Asked Questions
+                                    </span>
+                                    <span class="text-caption text-black-56" style="font-size: 11px;">
+                                        AI &amp; Knowledge Index
+                                    </span>
+                                </div>
+                                <div class="faq-accordion" style="display: flex; flex-direction: column; gap: 8px;">
+                                    <details style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 10px; padding: 12px 18px; cursor: pointer; transition: all 0.2s ease;">
+                                        <summary style="font-size: 13px; font-weight: 500; color: rgba(255, 255, 255, 0.85); list-style: none; display: flex; justify-content: space-between; align-items: center; user-select: none;">
+                                            <span>Who is Pratyush Kumar?</span>
+                                            <span style="color: #00d4ff; font-size: 15px; font-weight: 300;">+</span>
+                                        </summary>
+                                        <p style="font-size: 12px; color: rgba(255, 255, 255, 0.55); line-height: 1.6; margin: 10px 0 0 0; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.04);">
+                                            Pratyush Kumar (KNOWNASPRATYUSH) is a Full-Stack Web Developer and Founder of CARTNOVA based in Patna, Bihar, India. He builds high-speed ordering engines, 60FPS fluid web applications with React 19/Next.js 15, zero-dependency Node.js core runtimes, and sub-10ms Redis caching layers.
+                                        </p>
+                                    </details>
+                                    <details style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 10px; padding: 12px 18px; cursor: pointer; transition: all 0.2s ease;">
+                                        <summary style="font-size: 13px; font-weight: 500; color: rgba(255, 255, 255, 0.85); list-style: none; display: flex; justify-content: space-between; align-items: center; user-select: none;">
+                                            <span>What flagship production systems has Pratyush engineered?</span>
+                                            <span style="color: #00d4ff; font-size: 15px; font-weight: 300;">+</span>
+                                        </summary>
+                                        <p style="font-size: 12px; color: rgba(255, 255, 255, 0.55); line-height: 1.6; margin: 10px 0 0 0; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.04);">
+                                            Pratyush has engineered two live flagship systems: <a href="https://www.coffeeandcravings.shop/" target="_blank" rel="noopener noreferrer" style="color: #00d4ff;">Coffee &amp; Cravings</a> (artisan dining and QR table ordering platform with native Node.js core, Upstash Redis KV, HMAC-SHA256 tokens, and 71/71 automated tests passing); and <a href="https://india-fitness.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: #00d4ff;">India Fitness</a> (high-velocity athletics portal built with Next.js 15, PostgreSQL, and GSAP for locked 60FPS fluid transitions).
+                                        </p>
+                                    </details>
+                                    <details style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 10px; padding: 12px 18px; cursor: pointer; transition: all 0.2s ease;">
+                                        <summary style="font-size: 13px; font-weight: 500; color: rgba(255, 255, 255, 0.85); list-style: none; display: flex; justify-content: space-between; align-items: center; user-select: none;">
+                                            <span>What web development services does Pratyush Kumar offer?</span>
+                                            <span style="color: #00d4ff; font-size: 15px; font-weight: 300;">+</span>
+                                        </summary>
+                                        <p style="font-size: 12px; color: rgba(255, 255, 255, 0.55); line-height: 1.6; margin: 10px 0 0 0; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.04);">
+                                            Full-stack web engineering, custom reactive UI development (React 19, Next.js 15), zero-dependency Node.js core microservices, sub-10ms Upstash Redis in-memory caching architectures, payment gateway integrations (Razorpay and dynamic UPI), and statutory compliance auditing under India's DPDP Act 2023.
+                                        </p>
+                                    </details>
+                                    <details style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 10px; padding: 12px 18px; cursor: pointer; transition: all 0.2s ease;">
+                                        <summary style="font-size: 13px; font-weight: 500; color: rgba(255, 255, 255, 0.85); list-style: none; display: flex; justify-content: space-between; align-items: center; user-select: none;">
+                                            <span>Why zero-dependency Node.js backends?</span>
+                                            <span style="color: #00d4ff; font-size: 15px; font-weight: 300;">+</span>
+                                        </summary>
+                                        <p style="font-size: 12px; color: rgba(255, 255, 255, 0.55); line-height: 1.6; margin: 10px 0 0 0; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.04);">
+                                            Guided by Edsger W. Dijkstra’s principle that "Simplicity is prerequisite for reliability", writing backend microservices with native Node.js core runtimes (http, crypto, fs) cuts bundle sizes by up to 90%, eliminates supply-chain vulnerabilities, and enables single-digit millisecond cold boot times.
+                                        </p>
+                                    </details>
+                                    <details style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 10px; padding: 12px 18px; cursor: pointer; transition: all 0.2s ease;">
+                                        <summary style="font-size: 13px; font-weight: 500; color: rgba(255, 255, 255, 0.85); list-style: none; display: flex; justify-content: space-between; align-items: center; user-select: none;">
+                                            <span>Does Pratyush take freelance projects in Patna and globally?</span>
+                                            <span style="color: #00d4ff; font-size: 15px; font-weight: 300;">+</span>
+                                        </summary>
+                                        <p style="font-size: 12px; color: rgba(255, 255, 255, 0.55); line-height: 1.6; margin: 10px 0 0 0; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.04);">
+                                            Yes. Locally based in Patna, Bihar (serving Boring Road, Bailey Road, Kankarbagh, Sipara, Kurthaul, Sampatchak, and Patliputra) and working remotely with clients across India (Bengaluru, Delhi NCR, Mumbai, Hyderabad, Pune) and internationally (USA, UK, Europe, UAE).
+                                        </p>
+                                    </details>
+                                    <details style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 10px; padding: 12px 18px; cursor: pointer; transition: all 0.2s ease;">
+                                        <summary style="font-size: 13px; font-weight: 500; color: rgba(255, 255, 255, 0.85); list-style: none; display: flex; justify-content: space-between; align-items: center; user-select: none;">
+                                            <span>How can I hire or contact Pratyush Kumar?</span>
+                                            <span style="color: #00d4ff; font-size: 15px; font-weight: 300;">+</span>
+                                        </summary>
+                                        <p style="font-size: 12px; color: rgba(255, 255, 255, 0.55); line-height: 1.6; margin: 10px 0 0 0; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.04);">
+                                            Submit a project scope via the contact form above or email directly at <a href="mailto:admin@knownaspratyush.online" style="color: #00d4ff;">admin@knownaspratyush.online</a>. You can also view open-source code on <a href="https://github.com/KNOWNASPRATYUSH" target="_blank" rel="noopener noreferrer" style="color: #00d4ff;">GitHub</a> and connect on <a href="https://www.instagram.com/knownaspratyush_/" target="_blank" rel="noopener noreferrer" style="color: #00d4ff;">Instagram</a>.
+                                        </p>
+                                    </details>
+                                </div>
+                            </div>
+                            <!-- /FAQ -->
+
+                            <!-- Footer -->
+                            <div id="footer" class="tf-footer flat-spacing">
+                                <div class="block-quote effectFade fadeUp no-div">
+                                    <h5 class="quote-text font-3 fw-normal text-black-72">
+                                        <span class="text-black-56">“</span>
+                                        Simplicity is prerequisite for reliability.
+                                        <span class="text-black-56">”</span>
+                                    </h5>
+                                    <p class="quote-author font-3 text-black-56 h6 text-end">
+                                        Edsger W. Dijkstra
+                                    </p>
+                                </div>
+                                <div class="br-line"></div>
+                                <div class="foot-inner">
+                                    <div class="isak effectFade fadeUp no-div">
+                                        <h2 style="font-size: 54px; font-weight: 800; letter-spacing: -0.04em; margin: 0; color: #fff;">PRATYUSH</h2>
+                                    </div>
+                                </div>
+                                <div class="foot-bottom">
+                                    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px;">
+                                        <a href="/about" style="color: rgba(255,255,255,0.7); font-size: 13px; text-decoration: none;">About</a>
+                                        <span style="color: rgba(255,255,255,0.2);">&bull;</span>
+                                        <a href="/work" style="color: rgba(255,255,255,0.7); font-size: 13px; text-decoration: none;">Work &amp; Case Studies</a>
+                                        <span style="color: rgba(255,255,255,0.2);">&bull;</span>
+                                        <a href="/services" style="color: rgba(255,255,255,0.7); font-size: 13px; text-decoration: none;">Services</a>
+                                        <span style="color: rgba(255,255,255,0.2);">&bull;</span>
+                                        <a href="/contact" style="color: rgba(255,255,255,0.7); font-size: 13px; text-decoration: none;">Contact</a>
+                                    </div>
+                                    <p class="text-nocopy text-black-56 effectFade fadeUp no-div">
+                                        All rights reserved &bull; Designed &amp; Engineered by Pratyush Kumar<br>
+                                        &copy; 2026 Patna, Bihar, India
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- /Footer -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Essential Javascript Plugins -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.nice-select.min.js"></script>
+    <script src="/assets/js/jquery-validate.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script src="/assets/js/carousel.js"></script>
+    <script src="/assets/js/infinityslide.js"></script>
+    <script src="/assets/js/ScrollSmooth.js"></script>
+    <script src="/assets/js/gsap.min.js"></script>
+    <script src="/assets/js/SplitText.min.js"></script>
+    <script src="/assets/js/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/ScrollToPlugin.min.js"></script>
+    <script src="/assets/js/gsapAnimation.js"></script>
+    <script src="/assets/js/countto.js"></script>
+    <script src="/assets/js/animation-change-text.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+
 </html>

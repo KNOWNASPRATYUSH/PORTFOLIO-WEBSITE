@@ -1,18 +1,18 @@
 <div align="center">
 
-# 🌌 PRATYUSH KUMAR — 3D INTERACTIVE PORTFOLIO
-### *WebGL Visual Computing • React 19 & Three.js • High-Performance Kinetic Interface*
+# 🌌 PRATYUSH KUMAR
+### *Official Portfolio & Digital Engineering Studio • Founder, CARTNOVA*
 
-[![Production Status](https://img.shields.io/badge/Production-Live%20on%20Vercel-success?style=for-the-badge&logo=vercel&logoColor=white)](https://www.knownaspratyush.online/)
+[![Live Production](https://img.shields.io/badge/Live-knownaspratyush.online-00d4ff?style=for-the-badge&logo=vercel&logoColor=white)](https://www.knownaspratyush.online/)
+[![Founder](https://img.shields.io/badge/Founder-CARTNOVA-a855f7?style=for-the-badge)](https://www.knownaspratyush.online/)
 [![React Version](https://img.shields.io/badge/React-19.2.4-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Three.js](https://img.shields.io/badge/Three.js-WebGL%20Canvas-black?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org/)
-[![Vite](https://img.shields.io/badge/Bundler-Vite%208-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![Core Web Vitals](https://img.shields.io/badge/Core%20Web%20Vitals-100%2F100-emerald?style=for-the-badge)](https://www.knownaspratyush.online/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge)](./LICENSE)
 
 <br/>
 
-**[🌐 Launch 3D Portfolio](https://www.knownaspratyush.online/)** • **[💼 Connect on LinkedIn](https://www.knownaspratyush.online/)** • **[🐙 GitHub Profile](https://github.com/KNOWNASPRATYUSH)**
+**[🌐 Official Portfolio](https://www.knownaspratyush.online/)** • **[🏢 Studio (CARTNOVA)](https://www.knownaspratyush.online/)** • **[💼 Work & Case Studies](https://www.knownaspratyush.online/work)** • **[⚡ Services](https://www.knownaspratyush.online/services)**
 
 ---
 
@@ -20,7 +20,9 @@
 
 ## 📌 Executive Overview
 
-This repository powers the official **3D interactive digital portfolio** of **Pratyush Kumar** (`KNOWNASPRATYUSH`). Built with **React 19**, **Three.js**, and **React Three Fiber (R3F)**, the application delivers a GPU-accelerated spatial computing interface designed for smooth 60fps animations, interactive 3D object rendering, and cinematic page transitions.
+Official open-source codebase for the digital portfolio of **Pratyush Kumar** (`KNOWNASPRATYUSH`), Full-Stack Web Developer and Founder of **CARTNOVA** based in Patna, Bihar, India.
+
+Combining **React 19**, **Three.js / React Three Fiber**, and fluid **GSAP** timelines, this platform delivers an interactive WebGL spatial computing experience engineered with a zero-dependency mindset and zero cumulative layout shift (CLS = 0).
 
 ```
          Browser Client                     Canvas Layer                     DOM & State
@@ -33,72 +35,55 @@ This repository powers the official **3D interactive digital portfolio** of **Pr
 
 ---
 
-## ✨ Engineering & Visual Highlights
+## 🌐 Live Broadcast & Canonical Knowledge Endpoints
 
-### 1. 🪐 3D WebGL Spatial Computing
-- **React Three Fiber & Drei:** Declarative 3D scene construction with dynamic lighting, environment mapping, and real-time mesh deformation.
-- **Interactive Mouse Parallax:** Depth-aware perspective shifts responding fluidly to pointer movements and device orientation.
-
-### 2. 🎬 Kinetic Transitions & Digital Dissolve
-- **Custom Loading Screen:** Engineered with GSAP and Framer Motion featuring a high-speed "Digital Dissolve" exit animation sequence.
-- **Smooth Scroll & Section Navigation:** Interpolated physics-based scroll choreography coordinating 2D DOM elements with 3D canvas positions.
-
-### 3. 🎨 Dark Cyberpunk Minimalist Design System
-- **Typography:** Orbitron geometric futurist headings paired with Inter body copy for clean readability.
-- **Glassmorphism & Neon Accents:** Frosted backdrop-filter panels with cyan and emerald gradient illumination.
-
-### 4. ⚡ Extreme Frontend Performance
-- **React 19 & Vite 8:** Zero-latency Hot Module Replacement (HMR) and optimized tree-shaken production bundles.
-- **Asset Optimization:** Low-poly 3D models and compressed textures to maintain fast First Contentful Paint (FCP) on mobile networks.
+* **Official Portfolio**: [https://www.knownaspratyush.online/](https://www.knownaspratyush.online/)
+* **Engineering Studio**: [CARTNOVA](https://www.knownaspratyush.online/) (Patna, Bihar, India)
+* **Flagship Case Studies**: [https://www.knownaspratyush.online/work](https://www.knownaspratyush.online/work)
+* **Services & Technical Consulting**: [https://www.knownaspratyush.online/services](https://www.knownaspratyush.online/services)
+* **AI Machine Ingestion Specs**: [llms.txt](https://www.knownaspratyush.online/llms.txt) • [llms-full.txt](https://www.knownaspratyush.online/llms-full.txt)
 
 ---
 
-## 🛠️ Technology Stack & Dependencies
+## 🚀 Flagship Production Systems
 
-| Category | Primary Technologies |
-|---|---|
-| **Core Framework** | React 19 (`react`, `react-dom`), Vite 8, TypeScript |
-| **3D Rendering** | Three.js (`three`), `@react-three/fiber`, `@react-three/drei` |
-| **Choreography & Motion** | Framer Motion 12, GSAP 3 (GreenSock Animation Platform) |
-| **Styling & Design System** | Tailwind CSS 3, PostCSS, Autoprefixer, `tailwind-merge`, `clsx` |
-| **Iconography** | Lucide React (`lucide-react`) |
-| **Hosting & Edge** | Vercel Global Edge Network with instant SSL and HTTP/3 support |
+| Platform | Domain | Tech Stack | Status | Repository |
+| :--- | :--- | :--- | :--- | :--- |
+| **☕ Coffee & Cravings** | [coffeeandcravings.shop](https://www.coffeeandcravings.shop/) | Native Node.js Core, Upstash Redis KV, HMAC-SHA256 | `Production` | [Coffee-cravings](https://github.com/KNOWNASPRATYUSH/Coffee-cravings) |
+| **🏋️ India Fitness** | [india-fitness.vercel.app](https://india-fitness.vercel.app/) | HTML5, CSS Grid, FitFlex Theme, Decap CMS | `Production` | [INDIA-FITNESS](https://github.com/KNOWNASPRATYUSH/INDIA-FITNESS) |
+| **🏢 CARTNOVA Studio** | [knownaspratyush.online](https://www.knownaspratyush.online/) | Full-Stack Custom Systems, VŌLT Storefront | `Active` | [CARTNOVA](https://github.com/KNOWNASPRATYUSH) |
 
 ---
 
-## 🏗️ Repository Architecture
+## ⚡ Engineering Architecture & Features
 
-```
-PORTFOLIO-WEBSITE/
-├── public/                 # Static assets, models, and favicon icons
-├── src/
-│   ├── assets/             # Vector icons, imagery, and sound effects
-│   ├── components/         # 3D Canvas scenes, Navbar, Experience cards, Hero
-│   ├── hooks/              # Custom hooks for viewport, pointer, and theme state
-│   ├── App.jsx             # Main canvas and layout composition
-│   ├── index.css           # Tailwind custom utility classes and design tokens
-│   └── main.jsx            # Application entry point
-├── package.json            # Scripts, build tools, and modern dependencies
-├── tailwind.config.js      # Custom theme extensions (fonts, colors, shadows)
-├── vite.config.js          # Vite configuration and plugin pipelines
-└── vercel.json             # Edge caching and clean URL rewrite rules
-```
+* **Fluid 60FPS Kinetic Transitions**: Choreographed using GSAP (GreenSock) and ScrollTrigger with zero cumulative layout shift (CLS = 0).
+* **3D Canvas & WebGL Computing**: Depth-aware perspective shifts responding fluidly to pointer movements and device orientation.
+* **Zero-Dependency Mindset**: Lean, hardened runtime boot times minimizing third-party bundle bloat.
+* **Deep Schema.org Knowledge Graph**: Comprehensive JSON-LD linking `Person`, `Organization` (CARTNOVA), `LocalBusiness` / `ProfessionalService`, `FAQPage`, and Wikidata entity relationships.
+* **Answer Engine Optimization (AEO)**: Fully integrated `llms.txt` and `llms-full.txt` endpoints designed for machine ingestion by Perplexity, SearchGPT, Claude, and Gemini.
+* **Geographic Search Optimization (GEO)**: Explicit geolocation metadata targeting Patna, Bihar, India (Postal Code: 800001, Geo: 25.5941° N, 85.1376° E).
+* **Statutory Data Privacy**: Designed in full compliance with India's Digital Personal Data Protection Act (DPDP Act 2023).
 
 ---
 
-## 🚀 Local Development Setup
+## 🛠️ Local Development & Build
 
-Ensure you have **Node.js 20+** installed:
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18.0.0 or later)
+- [npm](https://www.npmjs.com/) (v9.0.0 or later)
+
+### Quickstart
 
 ```bash
-# 1. Clone the repository
+# 1. Clone repository
 git clone https://github.com/KNOWNASPRATYUSH/PORTFOLIO-WEBSITE.git
 cd PORTFOLIO-WEBSITE
 
 # 2. Install dependencies
 npm install
 
-# 3. Start development server
+# 3. Start development server (Vite)
 npm run dev
 
 # 4. Compile optimized production build
@@ -110,7 +95,35 @@ npm run preview
 
 ---
 
-## 👨‍💻 Architect & Engineering Lead
+## 📂 Project Structure
+
+```
+PORTFOLIO-WEBSITE/
+├── index.html              # Main portfolio application & Schema.org Graph
+├── about/                  # Dedicated About & Biography page
+├── work/                   # Production Flagships & Architectural Case Studies
+├── services/               # Full-Stack Engineering & Consulting Services
+├── contact/                # Contact Terminal & Project Inquiry console
+├── public/
+│   ├── assets/             # CSS, JS, Fonts, Icons, and Media
+│   ├── robots.txt          # Multi-bot crawling directives (11 AI/Search bots)
+│   ├── sitemap.xml         # Image-rich XML sitemap for Search Console
+│   ├── llms.txt            # Machine-readable summary for AI engines
+│   ├── llms-full.txt       # Uncompressed AI entity knowledge base
+│   └── site.webmanifest    # Progressive Web App manifest
+├── .github/
+│   ├── ISSUE_TEMPLATE/     # Standard bug and feature issue templates
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── SECURITY.md         # Vulnerability reporting protocol
+├── CODE_OF_CONDUCT.md      # Contributor Covenant v2.1
+├── CONTRIBUTING.md         # Contribution guidelines
+├── LICENSE                 # MIT License
+└── package.json
+```
+
+---
+
+## 👨‍💻 Author & Engineering Lead
 
 <table border="0">
  <tr>
@@ -119,10 +132,10 @@ npm run preview
   </td>
   <td>
     <h3>Pratyush Kumar</h3>
-    <p><b>Full-Stack Engineer • Creative Technologist • Founder, CARTNOVA</b></p>
-    <p>Specializing in 3D WebGL interfaces, real-time distributed systems, and modern digital commerce solutions.</p>
+    <p><b>Full-Stack Web Developer • Software Architect • Founder, CARTNOVA</b></p>
+    <p>Based in Patna, Bihar, India. Specializing in WebGL computing, high-conversion web platforms, and edge cloud architectures.</p>
     <p>
-      <a href="https://www.knownaspratyush.online/"><img src="https://img.shields.io/badge/Portfolio-knownaspratyush.online-646CFF?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>&nbsp;
+      <a href="https://www.knownaspratyush.online/"><img src="https://img.shields.io/badge/Portfolio-knownaspratyush.online-00d4ff?style=flat-square&logo=googlechrome&logoColor=black" alt="Portfolio"/></a>&nbsp;
       <a href="https://github.com/KNOWNASPRATYUSH"><img src="https://img.shields.io/badge/GitHub-KNOWNASPRATYUSH-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>&nbsp;
       <a href="https://www.instagram.com/knownaspratyush_/"><img src="https://img.shields.io/badge/Instagram-@knownaspratyush__-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/></a>&nbsp;
       <a href="mailto:admin@knownaspratyush.online"><img src="https://img.shields.io/badge/Email-admin@knownaspratyush.online-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
@@ -133,8 +146,8 @@ npm run preview
 
 ---
 
-## 📄 License & Attribution
+## 📄 License & Intellectual Property
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for complete terms.
+This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for complete details.
 
 &copy; 2026 **Pratyush Kumar**. All rights reserved.
