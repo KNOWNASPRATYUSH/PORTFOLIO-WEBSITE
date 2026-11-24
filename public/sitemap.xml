@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Main Portfolio Homepage -->
   <url>
     <loc>https://pratyush-portfolio.vercel.app/</loc>
     <lastmod>2026-11-24</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://pratyush-portfolio.vercel.app/og-image.jpg</image:loc>
@@ -13,13 +15,13 @@
     </image:image>
     <image:image>
       <image:loc>https://pratyush-portfolio.vercel.app/assets/images/section/coffee_preview.jpg</image:loc>
-      <image:title>Coffee &amp; Cravings — Live Artisan Dining &amp; QR Ordering Platform</image:title>
-      <image:caption>Production dining system engineered with zero-dependency Node.js core, Upstash Redis, and HMAC-signed QR ordering by Pratyush Kumar.</image:caption>
+      <image:title>Coffee &amp; Cravings — Live Artisan Dining Platform</image:title>
+      <image:caption>Production dining system engineered with zero-dependency Node.js core, Upstash Redis, and HMAC QR ordering.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://pratyush-portfolio.vercel.app/assets/images/section/fitness_preview.jpg</image:loc>
       <image:title>India Fitness — High Performance Athletics Platform</image:title>
-      <image:caption>Digital athletics web platform for Patna premier gym destination engineered with Next.js 15, PostgreSQL, and GSAP motion by Pratyush Kumar.</image:caption>
+      <image:caption>Digital athletics web platform for Patna premier gym destination engineered with Next.js 15, PostgreSQL, and GSAP motion.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://pratyush-portfolio.vercel.app/assets/images/avatar/avatar.png</image:loc>
@@ -27,4 +29,52 @@
       <image:caption>Pratyush Kumar, Freelance Web Developer and Full Stack Software Engineer in Patna, Bihar, India.</image:caption>
     </image:image>
   </url>
+
+  <!-- Dedicated Work & Flagships Case Studies Page -->
+  <url>
+    <loc>https://pratyush-portfolio.vercel.app/work</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pratyush-portfolio.vercel.app/assets/images/section/coffee_preview.jpg</image:loc>
+      <image:title>Coffee &amp; Cravings Architectural Case Study</image:title>
+      <image:caption>Artisan dining platform with zero-dep Node core and KDS.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://pratyush-portfolio.vercel.app/assets/images/section/fitness_preview.jpg</image:loc>
+      <image:title>India Fitness Platform Showcase</image:title>
+      <image:caption>Next.js 15 athletics portal with 60FPS fluid transitions.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Dedicated About Page -->
+  <url>
+    <loc>https://pratyush-portfolio.vercel.app/about</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pratyush-portfolio.vercel.app/assets/images/avatar/avatar.png</image:loc>
+      <image:title>About Pratyush Kumar</image:title>
+      <image:caption>Biography, systems philosophy, and career milestones of Pratyush Kumar.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Dedicated Services Page -->
+  <url>
+    <loc>https://pratyush-portfolio.vercel.app/services</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Dedicated Contact Page -->
+  <url>
+    <loc>https://pratyush-portfolio.vercel.app/contact</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
