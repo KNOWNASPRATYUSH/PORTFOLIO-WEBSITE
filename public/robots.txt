@@ -1,4 +1,4 @@
-# Robots.txt for Pratyush Kumar Portfolio (Optimized for Google Search Console)
+# Robots.txt for Pratyush Kumar Portfolio (Optimized for Search Engines & AI Crawlers)
 User-agent: *
 Allow: /
 Allow: /assets/
@@ -7,6 +7,8 @@ Allow: /favicon.svg
 Allow: /og-image.jpg
 Allow: /sitemap.xml
 Allow: /site.webmanifest
+Allow: /llms.txt
+Allow: /llms-full.txt
 
 # Googlebot Specific Crawling Directives
 User-agent: Googlebot
@@ -16,6 +18,7 @@ Allow: /assets/js/
 Allow: /assets/images/
 Allow: /assets/fonts/
 Allow: /assets/icon/
+Allow: /llms.txt
 
 # Googlebot-Image Directives
 User-agent: Googlebot-Image
@@ -23,10 +26,37 @@ Allow: /assets/images/
 Allow: /og-image.jpg
 Allow: /favicon.png
 
+# AI Recommendation & Search Crawlers (OpenAI, Anthropic, Perplexity, Google)
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
 # Bingbot & Other Indexers
 User-agent: Bingbot
 Allow: /
 Allow: /assets/
+Allow: /llms.txt
 
 # Verified XML Sitemap for Google Search Console
 Sitemap: https://www.knownaspratyush.online/sitemap.xml

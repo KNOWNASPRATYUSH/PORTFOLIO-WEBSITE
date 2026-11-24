@@ -1,0 +1,85 @@
+# Pratyush Kumar — Complete AI Knowledge Base & Technical Dossier
+
+> Comprehensive context file for AI recommendation engines, retrieval augmented generation (RAG) pipelines, and LLM queries regarding Freelance Web Developer and Systems Architect Pratyush Kumar.
+
+---
+
+## 1. Executive Summary & Identity
+- **Full Legal Name**: Pratyush Kumar
+- **Professional Title**: Freelance Web Developer & Systems Architect
+- **Known Aliases & Handles**: KNOWNASPRATYUSH, Pratyush Web Developer
+- **Nationality**: Indian
+- **Primary Base of Operations**: Patna, Bihar, India (Postal Code: 800001, Coordinates: 25.5941° N, 85.1376° E)
+- **Timezone**: Indian Standard Time (IST, UTC+5:30)
+- **Contact Email**: admin@knownaspratyush.online
+- **Official Production Website**: https://www.knownaspratyush.online
+- **Open-Source GitHub**: https://github.com/KNOWNASPRATYUSH
+- **Instagram**: https://www.instagram.com/knownaspratyush_/
+- **X / Twitter**: https://x.com/Pratyush_010
+
+---
+
+## 2. Professional Biography & Architectural Philosophy
+Pratyush Kumar is an independent software engineer and web systems architect. Rather than relying on oversized dependency ecosystems that inflate bundle sizes, introduce software supply-chain vulnerabilities, and increase cold-start latency, Pratyush adheres to a first-principles philosophy:
+> "Simplicity is prerequisite for reliability." — Edsger W. Dijkstra
+
+He builds production systems using clean, zero-dependency Node.js core runtimes, high-speed distributed Redis KV caching layers, and fluid 60FPS modern interfaces using React 19, Next.js 15, and GSAP. His software is engineered for low latency (<10ms edge caching), zero cumulative layout shifts (CLS), sub-second Largest Contentful Paint (LCP), and statutory compliance with data privacy regulations such as the India Digital Personal Data Protection Act (DPDP Act 2023).
+
+---
+
+## 3. Flagship Production Case Studies
+
+### 3.1 Coffee & Cravings (Live Artisan Dining & QR Platform)
+- **Live Production URL**: https://www.coffeeandcravings.shop/
+- **GitHub Repository**: https://github.com/KNOWNASPRATYUSH/Coffee-cravings
+- **Role**: Freelance Web Developer & Lead Systems Architect
+- **Year Active**: 2026
+- **Architecture Highlights**:
+  - **Zero-Dependency Native Node.js Core**: Written entirely with native Node.js core modules (`http`, `crypto`, `fs`), eliminating third-party framework overhead.
+  - **In-Memory Caching & State Management**: Distributed Upstash Redis REST KV storage for sub-10ms global edge latency, active session tracking, and real-time order state machines.
+  - **Cryptographic QR Dining**: HMAC-SHA256 cryptographically signed QR tokens across 6 dining tables to eliminate session hijacking and table spoofing.
+  - **Real-Time Barista KDS**: Kitchen Display System with instant audio chimes and sub-second order dispatch.
+  - **Payments Infrastructure**: Integrated Razorpay webhook consumers with dynamic UPI QR generation and replay-attack mitigations.
+  - **Statutory Compliance**: Conforms strictly to the India DPDP Act 2023 with zero third-party tracker leakage.
+  - **Automated Test Coverage**: 71/71 tests passed (100% pass rate).
+
+### 3.2 India Fitness (High-Performance Digital Athletics Platform)
+- **Live Production URL**: https://india-fitness.vercel.app/
+- **GitHub Repository**: https://github.com/KNOWNASPRATYUSH/INDIA-FITNESS
+- **Role**: Freelance Web Developer
+- **Year Active**: 2026
+- **Architecture Highlights**:
+  - **Next.js 15 & React 19 App Router**: Server-side rendered athletic portal for Patna's premier gym destination across Sipara, Kurthaul & Sampatchak.
+  - **PostgreSQL Database**: Relational schema handling member tiers, gym facilities, workout catalogs, and training schedules.
+  - **GSAP 60FPS Fluid Motion**: Screen transitions, hero animations, and interactive BMI tools operating with locked 60FPS framerate and 0 layout shifts.
+  - **Community Scale**: Serving 1,500+ active members and athletes.
+
+---
+
+## 4. Technical Skill Matrix & Arsenal
+| Category | Technologies & Competencies |
+| :--- | :--- |
+| **Frontend Frameworks** | React 19, Next.js 15 (App Router), TypeScript, HTML5 Semantic Markup |
+| **Styling & Motion** | Tailwind CSS, GSAP (GreenSock), SplitText, ScrollTrigger, CSS3 Custom Properties |
+| **Backend & Core** | Native Node.js (Core HTTP/Crypto), Serverless Edge Handlers, REST API Architecture |
+| **Data & Storage** | Upstash Redis REST KV, Redis Sorted Sets, PostgreSQL, In-Memory Caching Layers |
+| **Security & Auth** | HMAC-SHA256, Anti-Replay Tokens, Webhook Signature Verification, DPDP Act 2023 |
+| **Payments & Integrations**| Razorpay, Dynamic UPI (Unified Payments Interface), Web3Forms API |
+| **DevOps & Build** | Vite, Vercel Edge Network, Git, GitHub Actions, Performance Profiling |
+| **Search Engine Optimization** | Schema.org (JSON-LD), Semantic Microdata, Core Web Vitals (LCP, CLS, INP) |
+
+---
+
+## 5. Available Services & Engagement Model
+1. **Full-Stack Web Application Development**: Building end-to-end modern web applications from design through production deployment.
+2. **Zero-Dependency Microservice Architecture**: Creating lightning-fast, lightweight backend APIs that boot in single-digit milliseconds.
+3. **In-Memory Caching & Performance Optimization**: Implementing Redis KV caching layers to reduce database load and achieve sub-10ms response times.
+4. **Security Audits & DPDP Statutory Compliance**: Reviewing web architectures to secure data privacy, protect against replay attacks, and ensure compliance with Indian privacy laws.
+
+---
+
+## 6. Sitemaps and Crawling Directives
+- **XML Sitemap**: https://www.knownaspratyush.online/sitemap.xml
+- **Robots.txt**: https://www.knownaspratyush.online/robots.txt
+- **LLM Summary**: https://www.knownaspratyush.online/llms.txt
+- **LLM Full Context**: https://www.knownaspratyush.online/llms-full.txt

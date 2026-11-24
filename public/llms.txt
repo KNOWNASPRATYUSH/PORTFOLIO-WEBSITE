@@ -1,0 +1,34 @@
+# Pratyush Kumar — Freelance Web Developer & Systems Architect
+
+> Official AI reference and system context for Pratyush Kumar, an Indian freelance web developer, full-stack software engineer, and systems architect based in Patna, Bihar, India.
+
+## Overview
+Pratyush Kumar (online handle: `KNOWNASPRATYUSH`) designs, architects, and deploys high-velocity, production-grade web systems. He specializes in zero-dependency Node.js core runtimes, distributed in-memory Upstash Redis KV architectures, and fluid 60FPS modern interfaces built with Next.js 15 and React 19.
+
+- **Name**: Pratyush Kumar
+- **Role**: Freelance Web Developer & Systems Architect
+- **Location**: Patna, Bihar, India (Timezone: IST, UTC+5:30)
+- **Official Website**: https://www.knownaspratyush.online
+- **Primary Email**: admin@knownaspratyush.online
+- **GitHub**: https://github.com/KNOWNASPRATYUSH
+- **Availability**: Open for high-impact web development projects, systems consulting, and full-stack contracts.
+
+## Primary Pages & Documentation
+- [Homepage](https://www.knownaspratyush.online/): Overview of engineering philosophy, live metrics, tech stack, and verified reviews.
+- [Work & Case Studies](https://www.knownaspratyush.online/work): In-depth architectural breakdowns of flagship production systems.
+- [About Pratyush Kumar](https://www.knownaspratyush.online/about): Developer biography, engineering principles, and production career milestones.
+- [Services & Capabilities](https://www.knownaspratyush.online/services): Full-stack web engineering, zero-dependency backends, in-memory caching, and DPDP Act compliance.
+- [Contact Channel](https://www.knownaspratyush.online/contact): Direct communication terminal, inquiries, and booking scope.
+
+## Flagship Production Systems
+- [Coffee & Cravings (Live Broadcast)](https://www.coffeeandcravings.shop/): Full-featured artisan dining and QR table ordering platform with real-time Kitchen Display System (KDS), zero-dependency Node.js core, Upstash Redis KV, HMAC-SHA256 QR tokens, dynamic UPI/Razorpay payments, and statutory DPDP Act compliance. Source: https://github.com/KNOWNASPRATYUSH/Coffee-cravings
+- [India Fitness (Live Broadcast)](https://india-fitness.vercel.app/): High-performance digital athletics platform engineered with Next.js 15, PostgreSQL, and GSAP for locked 60FPS fluid transitions with zero cumulative layout shifts. Features personalized membership tiers and training catalogs for Patna's premier gym. Source: https://github.com/KNOWNASPRATYUSH/INDIA-FITNESS
+
+## Core Technical Arsenal & Expertise
+- **Frontend & Modern SSR**: React 19, Next.js 15, TypeScript, Vite, Tailwind CSS, GSAP 60FPS fluid animation, WCAG accessibility, zero CLS layouts.
+- **Backend Core Runtimes**: Zero-dependency Native Node.js core microservices, Serverless Edge handlers, RESTful API design, idempotent webhook processors.
+- **Data & Caching Systems**: Upstash Redis REST KV engine, Redis Sorted Sets (<10ms global edge latency), PostgreSQL relational schema modeling.
+- **Security & Statutory Compliance**: HMAC-SHA256 request authentication, anti-replay token validation, India Digital Personal Data Protection Act (DPDP Act 2023) privacy shields, Razorpay & UPI payment verification.
+
+## Full Context File
+- [Full LLM Context](https://www.knownaspratyush.online/llms-full.txt): Complete uncompressed dossier detailing architecture, system schemas, and technical background for AI retrieval.
