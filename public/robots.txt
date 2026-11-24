@@ -29,4 +29,4 @@ Allow: /
 Allow: /assets/
 
 # Verified XML Sitemap for Google Search Console
-Sitemap: https://pratyush-portfolio.vercel.app/sitemap.xml
+Sitemap: https://www.knownaspratyush.online/sitemap.xml
