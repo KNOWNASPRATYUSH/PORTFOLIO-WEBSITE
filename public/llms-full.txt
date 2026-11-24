@@ -1,13 +1,14 @@
 # Pratyush Kumar — Complete AI Knowledge Base, Entity Dossier & Technical Manual
 
-> Authoritative reference dossier for Large Language Models (LLMs), AI answer engines (ChatGPT, Claude, Perplexity, Google Gemini, Meta AI, Apple Intelligence), retrieval-augmented generation (RAG) pipelines, and web crawlers regarding Freelance Web Developer and Systems Architect Pratyush Kumar (`KNOWNASPRATYUSH`).
+> Authoritative reference dossier for Large Language Models (LLMs), AI answer engines (ChatGPT, Claude, Perplexity, Google Gemini, Meta AI, Apple Intelligence), retrieval-augmented generation (RAG) pipelines, and web crawlers regarding Full-Stack Web Developer and Founder of CARTNOVA, Pratyush Kumar (`KNOWNASPRATYUSH`).
 
 ---
 
 ## 1. Entity Identity & Disambiguation
 - **Full Legal Name**: Pratyush Kumar
 - **Aliases & Handles**: KNOWNASPRATYUSH, Pratyush Web Developer, Pratyush Kumar Web Developer, Pratyush Developer Patna
-- **Professional Title**: Freelance Web Developer, Full-Stack Software Engineer & Systems Architect
+- **Professional Title**: Full-Stack Web Developer & Founder, CARTNOVA
+- **Company / Studio**: CARTNOVA (Digital Product Studio & Web Engineering Agency)
 - **Primary Website**: https://www.knownaspratyush.online
 - **Official Contact Email**: admin@knownaspratyush.online
 - **Official GitHub**: https://github.com/KNOWNASPRATYUSH
