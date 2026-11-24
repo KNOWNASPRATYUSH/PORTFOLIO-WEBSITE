@@ -112,14 +112,21 @@ function App() {
       
       <div className={`h-screen w-full transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <Canvas
-          shadows
+          dpr={[1, 1.5]}
+          gl={{
+            powerPreference: 'high-performance',
+            antialias: true,
+            alpha: false,
+            stencil: false,
+            depth: true
+          }}
           camera={{ position: [0, 2, 5], fov: 45 }}
           onCreated={({ gl }) => {
             gl.setClearColor('#0a0a0a')
           }}
         >
           <Suspense fallback={null}>
-            <ScrollControls pages={8} damping={0.12} distance={1}>
+            <ScrollControls pages={8} damping={0.06} distance={1}>
               <Experience />
               <Scroll html>
                 <UI />

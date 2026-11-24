@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
-import { Float, useScroll, Stars, Sparkles, Environment, Text, MeshDistortMaterial, useTexture } from '@react-three/drei'
+import { Float, useScroll, Stars, Sparkles, Text, MeshDistortMaterial, useTexture } from '@react-three/drei'
 import * as THREE from 'three'
 import profileImg from '../assets/profile.jpg'
 import fitnessPreviewImg from '../assets/fitness_preview.jpg'
@@ -11,20 +11,17 @@ export default function Experience() {
   const scroll = useScroll()
   const groupRef = useRef()
   const starsRef = useRef()
+  const tempTargetPos = useRef(new THREE.Vector3())
   
   const isMobile = width < height
   const responsiveScale = isMobile ? Math.min(width * 0.16, 0.72) : 1
 
   useFrame((state, delta) => {
     const scrollOffset = scroll.offset
-    const scrollVelocity = Math.abs(scroll.delta)
     
-    // Warp speed stars acceleration on fast scroll
+    // Smooth starfield rotation without heavy scale mutations
     if (starsRef.current) {
-      starsRef.current.rotation.z += delta * (0.02 + scrollVelocity * 0.5)
-      starsRef.current.scale.z = 1 + scrollVelocity * 15
-      starsRef.current.scale.x = 1 + scrollVelocity * 1.5
-      starsRef.current.scale.y = 1 + scrollVelocity * 1.5
+      starsRef.current.rotation.z += delta * 0.015
     }
 
     // Camera movement based on scroll across 8 pages
@@ -33,36 +30,37 @@ export default function Experience() {
     const targetZ = zBase - (scrollOffset * (isMobile ? 25 : 28))
     const targetY = (isMobile ? 1.2 : 2) + Math.cos(scrollOffset * Math.PI) * (isMobile ? 0.6 : 1.5)
 
-    const targetPos = new THREE.Vector3(targetX, targetY, targetZ)
-    state.camera.position.lerp(targetPos, 0.05)
+    // Reusable Vector3 to eliminate Garbage Collection stutter
+    tempTargetPos.current.set(targetX, targetY, targetZ)
+    state.camera.position.lerp(tempTargetPos.current, 0.08)
     
     // Look ahead dynamically
     const lookAtZ = -scrollOffset * (isMobile ? 20 : 24)
     state.camera.lookAt(0, 0, lookAtZ)
 
     // Parallax on mouse movement (desktop only, smoothed)
-    const mouseX = state.mouse.x * 0.5
-    const mouseY = state.mouse.y * 0.5
+    const mouseX = state.mouse.x * 0.4
+    const mouseY = state.mouse.y * 0.4
     if (groupRef.current && !isMobile) {
-      groupRef.current.rotation.y = THREE.MathUtils.lerp(groupRef.current.rotation.y, mouseX * 0.2, 0.1)
-      groupRef.current.rotation.x = THREE.MathUtils.lerp(groupRef.current.rotation.x, -mouseY * 0.1, 0.1)
+      groupRef.current.rotation.y = THREE.MathUtils.lerp(groupRef.current.rotation.y, mouseX * 0.15, 0.08)
+      groupRef.current.rotation.x = THREE.MathUtils.lerp(groupRef.current.rotation.x, -mouseY * 0.08, 0.08)
     }
   })
 
   return (
     <group ref={groupRef} scale={[responsiveScale, responsiveScale, responsiveScale]}>
-      {/* Dynamic Cyber Lighting */}
-      <ambientLight intensity={0.25} />
-      <pointLight position={[10, 10, 10]} intensity={1.5} color="#00d4ff" />
-      <spotLight position={[-5, 5, 5]} angle={0.3} penumbra={1} intensity={2} color="#a855f7" castShadow />
+      {/* High-Performance Direct Cyber Lighting */}
+      <ambientLight intensity={0.45} />
+      <pointLight position={[10, 10, 10]} intensity={1.6} color="#00d4ff" />
+      <spotLight position={[-5, 5, 5]} angle={0.4} penumbra={1} intensity={2.2} color="#a855f7" />
       <pointLight position={[-5, -2, -4]} intensity={1.5} color="#f59e0b" />
       <pointLight position={[5, -2, -8]} intensity={1.2} color="#00d4ff" />
       
-      {/* Atmospheric Starfield and Sparkles */}
+      {/* Lightweight Atmospheric Starfield and Sparkles */}
       <group ref={starsRef}>
-         <Stars radius={100} depth={50} count={isMobile ? 3500 : 7000} factor={6} saturation={0} fade speed={1} />
+         <Stars radius={100} depth={50} count={isMobile ? 800 : 1800} factor={5} saturation={0} fade speed={0.8} />
       </group>
-      <Sparkles count={isMobile ? 120 : 300} scale={[24, 24, 16]} size={2.5} speed={0.6} opacity={0.35} color="#00d4ff" />
+      <Sparkles count={isMobile ? 35 : 75} scale={[24, 24, 16]} size={2.5} speed={0.5} opacity={0.35} color="#00d4ff" />
       <fog attach="fog" args={['#0a0a0a', 5, 18]} />
 
       {/* Hero Workstation Desk */}
@@ -117,8 +115,6 @@ export default function Experience() {
       <Float speed={3.5} rotationIntensity={1.8} floatIntensity={1} position={[isMobile ? 1.3 : 3.8, isMobile ? -1.2 : -0.8, -15]}>
         <SkillSphere color="#00d4ff" name="Docker" ringColor="#00d4ff" />
       </Float>
-
-      <Environment preset="city" />
     </group>
   )
 }
@@ -129,7 +125,7 @@ function Desk({ isMobile }) {
   return (
     <group position={[0, isMobile ? -0.2 : -0.5, 0]}>
       {/* Table Top Surface */}
-      <mesh receiveShadow position={[0, 0, 0]}>
+      <mesh position={[0, 0, 0]}>
         <boxGeometry args={[4.2, 0.1, 2.2]} />
         <meshStandardMaterial color="#121214" metalness={0.85} roughness={0.2} />
       </mesh>
@@ -331,12 +327,12 @@ function SkillSphere({ color, name, ringColor }) {
 
   return (
     <group>
-      {/* Core Dynamic Mesh Sphere */}
+      {/* Core Dynamic Mesh Sphere (Optimized Segments) */}
       <mesh>
-        <sphereGeometry args={[0.42, 32, 32]} />
+        <sphereGeometry args={[0.42, 20, 20]} />
         <MeshDistortMaterial
-          distort={0.35}
-          speed={2.2}
+          distort={0.25}
+          speed={1.5}
           color={color}
           emissive={color}
           emissiveIntensity={0.6}
@@ -345,9 +341,9 @@ function SkillSphere({ color, name, ringColor }) {
         />
       </mesh>
 
-      {/* Planetary Holographic Orbital Ring */}
+      {/* Planetary Holographic Orbital Ring (Optimized Geometry) */}
       <mesh ref={ringRef}>
-        <torusGeometry args={[0.62, 0.015, 16, 64]} />
+        <torusGeometry args={[0.62, 0.012, 8, 32]} />
         <meshStandardMaterial 
           color={ringColor} 
           emissive={ringColor} 
