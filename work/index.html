@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Production Platforms &amp; Client Work | Pratyush Kumar (CARTNOVA)</title>
+    <title>Production Case Studies &amp; Architectural Work | CARTNOVA</title>
     <meta name="author" content="Pratyush Kumar">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <meta name="description"
-        content="Explore production web platforms engineered by Pratyush Kumar, Founder of CARTNOVA: Coffee &amp; Cravings (zero-dependency dining engine) and India Fitness (high-velocity athletic portal).">
+        content="Explore architectural case studies by Pratyush Kumar &amp; CARTNOVA: Coffee &amp; Cravings (zero-dependency dining engine), India Fitness (60FPS athletic portal), and VŌLT Storefront.">
     <meta name="keywords"
-        content="Pratyush Kumar, CARTNOVA, Coffee and Cravings, India Fitness, Web Developer Portfolio, Patna Web Developer">
+        content="Pratyush Kumar, CARTNOVA, Coffee and Cravings, India Fitness, VOLT Storefront, Architecture Case Studies, Patna, Full-Stack Engineer">
     <meta name="theme-color" content="#0a0a0a">
     <meta name="color-scheme" content="dark">
 
@@ -241,7 +241,7 @@
                 <div class="user-info">
                     <h5 class="greeting letter-space--2 text-white">Hey, I’m Pratyush</h5>
                     <p class="introduce text-white-56 letter-space--05 text-body-3">
-                        Freelance Full-Stack Web Developer &amp; Systems Architect based in Patna, India. Building zero-dependency backend runtimes, distributed Redis KV architectures, and fluid high-velocity web platforms.
+                        Full-Stack Engineer &amp; Co-Founder of CARTNOVA based in Patna, India. Building fast, secure ordering platforms, 60FPS fluid web systems, UI/UX design, and brand growth experiences.
                     </p>
                     <div class="br-line"></div>
                     <div class="action-group">
@@ -284,23 +284,45 @@
                                 </p>
 
                                 <!-- Case Study 01: Coffee & Cravings -->
-                                <div class="wg-work" style="margin-bottom: 48px;">
-                                    <div class="work-image" style="max-height: 440px; overflow: hidden; border-radius: 20px;">
+                                <div class="wg-work" style="margin-bottom: 56px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 24px; overflow: hidden;">
+                                    <div class="work-image" style="max-height: 420px; overflow: hidden;">
                                         <img loading="lazy" width="700" height="427" src="/assets/images/section/coffee_preview.jpg" alt="Coffee &amp; Cravings Live Platform Screenshot" style="width: 100%; height: 100%; object-fit: cover;">
                                     </div>
-                                    <div style="padding: 32px;">
+                                    <div style="padding: 36px 32px;">
                                         <div style="margin-bottom: 16px;">
                                             <span style="background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); color: #f59e0b; padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 8px;">
                                                 <span style="width: 7px; height: 7px; border-radius: 50%; background: #f59e0b; box-shadow: 0 0 8px #f59e0b;"></span>
-                                                LIVE PRODUCTION &bull; COFFEE &amp; CRAVINGS
+                                                CASE STUDY 01 &bull; COFFEE &amp; CRAVINGS
                                             </span>
                                         </div>
                                         <h2 class="letter-space--2 text-white-72" style="font-size: 32px; margin-bottom: 16px;">
-                                            Coffee &amp; Cravings
+                                            Coffee &amp; Cravings — Real-Time QR Dining &amp; KDS Engine
                                         </h2>
-                                        <p class="text-white-56 text-body-3" style="line-height: 1.7; margin-bottom: 24px;">
-                                            Full-featured dining platform and kitchen display system engineered for an artisan cafe in Patna. Built with zero runtime external dependencies on native Node.js core, Upstash Redis REST KV storage for in-memory order caching, cryptographic HMAC-SHA256 signed table QR tokens across 6 tables, instant-chime Barista KDS, Razorpay &amp; dynamic UPI verification, and strict statutory compliance under the India DPDP Act 2023.
-                                        </p>
+                                        
+                                        <!-- Problem / Approach / Results Grid -->
+                                        <div style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 28px;">
+                                            <div style="background: rgba(255,255,255,0.03); border-left: 3px solid #ef4444; padding: 16px 20px; border-radius: 0 12px 12px 0;">
+                                                <h4 style="color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 6px;">The Challenge &amp; Problem</h4>
+                                                <p style="color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.6; margin: 0;">
+                                                    Artisan cafes experience severe bottlenecking during peak rush hours. Paper menus created order latency, manual cashier queues slowed throughput, third-party delivery aggregators levied steep 20–30% commissions, and table-ordering lacked tamper-proofing against unauthorized order injection.
+                                                </p>
+                                            </div>
+
+                                            <div style="background: rgba(255,255,255,0.03); border-left: 3px solid #00d4ff; padding: 16px 20px; border-radius: 0 12px 12px 0;">
+                                                <h4 style="color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 6px;">Architecture &amp; Engineering Approach</h4>
+                                                <p style="color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.6; margin: 0;">
+                                                    Engineered a zero-dependency native Node.js core backend eliminating npm supply-chain vulnerabilities. Implemented cryptographic HMAC-SHA256 signed table tokens across 6 tables to prevent order spoofing, Upstash Redis REST KV storage for sub-10ms in-memory menu state, an instant audio chime Barista Kitchen Display System (KDS), dynamic UPI payments with Razorpay webhook reconciliation, and compliance under India's DPDP Act 2023.
+                                                </p>
+                                            </div>
+
+                                            <div style="background: rgba(255,255,255,0.03); border-left: 3px solid #10b981; padding: 16px 20px; border-radius: 0 12px 12px 0;">
+                                                <h4 style="color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 6px;">Measurable Results &amp; Impact</h4>
+                                                <p style="color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.6; margin: 0;">
+                                                    71 of 71 automated tests passing (100% test coverage); sub-second live order dispatch directly to barista screens; 100% elimination of aggregator fees; zero third-party cookie leakage.
+                                                </p>
+                                            </div>
+                                        </div>
+
                                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin-bottom: 24px;">
                                             <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 16px; border-radius: 12px;">
                                                 <p style="color: rgba(255,255,255,0.4); font-size: 12px; margin: 0;">Year</p>
@@ -308,16 +330,17 @@
                                             </div>
                                             <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 16px; border-radius: 12px;">
                                                 <p style="color: rgba(255,255,255,0.4); font-size: 12px; margin: 0;">Role</p>
-                                                <p style="color: #fff; font-size: 16px; font-weight: 600; margin: 4px 0 0 0;">Freelance Web Architect</p>
+                                                <p style="color: #fff; font-size: 16px; font-weight: 600; margin: 4px 0 0 0;">Lead Systems Architect</p>
                                             </div>
                                             <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 16px; border-radius: 12px;">
                                                 <p style="color: rgba(255,255,255,0.4); font-size: 12px; margin: 0;">Automated Tests</p>
                                                 <p style="color: #10b981; font-size: 16px; font-weight: 600; margin: 4px 0 0 0;">71/71 Passed (100%)</p>
                                             </div>
                                         </div>
+
                                         <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px;">
-                                            <span style="background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: #fff;">Native Node.js</span>
-                                            <span style="background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: #fff;">Upstash Redis</span>
+                                            <span style="background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: #fff;">Native Node.js Core</span>
+                                            <span style="background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: #fff;">Upstash Redis KV</span>
                                             <span style="background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: #fff;">HMAC-SHA256</span>
                                             <span style="background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: #fff;">Razorpay &amp; UPI</span>
                                             <span style="background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: #fff;">DPDP Act 2023</span>
@@ -336,23 +359,45 @@
                                 </div>
 
                                 <!-- Case Study 02: India Fitness -->
-                                <div class="wg-work" style="margin-bottom: 48px;">
-                                    <div class="work-image" style="max-height: 440px; overflow: hidden; border-radius: 20px;">
+                                <div class="wg-work" style="margin-bottom: 56px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 24px; overflow: hidden;">
+                                    <div class="work-image" style="max-height: 420px; overflow: hidden;">
                                         <img loading="lazy" width="700" height="427" src="/assets/images/section/fitness_preview.jpg" alt="India Fitness Live Homepage Screenshot" style="width: 100%; height: 100%; object-fit: cover;">
                                     </div>
-                                    <div style="padding: 32px;">
+                                    <div style="padding: 36px 32px;">
                                         <div style="margin-bottom: 16px;">
                                             <span style="background: rgba(0, 212, 255, 0.15); border: 1px solid rgba(0, 212, 255, 0.4); color: #00d4ff; padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 8px;">
                                                 <span style="width: 7px; height: 7px; border-radius: 50%; background: #00d4ff; box-shadow: 0 0 8px #00d4ff;"></span>
-                                                LIVE PRODUCTION &bull; INDIA FITNESS
+                                                CASE STUDY 02 &bull; INDIA FITNESS
                                             </span>
                                         </div>
                                         <h2 class="letter-space--2 text-white-72" style="font-size: 32px; margin-bottom: 16px;">
-                                            India Fitness
+                                            India Fitness — High-Velocity Digital Athletics Platform
                                         </h2>
-                                        <p class="text-white-56 text-body-3" style="line-height: 1.7; margin-bottom: 24px;">
-                                            High-performance digital athletics platform engineered for Patna’s premier gym destination across Sipara, Kurthaul &amp; Sampatchak. Built with Next.js 15, PostgreSQL, and GSAP for locked 60FPS fluid screen transitions, custom membership tiers, workout regimens, BMI calculators, and instantaneous mobile navigation with zero cumulative layout shifts.
-                                        </p>
+
+                                        <!-- Problem / Approach / Results Grid -->
+                                        <div style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 28px;">
+                                            <div style="background: rgba(255,255,255,0.03); border-left: 3px solid #ef4444; padding: 16px 20px; border-radius: 0 12px 12px 0;">
+                                                <h4 style="color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 6px;">The Challenge &amp; Problem</h4>
+                                                <p style="color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.6; margin: 0;">
+                                                    With over 1,500 active athletes across three gym branches in Patna (Sipara, Kurthaul, Sampatchak), the business was hampered by an outdated, sluggish template website with high Cumulative Layout Shifts (CLS), slow mobile loading, and confusing workout discovery.
+                                                </p>
+                                            </div>
+
+                                            <div style="background: rgba(255,255,255,0.03); border-left: 3px solid #00d4ff; padding: 16px 20px; border-radius: 0 12px 12px 0;">
+                                                <h4 style="color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 6px;">Architecture &amp; Engineering Approach</h4>
+                                                <p style="color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.6; margin: 0;">
+                                                    Engineered a modern Server-Side Rendered (SSR) web app using Next.js 15 (App Router), React 19, TypeScript, and Tailwind CSS. Implemented hardware-accelerated GSAP animations locked at 60FPS, structured PostgreSQL relational database schema for branch facilities and trainer schedules, and built interactive client-side tools including a BMI calculator and dynamic routine planner.
+                                                </p>
+                                            </div>
+
+                                            <div style="background: rgba(255,255,255,0.03); border-left: 3px solid #10b981; padding: 16px 20px; border-radius: 0 12px 12px 0;">
+                                                <h4 style="color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 6px;">Measurable Results &amp; Impact</h4>
+                                                <p style="color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.6; margin: 0;">
+                                                    Fluid 60FPS route transitions with zero layout shift (CLS = 0); instantaneous mobile rendering; measurable surge in online membership registrations across all three Patna locations.
+                                                </p>
+                                            </div>
+                                        </div>
+
                                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin-bottom: 24px;">
                                             <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 16px; border-radius: 12px;">
                                                 <p style="color: rgba(255,255,255,0.4); font-size: 12px; margin: 0;">Year</p>
@@ -360,13 +405,14 @@
                                             </div>
                                             <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 16px; border-radius: 12px;">
                                                 <p style="color: rgba(255,255,255,0.4); font-size: 12px; margin: 0;">Role</p>
-                                                <p style="color: #fff; font-size: 16px; font-weight: 600; margin: 4px 0 0 0;">Freelance Web Developer</p>
+                                                <p style="color: #fff; font-size: 16px; font-weight: 600; margin: 4px 0 0 0;">Lead Full-Stack Engineer</p>
                                             </div>
                                             <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 16px; border-radius: 12px;">
                                                 <p style="color: rgba(255,255,255,0.4); font-size: 12px; margin: 0;">Framerate</p>
                                                 <p style="color: #00d4ff; font-size: 16px; font-weight: 600; margin: 4px 0 0 0;">Locked 60 FPS</p>
                                             </div>
                                         </div>
+
                                         <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px;">
                                             <span style="background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: #fff;">Next.js 15</span>
                                             <span style="background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: #fff;">React 19</span>
@@ -382,6 +428,77 @@
                                             </a>
                                             <a href="https://github.com/KNOWNASPRATYUSH/INDIA-FITNESS" target="_blank" rel="noopener noreferrer" class="tf-btn-action style-white">
                                                 <span class="text text-body-3 letter-space--05 fw-medium">Source Code ↗</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Case Study 03: CARTNOVA & VŌLT -->
+                                <div class="wg-work" style="margin-bottom: 48px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 24px; overflow: hidden;">
+                                    <div class="work-image" style="max-height: 420px; overflow: hidden;">
+                                        <img loading="lazy" width="700" height="427" src="/assets/images/section/award-4.jpg" alt="VOLT Storefront &amp; CARTNOVA Studio Showcase" style="width: 100%; height: 100%; object-fit: cover;">
+                                    </div>
+                                    <div style="padding: 36px 32px;">
+                                        <div style="margin-bottom: 16px;">
+                                            <span style="background: rgba(168, 85, 247, 0.15); border: 1px solid rgba(168, 85, 247, 0.4); color: #a855f7; padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 8px;">
+                                                <span style="width: 7px; height: 7px; border-radius: 50%; background: #a855f7; box-shadow: 0 0 8px #a855f7;"></span>
+                                                CASE STUDY 03 &bull; CARTNOVA STUDIO &amp; VŌLT
+                                            </span>
+                                        </div>
+                                        <h2 class="letter-space--2 text-white-72" style="font-size: 32px; margin-bottom: 16px;">
+                                            VŌLT &amp; CARTNOVA — Headless E-Commerce &amp; Brand Systems
+                                        </h2>
+
+                                        <!-- Problem / Approach / Results Grid -->
+                                        <div style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 28px;">
+                                            <div style="background: rgba(255,255,255,0.03); border-left: 3px solid #ef4444; padding: 16px 20px; border-radius: 0 12px 12px 0;">
+                                                <h4 style="color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 6px;">The Challenge &amp; Problem</h4>
+                                                <p style="color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.6; margin: 0;">
+                                                    Modern retail brands suffer from disjointed agency workflows—designers who don't understand code, developers who ignore aesthetics, and social media managers operating in a silo. Off-the-shelf monolithic storefronts also caused slow checkout friction and drop-offs.
+                                                </p>
+                                            </div>
+
+                                            <div style="background: rgba(255,255,255,0.03); border-left: 3px solid #00d4ff; padding: 16px 20px; border-radius: 0 12px 12px 0;">
+                                                <h4 style="color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 6px;">Architecture &amp; Agency Solution</h4>
+                                                <p style="color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.6; margin: 0;">
+                                                    As Co-Founder &amp; Technical Lead of CARTNOVA, orchestrated a unified agency model. Built VŌLT, a headless high-performance storefront with React 19, Redis cart state caching, and instant checkout transitions, while our co-founding creative team designed the Figma design system, brand assets, and multi-channel social media launch campaign.
+                                                </p>
+                                            </div>
+
+                                            <div style="background: rgba(255,255,255,0.03); border-left: 3px solid #10b981; padding: 16px 20px; border-radius: 0 12px 12px 0;">
+                                                <h4 style="color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 6px;">Measurable Results &amp; Impact</h4>
+                                                <p style="color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.6; margin: 0;">
+                                                    Sub-second checkout flow; seamless visual branding across web and social media; complete end-to-end launch delivered under one unified agency roof.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin-bottom: 24px;">
+                                            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 16px; border-radius: 12px;">
+                                                <p style="color: rgba(255,255,255,0.4); font-size: 12px; margin: 0;">Year</p>
+                                                <p style="color: #fff; font-size: 16px; font-weight: 600; margin: 4px 0 0 0;">2025 - 2026</p>
+                                            </div>
+                                            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 16px; border-radius: 12px;">
+                                                <p style="color: rgba(255,255,255,0.4); font-size: 12px; margin: 0;">Role</p>
+                                                <p style="color: #fff; font-size: 16px; font-weight: 600; margin: 4px 0 0 0;">Co-Founder &amp; Tech Lead</p>
+                                            </div>
+                                            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 16px; border-radius: 12px;">
+                                                <p style="color: rgba(255,255,255,0.4); font-size: 12px; margin: 0;">Scope</p>
+                                                <p style="color: #a855f7; font-size: 16px; font-weight: 600; margin: 4px 0 0 0;">Full-Stack &amp; Agency</p>
+                                            </div>
+                                        </div>
+
+                                        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px;">
+                                            <span style="background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: #fff;">Headless Commerce</span>
+                                            <span style="background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: #fff;">UI/UX Design</span>
+                                            <span style="background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: #fff;">Social Media Strategy</span>
+                                            <span style="background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: #fff;">Brand Systems</span>
+                                        </div>
+                                        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                                            <a href="/contact" class="tf-btn-action style-white">
+                                                <span class="ic-wrap"><i class="icon icon-arrow-right-top"></i></span>
+                                                <span class="text text-body-3 letter-space--05 fw-medium">Hire CARTNOVA ↗</span>
+                                                <span class="ic-wrap"><i class="icon icon-arrow-right-top"></i></span>
                                             </a>
                                         </div>
                                     </div>

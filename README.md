@@ -1,18 +1,18 @@
 <div align="center">
 
 # 🌌 PRATYUSH KUMAR
-### *Official Portfolio & Digital Engineering Studio • Founder, CARTNOVA*
+### *Official Portfolio & Digital Agency Studio • Co-Founder, CARTNOVA*
 
 [![Live Production](https://img.shields.io/badge/Live-knownaspratyush.online-00d4ff?style=for-the-badge&logo=vercel&logoColor=white)](https://www.knownaspratyush.online/)
-[![Founder](https://img.shields.io/badge/Founder-CARTNOVA-a855f7?style=for-the-badge)](https://www.knownaspratyush.online/)
+[![Co--Founder](https://img.shields.io/badge/Co--Founder-CARTNOVA-a855f7?style=for-the-badge)](https://www.knownaspratyush.online/)
 [![React Version](https://img.shields.io/badge/React-19.2.4-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Three.js](https://img.shields.io/badge/Three.js-WebGL%20Canvas-black?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org/)
-[![Core Web Vitals](https://img.shields.io/badge/Core%20Web%20Vitals-100%2F100-emerald?style=for-the-badge)](https://www.knownaspratyush.online/)
+[![Core Web Vitals](https://img.shields.io/badge/Core%20Web%20Vitals-Optimized-emerald?style=for-the-badge)](https://www.knownaspratyush.online/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge)](./LICENSE)
 
 <br/>
 
-**[🌐 Official Portfolio](https://www.knownaspratyush.online/)** • **[🏢 Studio (CARTNOVA)](https://www.knownaspratyush.online/)** • **[💼 Work & Case Studies](https://www.knownaspratyush.online/work)** • **[⚡ Services](https://www.knownaspratyush.online/services)**
+**[🌐 Official Portfolio](https://www.knownaspratyush.online/)** • **[🏢 Digital Agency (CARTNOVA)](https://www.knownaspratyush.online/)** • **[💼 Work & Case Studies](https://www.knownaspratyush.online/work)** • **[⚡ Services](https://www.knownaspratyush.online/services)**
 
 ---
 
@@ -20,7 +20,7 @@
 
 ## 📌 Executive Overview
 
-Official open-source codebase for the digital portfolio of **Pratyush Kumar** (`KNOWNASPRATYUSH`), Full-Stack Web Developer and Founder of **CARTNOVA** based in Patna, Bihar, India.
+Official open-source codebase for the digital portfolio of **Pratyush Kumar** (`KNOWNASPRATYUSH`), Full-Stack Engineer and Co-Founder of **CARTNOVA** based in Patna, Bihar, India.
 
 Combining **React 19**, **Three.js / React Three Fiber**, and fluid **GSAP** timelines, this platform delivers an interactive WebGL spatial computing experience engineered with a zero-dependency mindset and zero cumulative layout shift (CLS = 0).
 
@@ -38,9 +38,9 @@ Combining **React 19**, **Three.js / React Three Fiber**, and fluid **GSAP** tim
 ## 🌐 Live Broadcast & Canonical Knowledge Endpoints
 
 * **Official Portfolio**: [https://www.knownaspratyush.online/](https://www.knownaspratyush.online/)
-* **Engineering Studio**: [CARTNOVA](https://www.knownaspratyush.online/) (Patna, Bihar, India)
+* **Digital Agency**: [CARTNOVA](https://www.knownaspratyush.online/) (Web Engineering, UI/UX Design, Social Media & Branding)
 * **Flagship Case Studies**: [https://www.knownaspratyush.online/work](https://www.knownaspratyush.online/work)
-* **Services & Technical Consulting**: [https://www.knownaspratyush.online/services](https://www.knownaspratyush.online/services)
+* **Services & Agency Capabilities**: [https://www.knownaspratyush.online/services](https://www.knownaspratyush.online/services)
 * **AI Machine Ingestion Specs**: [llms.txt](https://www.knownaspratyush.online/llms.txt) • [llms-full.txt](https://www.knownaspratyush.online/llms-full.txt)
 
 ---
@@ -51,7 +51,7 @@ Combining **React 19**, **Three.js / React Three Fiber**, and fluid **GSAP** tim
 | :--- | :--- | :--- | :--- | :--- |
 | **☕ Coffee & Cravings** | [coffeeandcravings.shop](https://www.coffeeandcravings.shop/) | Native Node.js Core, Upstash Redis KV, HMAC-SHA256 | `Production` | [Coffee-cravings](https://github.com/KNOWNASPRATYUSH/Coffee-cravings) |
 | **🏋️ India Fitness** | [india-fitness.vercel.app](https://india-fitness.vercel.app/) | HTML5, CSS Grid, FitFlex Theme, Decap CMS | `Production` | [INDIA-FITNESS](https://github.com/KNOWNASPRATYUSH/INDIA-FITNESS) |
-| **🏢 CARTNOVA Studio** | [knownaspratyush.online](https://www.knownaspratyush.online/) | Full-Stack Custom Systems, VŌLT Storefront | `Active` | [CARTNOVA](https://github.com/KNOWNASPRATYUSH) |
+| **🏢 CARTNOVA & VŌLT** | [knownaspratyush.online](https://www.knownaspratyush.online/) | Full-Stack Custom Systems, VŌLT Storefront | `Active` | [CARTNOVA](https://github.com/KNOWNASPRATYUSH) |
 
 ---
 
@@ -115,6 +115,7 @@ PORTFOLIO-WEBSITE/
 │   ├── ISSUE_TEMPLATE/     # Standard bug and feature issue templates
 │   ├── PULL_REQUEST_TEMPLATE.md
 │   └── SECURITY.md         # Vulnerability reporting protocol
+├── ACCESSIBILITY.md        # Accessibility Statement & Standards (WCAG 2.1 AA)
 ├── CODE_OF_CONDUCT.md      # Contributor Covenant v2.1
 ├── CONTRIBUTING.md         # Contribution guidelines
 ├── LICENSE                 # MIT License
@@ -132,8 +133,8 @@ PORTFOLIO-WEBSITE/
   </td>
   <td>
     <h3>Pratyush Kumar</h3>
-    <p><b>Full-Stack Web Developer • Software Architect • Founder, CARTNOVA</b></p>
-    <p>Based in Patna, Bihar, India. Specializing in WebGL computing, high-conversion web platforms, and edge cloud architectures.</p>
+    <p><b>Full-Stack Engineer • Co-Founder, CARTNOVA</b></p>
+    <p>Based in Patna, Bihar, India. Co-leading CARTNOVA across web engineering, UI/UX product design, and growth marketing, with expertise in native Node.js architectures and spatial web computing.</p>
     <p>
       <a href="https://www.knownaspratyush.online/"><img src="https://img.shields.io/badge/Portfolio-knownaspratyush.online-00d4ff?style=flat-square&logo=googlechrome&logoColor=black" alt="Portfolio"/></a>&nbsp;
       <a href="https://github.com/KNOWNASPRATYUSH"><img src="https://img.shields.io/badge/GitHub-KNOWNASPRATYUSH-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>&nbsp;

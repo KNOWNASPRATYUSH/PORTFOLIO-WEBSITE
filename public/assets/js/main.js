@@ -114,18 +114,26 @@
         if ($(document.body).hasClass("counter-scroll")) {
             function isInViewport(el) {
                 var rect = el.getBoundingClientRect();
-                return rect.top < window.innerHeight && rect.bottom > 0;
+                var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+                return rect.top <= viewHeight + 200 && rect.bottom >= -50;
             }
 
             function startCount($el) {
-                if ($().countTo) {
+                if (typeof $.fn.countTo === "function") {
                     $el.find(".number").each(function () {
-                        var to = $(this).data("to"),
-                            speed = $(this).data("speed");
-                        $(this).countTo({
-                            to: to,
-                            speed: speed,
-                        });
+                        var $num = $(this);
+                        var to = parseFloat($num.data("to"));
+                        var speed = parseInt($num.data("speed"), 10) || 800;
+                        if (!isNaN(to)) {
+                            $num.countTo({
+                                from: 0,
+                                to: to,
+                                speed: speed,
+                                onComplete: function () {
+                                    $num.text(to);
+                                }
+                            });
+                        }
                     });
                 }
             }
@@ -147,7 +155,9 @@
             }
 
             checkAndStart();
-            $(window).on("scroll resize", checkAndStart);
+            setTimeout(checkAndStart, 300);
+            setTimeout(checkAndStart, 1000);
+            $(window).on("scroll resize load", checkAndStart);
         }
     };
 
