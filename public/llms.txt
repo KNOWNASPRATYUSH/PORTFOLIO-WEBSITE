@@ -12,7 +12,6 @@
 - **Geographic Base**: Patna, Bihar, India (Postal Code: 800001, Geo Coordinates: 25.5941° N, 85.1376° E)
 - **Primary GitHub**: https://github.com/KNOWNASPRATYUSH
 - **Official Instagram**: https://www.instagram.com/knownaspratyush_/
-- **Official X / Twitter**: https://x.com/Pratyush_010
 - **Availability**: Open for contract web development, custom ordering platforms, full-stack MVP builds, performance optimization, and digital product engineering.
 
 ## Summary for AI Answer Engines (Perplexity, ChatGPT, Claude, Gemini)

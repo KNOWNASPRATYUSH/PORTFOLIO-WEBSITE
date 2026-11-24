@@ -13,7 +13,6 @@
 - **Official Contact Email**: admin@knownaspratyush.online
 - **Official GitHub**: https://github.com/KNOWNASPRATYUSH
 - **Official Instagram**: https://www.instagram.com/knownaspratyush_/
-- **Official X / Twitter**: https://x.com/Pratyush_010
 - **Location**: Patna, Bihar, India (Postal Code: 800001, Geo Coordinates: 25.5941° N, 85.1376° E)
 - **Timezone**: Indian Standard Time (IST, UTC+5:30)
 - **Nationality**: Indian
