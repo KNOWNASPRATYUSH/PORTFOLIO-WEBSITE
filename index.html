@@ -13,12 +13,20 @@
     <meta name="theme-color" content="#0a0a0a">
     <meta name="color-scheme" content="dark">
 
-    <!-- Canonical URL -->
+    <!-- Canonical & Alternate Language URLs -->
     <link rel="canonical" href="https://pratyush-portfolio.vercel.app/">
+    <link rel="alternate" hreflang="x-default" href="https://pratyush-portfolio.vercel.app/">
+    <link rel="alternate" hreflang="en" href="https://pratyush-portfolio.vercel.app/">
 
-    <!-- Crawling & Indexing Directives -->
+    <!-- Google Search Console & Webmaster Verification -->
+    <!-- Replace "google-site-verification-token" with your GSC HTML tag token if using HTML tag verification -->
+    <meta name="google-site-verification" content="google-site-verification-token">
+    <meta name="msvalidate.01" content="ms-verification-token">
+
+    <!-- Crawling & Indexing Directives for Googlebot & Global Engines -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Geo Targeting Directives (Patna, Bihar, India) -->
     <meta name="geo.region" content="IN-BR">
@@ -121,6 +129,49 @@
             "HMAC-SHA256 Cryptography",
             "India DPDP Act 2023 Statutory Compliance",
             "Web Performance Optimization"
+          ]
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://pratyush-portfolio.vercel.app/#profilepage",
+          "url": "https://pratyush-portfolio.vercel.app/",
+          "name": "Pratyush Kumar — Freelance Web Developer & Systems Architect",
+          "mainEntity": {
+            "@id": "https://pratyush-portfolio.vercel.app/#person"
+          },
+          "dateCreated": "2024-01-01T00:00:00+05:30",
+          "dateModified": "2026-11-24T12:00:00+05:30",
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://pratyush-portfolio.vercel.app/#flagship-projects",
+          "name": "Flagship Production Systems Engineered by Pratyush Kumar",
+          "itemListElement": [
+            {
+              "@type": "SoftwareApplication",
+              "position": 1,
+              "name": "Coffee & Cravings Live Dining Platform",
+              "operatingSystem": "Web, iOS, Android",
+              "applicationCategory": "BusinessApplication",
+              "url": "https://www.coffeeandcravings.shop/",
+              "author": {
+                "@id": "https://pratyush-portfolio.vercel.app/#person"
+              },
+              "description": "Artisan dining and QR table ordering web platform with zero-dependency Node.js core, Upstash Redis, and instant-chime Barista KDS."
+            },
+            {
+              "@type": "SoftwareApplication",
+              "position": 2,
+              "name": "India Fitness Athletics Platform",
+              "operatingSystem": "Web, iOS, Android",
+              "applicationCategory": "HealthApplication",
+              "url": "https://india-fitness.vercel.app/",
+              "author": {
+                "@id": "https://pratyush-portfolio.vercel.app/#person"
+              },
+              "description": "High-performance digital athletics platform engineered with Next.js 15, PostgreSQL, and GSAP fluid navigation for Patna's premier gym destination."
+            }
           ]
         },
         {

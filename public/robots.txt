@@ -1,19 +1,32 @@
-# Robots.txt for Pratyush Kumar Portfolio
+# Robots.txt for Pratyush Kumar Portfolio (Optimized for Google Search Console)
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /favicon.png
+Allow: /favicon.svg
+Allow: /og-image.jpg
+Allow: /sitemap.xml
+Allow: /site.webmanifest
 
-# Googlebot & Image Directives
+# Googlebot Specific Crawling Directives
 User-agent: Googlebot
 Allow: /
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+Allow: /assets/fonts/
+Allow: /assets/icon/
 
+# Googlebot-Image Directives
 User-agent: Googlebot-Image
-Allow: /
-Allow: /assets/
+Allow: /assets/images/
 Allow: /og-image.jpg
 Allow: /favicon.png
 
+# Bingbot & Other Indexers
 User-agent: Bingbot
 Allow: /
+Allow: /assets/
 
-# Sitemap Location
+# Verified XML Sitemap for Google Search Console
 Sitemap: https://pratyush-portfolio.vercel.app/sitemap.xml

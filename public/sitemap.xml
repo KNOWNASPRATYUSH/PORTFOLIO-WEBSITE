@@ -3,13 +3,28 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://pratyush-portfolio.vercel.app/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://pratyush-portfolio.vercel.app/og-image.jpg</image:loc>
-      <image:title>Pratyush Kumar — Web Developer &amp; Full Stack Software Engineer</image:title>
-      <image:caption>Official portfolio and production systems of Pratyush Kumar, Web Developer based in Patna, India.</image:caption>
+      <image:title>Pratyush Kumar — Freelance Web Developer &amp; Systems Architect</image:title>
+      <image:caption>Official portfolio and flagship production systems by Pratyush Kumar, Web Developer based in Patna, India.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://pratyush-portfolio.vercel.app/assets/images/section/coffee_preview.jpg</image:loc>
+      <image:title>Coffee &amp; Cravings — Live Artisan Dining &amp; QR Ordering Platform</image:title>
+      <image:caption>Production dining system engineered with zero-dependency Node.js core, Upstash Redis, and HMAC-signed QR ordering by Pratyush Kumar.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://pratyush-portfolio.vercel.app/assets/images/section/fitness_preview.jpg</image:loc>
+      <image:title>India Fitness — High Performance Athletics Platform</image:title>
+      <image:caption>Digital athletics web platform for Patna premier gym destination engineered with Next.js 15, PostgreSQL, and GSAP motion by Pratyush Kumar.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://pratyush-portfolio.vercel.app/assets/images/avatar/avatar.png</image:loc>
+      <image:title>Pratyush Kumar — Portrait</image:title>
+      <image:caption>Pratyush Kumar, Freelance Web Developer and Full Stack Software Engineer in Patna, Bihar, India.</image:caption>
     </image:image>
   </url>
 </urlset>
